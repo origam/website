@@ -1,0 +1,86 @@
+---
+layout: default
+title: ORIGAM Home
+headerstyle: 
+---
+<div class="pagetitle-container wrapper clearfix">
+    <h1>Produkt</h1>
+</div>
+
+<div class="main-container clearfix">
+    <article>
+        <div class="row white clearfix">
+            <div class="wrapper teaser">
+                {% translate_file product/features.md %}
+            </div>
+        </div>
+        <div class="row white clearfix">
+            <div class="wrapper">
+				<div class="accordion">
+					{% for feature in site.features %}
+						<div class="accordionHeader stateDefault" data-key="{{ feature.name }}"> 
+    						<a><i class="fa fa-chevron-up"></i>{% translate feature.name %}</a> 
+						</div>
+						<div class="accordionContent stateActive"  data-key="{{ feature.name }}" style="display:none">
+                            {{ feature.content | markdownify}}
+                        </div>
+                    {% endfor %}
+				</div> <!-- #accordion  -->
+            </div>
+        </div>
+        <div class="row lightGrey clearfix">
+            <div class="wrapper teaser">
+                {% translate_file product/audience.md %}
+            </div>
+        </div>
+        <div class="row white clearfix">
+            <div class="wrapper teaser">
+                {% translate_file product/roadmap.md %}
+            </div>
+        </div>
+        {% for step in site.customer-steps %}
+        <div class="row white clearfix ">
+            <div class="wrapper">
+                    <div class="box roadmap {{ step.type }} center">
+                        {{ step.content | markdownify}}
+                    </div>
+                </div>
+        </div>
+        {% endfor %}
+        <div class="row white clearfix ">
+            <div class="teaser">
+                <div class="wrapper">
+                    <a class="btn teaser" href="">Chci začít</a>
+                </div>
+            </div>
+        </div>
+        <div class="row lightGrey clearfix ">
+            <div class="wrapper">
+                <div class="teaser">
+                    {% translate_file product/support.md %}
+                </div>
+                {% for item in site.translations[site.lang].support-types %}
+                <a href="{{ item['link'] }}">
+                    <div class="column_{{forloop.index}}_1_3 teaser">
+                        <div class="box orange">
+                            <h3>
+                                {{ item["name"] }}
+                            </h3>
+                            <p>
+                                {{ item["description"] }}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row white clearfix">
+            <div class="wrapper teaser">
+                {% translate_file product/customers.md %}
+                <a class="btn teaser" href="">Ukažte mi ORIGAM osobně</a>
+            </div>
+        </div>
+    </article>
+</div>
+<!-- #main-container -->	

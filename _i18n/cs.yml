@@ -22,3 +22,30 @@ pain-titles:
   pain3: Dvojitá práce
   pain4: Změny
   pain5: Náklady
+
+feature-titles:
+  feature01: Jednoduché ovládání
+  feature02: Snadné změny
+  feature03: Dobře známé funkce
+  feature04: Reporty
+  feature05: Neomezené množství uživatelů
+  feature06: Zabezpečení dat
+  feature07: Integrace
+  feature08: Procesy
+  feature09: Mapy
+  feature10: Přizpůsobení
+  feature11: Dokumenty
+
+support-types:
+  -
+    name: Komunitní fórum
+    description: Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.
+    link: https://community.origam.com
+  -
+    name: Partneři
+    description: Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
+    link: partners
+  -
+    name: Zakladatelé
+    description: Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně nezůstanete.
+    link: https://community.origam.com/t/partner-profile-advantage-solutions/1318

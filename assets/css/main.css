@@ -427,9 +427,31 @@ a.btn.teaser { margin: 30px 0 0 0;}
 .box.orange { background: #F15B47;; }
 .box.special { background: #556f7a; }
 
+.box.roadmap {
+	border-style: solid;
+	color:#202323;
+	border-color: #556f7a;
+	cursor: auto;
+}
+.box.roadmap:hover {
+	transition: none;
+	background: none;
+}
+.box.roadmap h3 {
+	color:#202323;
+}
+.box.roadmap.orange h3 {
+	color:#F15B47;
+}
+.box.roadmap.orange {
+	background: #F8FBFB;
+	border-color: #F15B47;
+}
+
 .box h3{
     color: #F8FBFB;
 }
+
 .special.teaser {
 	margin-left: auto;
 	margin-right: auto;
@@ -842,6 +864,11 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 .column_3_1_3.product-tour img {
     float: right;
 }
+
+.center {
+	margin: auto;
+	width: 50%;
+  }
 
 /*	---------------------------------------------------------------------- */
 /* 	rows - columns */
