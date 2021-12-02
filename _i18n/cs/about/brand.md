@@ -1,8 +1,11 @@
-## Brand Story
+## Příběh značky
 
-A JOURNEY OF A THOUSAND MILES BEGINS WITH A SINGLE STEP
+I CESTA DLOUHÁ TISÍC MIL ZAČÍNÁ JEDINÝM KROKEM
 -- Lao Tse
 
-Imagine an origami: you start with an idea, the final design in your head. You fold the paper, then again. You practice, start with something simple and follow the instructions. You prototype. Gaining expertise, you try more and more sophisticated designs, and finally you master the whole thing from the idea through custom made development to a fully functional solution.
+Představte si origami: začnete nápadem, finální představou, kterou máte v hlavě. Ohnete papír, a poté znovu. 
+Trénujete, začnete něčím snadným a držíte se instrukcí. Prototypujete. Naberete zkušenosti a začnete zkoušet
+více a více sofistikované modely. Nakonec to celé zvládnete od myšlenky přes zakázkový vývoj až do
+funkčního řešení.
 
-That´s exactly how ORIGAM works.
+Přesně takhle ORIGAM funguje.

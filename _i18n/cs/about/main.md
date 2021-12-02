@@ -1,9 +1,13 @@
-## How it all started
-We started the company in 2003, at first focusing on delivering various IT solutions to small and medium businesses. We soon realized there was a demand for a 
-solution that would have all the benefits of custom software, but none of its drawbacks, and so we started focusing on software engineering. ORIGAM was born.
+## Jak to vše začalo
+Založili jsme společnost v roce 2003 a nejdříve se zaměřili na všeobecná IT řešení pro malé a střední podniky.
+Ale brzy jsme si uvědomili, že existuje poptávka po řešení, které by mělo všechny výhody zakázkového softwaru,
+ale bez jeho nevýhod. A tak jsme začali vyvíjet software. Zrodil se ORIGAM.
 
-### Focus on partnership
-In 2013 we decided to change our strategy and focus exclusively on software implementers and developers and let our partners be in direct contact with their end customers. We believe our partners know their clients needs better than us, and so we focus on giving them the right tools to get the job done.
+### Zacílení na partnery
+V roce 2013 jsme se rozhodli změnit strategii a zaměřit se zcela na implementátory softwaru a vývojáře. 
+Místo abychom byli v přímém kontaktu se zákazníky, rozhodli jsme se aby toto zastali naši partneři.
+Věříme, že znají své zákazníky lépe, než bychom kdy mohli my, a tak se naší starostí stalo dodávat partnerům
+správné nástroje, aby mohli tuto práci provádět co nejlépe.
 
 ### Opensource
-In 2017 we decided to release ORIGAM as opensource. 
+V roce 2017 jsme se rozhodli uvolnit ORIGAM jako svobodný software – opensource.
