@@ -152,6 +152,7 @@ hr {
 img {
     vertical-align: middle;
 	max-width: 100%;
+	height: auto;
 }
 
 fieldset {
@@ -1133,6 +1134,101 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
         page-break-after: avoid;
     }
 }
+
+@media screen and (max-width: 1086px) {
+	h1 {
+		font-size: 2.1em;
+	}
+
+	.wrapper, .header-container, .image-container, .orange-container, .grey-container, .row,
+	.special.teaser, .benefits-left, .benefits-right {
+		min-width: 0px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.grey-container .column_1, .grey-container .column_2, .grey-container .column_3 
+	{ 
+		margin: 30px;
+		float: left; 
+	}
+
+	.nav-container {
+		float: left;
+	}
+
+	.nav-container li {
+		margin-top: 15px;
+	}
+
+	.nav-container a {
+		padding-left: 0px;
+		font-size: 0.8em;
+		padding-right: 10px;
+	}
+
+	.social-container, .aslogo-container {
+		float: left;
+		width: 100%;
+	}
+
+	.aslogo-container {
+		margin: 20px 0 30px 30px;
+	}
+
+	.social-container a {
+		float: left;
+		height: 50px;
+		width: 24%;
+		border: none;
+	}
+
+	.aslogo-container img {
+		max-width: 145px;
+	}
+
+	.wrapper {
+		margin: 0px;
+		padding: 15px;
+	} 
+	.origami-container {
+		visibility: hidden;
+		width: 0;
+	}
+	.origami-container img { 
+		max-width: inherit; 
+	}
+	.claim-container {
+		padding-bottom: 30px;
+		padding-left: 10px;
+		width: 100%;
+		left: 0px;
+		bottom: 0px;
+	}	
+	img {
+		vertical-align: auto;
+		max-width: 100%;
+	}
+
+	.column_1_1_3, .column_2_1_3, .column_3_1_3,
+	.column_1_1_2, .column_2_1_2 ,
+	.column_1_1_4, .column_2_1_4, .column_3_1_4, .column_4_1_4,
+	.column_1_2_3, .column_2_2_3 {
+		 width: 100%; 
+		 padding: 0px;
+		 float: left;
+		 margin: 0px;
+	}
+	
+	.column_1_1_3, .column_1_1_4, .column_2_1_4 { margin-right: 0px; }
+
+	.box {
+		margin: 10px;
+		padding: 15px 25px;
+	}
+
+}
+
 
 /*	---------------------------------------------------------------------- */
 /* 	fontface */

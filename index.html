@@ -25,11 +25,11 @@ headerstyle: startpage
 <div class="main-container startpage clearfix">
     <article>
         <div class="row white clearfix">
-            <div class="teaser">
-                <h2>Co vám ORIGAM přinese?</h2>
-            </div>
             <div class="wrapper">
-                {% for benefit in site.benefits %}
+                <div class="teaser">
+                    <h2>Co vám ORIGAM přinese?</h2>
+                </div>
+                    {% for benefit in site.benefits %}
                     <a href="product">
                         <div class="column_{{forloop.index}}_1_3 teaser">
                             <div class="box orange">
@@ -73,16 +73,12 @@ headerstyle: startpage
                 </div>
             </div>
         </div>
-        <div class="row white ">
+
+        <div class="row white clearfix">
             <div class="wrapper">
                 <div class="teaser">
                     <h2>Kdo ORIGAM používá?</h2>
                 </div>
-            </div>
-        </div>
-
-        <div class="row white clearfix">
-            <div class="wrapper">
 				<div class="accordion">
 					{% for industry in site.industries %}
 						<div class="accordionHeader stateDefault" data-key="{{ industry.name }}"> 
