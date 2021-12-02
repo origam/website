@@ -1,0 +1,34 @@
+---
+layout: default
+title: ORIGAM Home
+headerstyle: 
+---
+<div class="pagetitle-container wrapper clearfix">
+    <h1>Partneři</h1>
+</div>
+
+<div class="main-container clearfix">
+    <article>
+        <div class="row white clearfix">
+            <div class="wrapper">
+                {% translate_file partners/main.md %}
+                <a class="btn" href="">Chci se stát oficiálním partnerem</a>
+            </div>
+        </div>
+        <div class="row lightGrey clearfix last">
+            <div class="wrapper">
+                {% translate_file partners/list.md %}
+                {% for partner in site.partners %}
+                <p>
+                {% if partner.link %}
+                    <a href="{{ partner.link }}">{{ partner.name }}</a>
+                {% else %}
+                    {{ partner.name }}
+                {% endif %}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+    </article>
+</div>
+<!-- #main-container -->	
