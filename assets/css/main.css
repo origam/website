@@ -1165,7 +1165,7 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 
 @media screen and (max-width: 1086px) {
 	h1 {
-		font-size: 2.1em;
+		font-size: 2.2em;
 	}
 
 	.wrapper, .header-container, .image-container, .orange-container, .grey-container, .row,
@@ -1175,12 +1175,17 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 		box-sizing: border-box;
 	}
 
-	.pagetitle-container.wrapper { padding: 150px 30px 90px 30px; }
+	.pagetitle-container.wrapper { padding: 180px 30px 40px 30px; }
 
 	.grey-container .column_1, .grey-container .column_2, .grey-container .column_3 
 	{ 
 		margin: 30px;
 		float: left; 
+	}
+
+	.image-container {
+		margin-bottom: 40px;
+		height: 500px;
 	}
 
 	.nav-container {
@@ -1230,10 +1235,12 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 	}
 	.claim-container {
 		padding-bottom: 30px;
-		padding-left: 10px;
-		width: 100%;
+		padding-left: 30px;
+		width: 80%;
 		left: 0px;
-		bottom: 0px;
+		position: relative;
+		bottom: initial;
+		top: 145px;
 	}	
 	img {
 		vertical-align: auto;
