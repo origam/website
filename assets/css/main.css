@@ -432,6 +432,7 @@ a.btn.teaser { margin: 30px 0 0 0;}
 	color:#202323;
 	border-color: #556f7a;
 	cursor: auto;
+	margin-bottom: 2em;
 }
 .box.roadmap:hover {
 	transition: none;
@@ -868,7 +869,7 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 .center {
 	margin: auto;
 	width: 50%;
-  }
+}
 
 /*	---------------------------------------------------------------------- */
 /* 	rows - columns */
@@ -1174,6 +1175,8 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 		box-sizing: border-box;
 	}
 
+	.pagetitle-container.wrapper { padding: 150px 30px 90px 30px; }
+
 	.grey-container .column_1, .grey-container .column_2, .grey-container .column_3 
 	{ 
 		margin: 30px;
@@ -1253,7 +1256,12 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 		margin: 10px;
 		padding: 15px 25px;
 	}
-
+	
+	.center {
+		margin: auto;
+		width: 80%;
+	  }
+	
 }
 
 

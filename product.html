@@ -38,19 +38,15 @@ headerstyle:
                 {% translate_file product/roadmap.md %}
             </div>
         </div>
-        {% for step in site.customer-steps %}
-        <div class="row white clearfix ">
+        <div class="row white clearfix">
             <div class="wrapper">
-                    <div class="box roadmap {{ step.type }} center">
+                {% for step in site.customer-steps %}
+                <div class="box {{ step.type }} roadmap center">
                         {{ step.content | markdownify}}
-                    </div>
                 </div>
-        </div>
-        {% endfor %}
-        <div class="row white clearfix ">
-            <div class="teaser">
-                <div class="wrapper">
-                    <a class="btn teaser" href="">Chci začít</a>
+                {% endfor %}
+                <div class="teaser">
+                    <a class="btn" href="">Chci začít</a>
                 </div>
             </div>
         </div>
