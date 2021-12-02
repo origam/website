@@ -1,8 +1,8 @@
-- Germania Flug
-- Ecco-Reisen GmbH
-- Thomas Cook ČR
+- Germania Flug (DE)
+- Ecco-Reisen GmbH (DE)
+- Thomas Cook
 - Exim Tours
 - Royal Prague Travel
-- KUONI AG
-- Gruber Touristik GmbH
+- KUONI AG (CH)
+- Gruber Touristik GmbH (AT)
 - Business Travel Solutions
