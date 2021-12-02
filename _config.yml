@@ -1,0 +1,10 @@
+plugins:
+  - jekyll-multiple-languages-plugin
+
+languages: ["cs", "en"]
+exclude_from_localizations: ["assets"]
+
+collections:
+  industries:
+  benefits:
+  pains:

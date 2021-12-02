@@ -1,0 +1,23 @@
+industry-titles:
+  travel: Cestovní ruch
+  food: Potravinářský průmysl
+  commerce: Obchod a eCommerce
+  real-estate: Reality
+  logistics: Logistika
+  telco: Telco
+  services: Služby
+  non-profit: Neziskovky
+  public-services: Státní správa
+  insurance: Pojišťovny
+
+benefit-titles:
+  benefit1: Začněte inovovat
+  benefit2: Rozložte investice
+  benefit3: Získejte prestiž
+
+pain-titles:
+  pain1: Udržitelnost
+  pain2: Nepřehlednost
+  pain3: Dvojitá práce
+  pain4: Změny
+  pain5: Náklady

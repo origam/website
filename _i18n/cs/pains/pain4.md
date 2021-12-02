@@ -1,0 +1,1 @@
+A co když budete potřebovat něco upravit nebo přidat? Na rozdíl od korporátních procesů máte vždy po ruce partnera - specialistu na ORIGAM platformu. Zanalyzuje, vyřeší a předá hotový produkt.

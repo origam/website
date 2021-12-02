@@ -1,0 +1,100 @@
+---
+layout: default
+title: ORIGAM Home
+headerstyle: startpage
+---
+<div class="image-container clearfix">
+    <div class="origami-container">
+        <img src="/assets/images/mainOrigami.png"/>
+    </div>
+    <!-- #origami-container -->
+    <div class="claim-container">
+        <h1>
+            Softwarová 
+            <br/>
+            <font color="#ffffff">stavebnice</font>  
+            <br/> pro vývoj 
+            <br/> informačních systémů
+        </h1>
+        <h3 style="color: white;">Složte si vlastní software na míru</h3>
+    </div>
+    <!-- #claim-container -->
+</div>
+<!-- #image-container -->
+
+<div class="main-container startpage clearfix">
+    <article>
+        <div class="row white clearfix">
+            <div class="teaser">
+                <h2>Co vám ORIGAM přinese?</h2>
+            </div>
+            <div class="wrapper">
+                {% for benefit in site.benefits %}
+                    <a href="product">
+                        <div class="column_{{forloop.index}}_1_3 teaser">
+                            <div class="box orange">
+                                <h3>
+                                    {% translate benefit.name %}
+                                </h3>
+                                <p>
+                                    {{ benefit.content | markdownify}}
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row lightGrey">
+            <div class="teaser">
+                <h2>Co vás nejčastěji trápí?</h2>
+            </div>
+        </div>
+        {% for pain in site.pains %}
+            <div class="row white clearfix">
+                <div class="wrapper">
+                    <div class="benefits-left ">
+                        {% translate pain.name %}
+                    </div>
+                    <div class="benefits-right ">
+                        {{ pain.content | markdownify}}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="row darkGrey clearfix">
+            <div class="wrapper">
+                <div class="special teaser">
+                    <h2>Jak ORIGAM vypadá?</h2>
+                    <img src="/assets/images/screenshot1.png">
+                    <p>
+                        Takto vypadá klasická podniková aplikace typu ERP
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row white ">
+            <div class="wrapper">
+                <div class="teaser">
+                    <h2>Kdo ORIGAM používá?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row white clearfix">
+            <div class="wrapper">
+				<div class="accordion">
+					{% for industry in site.industries %}
+						<div class="accordionHeader stateDefault" data-key="{{ industry.name }}"> 
+    						<a><i class="fa fa-chevron-up"></i>{% translate industry.name %}</a> 
+						</div>
+						<div class="accordionContent stateActive"  data-key="{{ industry.name }}" style="display:none">
+                            {{ industry.content | markdownify}}
+                        </div>
+                    {% endfor %}
+				</div> <!-- #accordion  -->
+            </div>
+        </div>
+    </article>
+</div>
+<!-- #main-container -->	
