@@ -946,6 +946,10 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 .social-container a.loginUser.loggedin i { font-size: 1.2em; margin-right: 15px; }
 .social-container a.loginUser.loggedin span { font-size: 1em; }
 
+.social-container i {
+	margin-top: 40px;
+}
+
 .grey-container {
 	background: #393C3C;
 	min-width: 1086px;
@@ -1212,6 +1216,10 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 		width: 100%;
 	}
 
+	.social-container i {
+		margin-top: 0px;
+	}
+	
 	.aslogo-container {
 		margin: 20px 0 30px 30px;
 	}
