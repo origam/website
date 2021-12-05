@@ -510,16 +510,20 @@ a.btn.teaser { margin: 30px 0 0 0;}
 /*	---------------------------------------------------------------------- */
 /* 	news */
 .news-container {
-	border-top: 1px solid #D2D2D5;
+	
 }
 .news-entry {
 	border-bottom: 1px solid #D2D2D5;
 	padding: 30px 0;
 }
 
+.news-entry:last-child {
+	border: none;
+}
+
 .news-left {
 	float: left;
-	width: 322px;
+	width: 222px;
 }
 .entry-title {
 	color: #F15B47;
@@ -533,7 +537,7 @@ a.btn.teaser { margin: 30px 0 0 0;}
 }
 .news-right {
 	float: right;
-	width: 674px;
+	width: 774px;
 }
 
 .more-news { margin-top: 30px; }
@@ -1221,7 +1225,7 @@ ul.registerForm li.buttons a.btn { margin-top: 20px; }
 	}
 
 	.wrapper, .header-container, .image-container, .orange-container, .grey-container, .row,
-	.special.teaser, .benefits-left, .benefits-right {
+	.special.teaser, .benefits-left, .benefits-right, .news-left, .news-right {
 		min-width: 0px;
 		width: 100%;
 		box-sizing: border-box;

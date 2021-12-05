@@ -48,18 +48,24 @@ headerstyle: startpage
                 <h2>Co vás nejčastěji trápí?</h2>
             </div>
         </div>
-        {% for pain in site.pains %}
             <div class="row white clearfix">
                 <div class="wrapper">
-                    <div class="benefits-left ">
-                        {% translate pain.name %}
-                    </div>
-                    <div class="benefits-right ">
-                        {{ pain.content | markdownify}}
+                    <div class="news-container">
+                        {% for pain in site.pains %}
+                        <div class="news-entry clearfix">
+                            <div class="news-left ">
+                                <div class="entry-title">
+                                    {% translate pain.name %}
+                                </div>
+                            </div>
+                            <div class="news-right ">
+                                {{ pain.content | markdownify}}
+                            </div>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-        {% endfor %}
         <div class="row darkGrey clearfix">
             <div class="wrapper">
                 <div class="special teaser">
