@@ -4,47 +4,48 @@ title: ORIGAM Home
 headerstyle: 
 ---
 <div class="pagetitle-container wrapper clearfix">
-    <h1>Představíme Vám ORIGAM osobně nebo online</h1>
+    <h1>{% translate titles.contact-form %}</h1>
 </div>
 
 <div class="main-container clearfix">
     <article>
         <div class="row white clearfix">
             <div class="wrapper">
-                <p>
-                    Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, 
-                    že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.
-                </p>
-                <form id="form" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfufNvGs9jySccoTrslyHCRNjlg6nB_kk1zwPmOqWVtQ0qA5w/formResponse">
+                <p>{% translate contact-form.welcome-text %}</p>
+                <form id="form" method="POST" 
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfufNvGs9jySccoTrslyHCRNjlg6nB_kk1zwPmOqWVtQ0qA5w/formResponse">
                     <ul class="registerform">
                         <li>
-                            <label>Čím Vás ORIGAM zaujal?</label>
+                            <label>{% translate contact-form.question1-text %}</label>
                             <label>
-                                <input name="entry.39948717" value="Jsme organizace a potřebujeme inovovat náš interní systém." type="radio">Jsme organizace a potřebujeme inovovat náš interní systém.</input>
+                                <input name="entry.39948717" value="Jsme organizace a potřebujeme inovovat náš interní systém." type="radio">
+                                    {% translate contact-form.question1-option1 %}
+                                </input>
                             </label>
                             <label>
-                                <input name="entry.39948717" value="Chceme se stát ORIGAM partnerem." type="radio">Chceme se stát ORIGAM partnerem.</input>
+                                <input name="entry.39948717" value="Chceme se stát ORIGAM partnerem." type="radio">
+                                    {% translate contact-form.question1-option2 %}
+                                </input>
                             </label>
                         </li>
                         <li>
-                            <label>Vaše jméno nebo název organizace</label>
+                            <label>{% translate contact-form.question2-text %}</label>
                             <input name="entry.117664973" mode="name" type="text"></input>
                         </li>
                         <li>
-                            <label>Váš e-mail</label>
+                            <label>{% translate contact-form.question3-text %}</label>
                             <input name="entry.866550084" mode="e-mail" type="text"></input>
                         </li>
                         <li>
-                            <label>Váš telefon</label>
+                            <label>{% translate contact-form.question4-text %}</label>
                             <input name="entry.182826076" mode="telefon" type="text"></input>
                         </li>
                         <li>
-                            <label>S čím byste chtěli pomoct?</label>
+                            <label>{% translate contact-form.question5-text %}</label>
                             <input name="entry.1719113303" type="text"></input>
                         </li>
-                        <input name="fbzx" value="7071280388774134628" type="hidden"></input>
                         <li class="buttons">
-                            <a id="button" class="btn">Odeslat</a>
+                            <a id="button" class="btn">{% translate contact-form.submit-text %}</a>
                         </li>
                     </ul>
                 </form>
@@ -66,7 +67,7 @@ headerstyle:
         var d = document.forms["form"]["entry.1719113303"].value;
         var e = document.forms["form"]["entry.39948717"].value;
         if (a == null || a == "" || b == null || b == "" || c == null || c == "" || d == null || d == "" || e == null || e == "") {
-        alert("Vyplňte prosím všechny odpovědi. Děkujeme!");
+        alert("{% translate contact-form.error-text %}");
         return false;
         }
         return true;

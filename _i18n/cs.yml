@@ -1,3 +1,20 @@
+titles:
+  benefits: Co vám ORIGAM přinese?
+  pains: Co vás nejčastěji trápí?
+  industries: Kdo ORIGAM používá?
+  screenshots: Jak ORIGAM vypadá?
+  product: Produkt
+  partners: Partneři
+  community: Komunita
+  about: O nás
+  contact-form: Představíme Vám ORIGAM osobně nebo online
+
+buttons:
+  contact: Ukažte mi ORIGAM osobně
+  start: Chci začít
+  partner: Chci se stát oficiálním partnerem
+  community: Chci se přidat ke komunitě
+
 industry-titles:
   travel: Cestovní ruch
   food: Potravinářský průmysl
@@ -49,3 +66,15 @@ support-types:
     name: Zakladatelé
     description: Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně nezůstanete.
     link: https://community.origam.com/t/partner-profile-advantage-solutions/1318
+
+contact-form:
+  welcome-text: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.
+  submit-text: Odeslat
+  question1-text: Čím Vás ORIGAM zaujal?
+  question1-option1: Jsme organizace a potřebujeme inovovat náš interní systém.
+  question1-option2: Chceme se stát ORIGAM partnerem.
+  question2-text: Vaše jméno nebo název organizace<
+  question3-text: Váš e-mail
+  question4-text: Váš telefon
+  question5-text: S čím byste chtěli pomoci?
+  error-text: Vyplňte prosím všechny odpovědi. Děkujeme!

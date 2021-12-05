@@ -296,6 +296,7 @@ a#scrollUp:hover i {
 	color: #FFF;
 	text-decoration: none;
 	padding-left: 20px;
+	text-transform: uppercase;
 }
 a.navToggle {
 	display: inline-block;

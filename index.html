@@ -9,14 +9,7 @@ headerstyle: startpage
     </div>
     <!-- #origami-container -->
     <div class="claim-container">
-        <h1>
-            Softwarová 
-            <br/>
-            <font color="#ffffff">stavebnice</font>  
-            <br/> pro vývoj 
-            <br/> informačních systémů
-        </h1>
-        <h3 style="color: white;">Složte si vlastní software na míru</h3>
+        {% translate_file home/claim.html %}
     </div>
     <!-- #claim-container -->
 </div>
@@ -27,7 +20,7 @@ headerstyle: startpage
         <div class="row white clearfix">
             <div class="wrapper">
                 <div class="teaser">
-                    <h2>Co vám ORIGAM přinese?</h2>
+                    <h2>{% translate titles.benefits %}</h2>
                 </div>
                     {% for benefit in site.benefits %}
                     <div class="column_{{forloop.index}}_1_3 teaser">
@@ -45,7 +38,7 @@ headerstyle: startpage
         </div>
         <div class="row lightGrey">
             <div class="teaser">
-                <h2>Co vás nejčastěji trápí?</h2>
+                <h2>{% translate titles.pains %}</h2>
             </div>
         </div>
             <div class="row white clearfix">
@@ -69,7 +62,7 @@ headerstyle: startpage
         <div class="row darkGrey clearfix">
             <div class="wrapper">
                 <div class="special teaser">
-                    <h2>Jak ORIGAM vypadá?</h2>
+                    <h2>{% translate titles.screenshots %}</h2>
                     {% include carousel.html height="60" unit="%" color="#F15B47" %}
                 </div>
             </div>
@@ -78,7 +71,7 @@ headerstyle: startpage
         <div class="row white clearfix">
             <div class="wrapper">
                 <div class="teaser">
-                    <h2>Kdo ORIGAM používá?</h2>
+                    <h2>{% translate titles.industries %}</h2>
                 </div>
 				<div class="accordion">
 					{% for industry in site.industries %}
@@ -95,7 +88,7 @@ headerstyle: startpage
         <div class="row white clearfix">
             <div class="wrapper">
                 <div class="teaser">
-                    <a class="btn" href="contact-form">Ukažte mi ORIGAM osobně</a>
+                    <a class="btn" href="contact-form">{% translate buttons.contact %}</a>
                 </div>
             </div>
         </div>
