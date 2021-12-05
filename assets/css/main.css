@@ -797,7 +797,9 @@ table.asapDownloads tr td.download, table.asapDownloads tr td.releaseNotes { wid
 
 /*	---------------------------------------------------------------------- */
 /* 	registration */
-ul.registerForm { width: 735px; }
+ul.registerForm { 
+	max-width: 735px; 
+}
 ul.registerForm li { padding: 5px 0; }
 ul.registerForm li:before { content: none; }
 ul.registerForm li label {
@@ -808,8 +810,10 @@ ul.registerForm li label {
     margin: 0;
     padding: 0;
     white-space: normal;
-    width: 234px;
-}
+    width: 100%;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+  }
 ul.registerForm li input {
     background: #D2D5D5;
     border-color: #ACAFAF;
@@ -826,7 +830,7 @@ ul.registerForm li input {
     line-height: 22px;
     margin: 0;
     padding: 7px 5px;
-    width: 486px;
+    width: 100%;
 	-webkit-transition: all 200ms ease-out;
 	-moz-transition: all 200ms ease-out;
     -ms-transition: all 200ms ease-out;
@@ -840,18 +844,60 @@ ul.registerForm li input:hover {
 	box-shadow:         1px 1px 2px #DCDFDF inset, 1px 1px 2px #FFFFFF;
 }
 ul.registerForm li input:focus {
-	border-color: #F15B47;
+	border-color: #867472;
 	background: #FFF;
 	-webkit-box-shadow: 1px 1px 2px #D2D5D5 inset, 1px 1px 2px #FFFFFF;
 	-moz-box-shadow:    1px 1px 2px #D2D5D5 inset, 1px 1px 2px #FFFFFF;
 	box-shadow:         1px 1px 2px #D2D5D5 inset, 1px 1px 2px #FFFFFF;
 }
 ul.registerForm li.captcha input { margin-left: 234px; }
+ul.registerForm li input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: #867472;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #867472;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  vertical-align: middle;
+  margin-right: 10px;
+  display: inline-grid;
+  place-content: center;
+}
+input[type="radio"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--form-control-color);
+	/* Windows High Contrast Mode */
+	background-color: #F15B47;
+  }
+  input[type="radio"]:checked::before {
+	transform: scale(1);
+  }
+  
+  input[type="radio"]:focus {
+	outline: max(2px, 0.15em) solid #867472;
+	outline-offset: max(2px, 0.15em);
+  }
+
 ul.registerForm li p.hint {
 	color: #868989; 
 	margin: 10px 0 10px 234px;
 }
-ul.registerForm li.buttons a.btn { margin-left: 234px; }
+ul.registerForm li.buttons a.btn { margin-top: 20px; }
 
 .product-tour h2 {
     padding-top: 50px;
@@ -1281,7 +1327,6 @@ ul.registerForm li.buttons a.btn { margin-left: 234px; }
 		margin: auto;
 		width: 80%;
 	  }
-	
 }
 
 
