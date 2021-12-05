@@ -58,14 +58,17 @@ support-types:
     name: Komunitní fórum
     description: Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.
     link: https://community.origam.com
+    link-title: Přejít na fórum >
   -
     name: Partneři
     description: Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
     link: partners
+    link-title: O partnerství >
   -
     name: Zakladatelé
     description: Pořád je tady i ORIGAM guru – zakladatelský tým. Kryjeme záda našim partnerům a důležitým zákazníkům. Bez pomoci rozhodně nezůstanete.
     link: https://community.origam.com/t/partner-profile-advantage-solutions/1318
+    link-title: Profil zakladatelů >
 
 contact-form:
   welcome-text: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.
