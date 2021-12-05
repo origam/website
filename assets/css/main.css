@@ -799,8 +799,9 @@ table.asapDownloads tr td.download, table.asapDownloads tr td.releaseNotes { wid
 /* 	registration */
 ul.registerForm { 
 	max-width: 735px; 
+	display: inline-grid;
 }
-ul.registerForm li { padding: 5px 0; }
+ul.registerForm li { padding: 7px 0; }
 ul.registerForm li:before { content: none; }
 ul.registerForm li label {
     border: medium none;
@@ -836,6 +837,7 @@ ul.registerForm li input {
     -ms-transition: all 200ms ease-out;
     -o-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
+	display: inline-grid;
 }
 ul.registerForm li input:hover {
 	border-color: #F15B47;
