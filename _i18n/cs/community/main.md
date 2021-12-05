@@ -1,4 +1,4 @@
-## Mít znalosti a informace – to je superschopnost
+## Mít znalosti a informace – to je konkurenční výhoda
 
 ### Co je ORIGAM komunita?
 Hledáte pomoc od ostatních nebo ji naopak nabízíte? O tom právě komunita je. Dostupná každému.
