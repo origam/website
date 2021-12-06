@@ -1,1 +1,16 @@
-<meta http-equiv="refresh" content="0; url=http://confluence.origam.com">
+<!DOCTYPE html>
+<html data-destination="http://confluence.origam.com">
+  <head>
+    <noscript><meta id="redirect" http-equiv="refresh" content="0; url=http://confluence.origam.com"></noscript>
+  </head>
+
+  <body>
+    This page has moved. Redirecting...
+    
+  <!-- Redirect in JavaScript with meta refresh fallback above in noscript -->
+  <script>
+  var destination = document.documentElement.getAttribute('data-destination');
+  window.location.href = destination + window.location.pathname.substring(4) + (window.location.search || '') + (window.location.hash || '');
+  </script>
+  </body>
+</html>
