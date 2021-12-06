@@ -17,7 +17,7 @@ permalink: /404.html
 </div> 
 
 <script>
-    if(window.location.pathname.substring(0,4) == "doc/")
+    if(window.location.pathname.substring(0,5) === "/doc/")
     {
         var destination = "http://confluence.origam.com";
         window.location.href = destination + window.location.pathname.substring(4) + (window.location.search || '') + (window.location.hash || '');
