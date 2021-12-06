@@ -24,6 +24,10 @@
 /* 	global */
 /*	---------------------------------------------------------------------- */
 
+html,body{
+    overflow-x: hidden;
+}
+
 html, button, input, select, textarea {
     color: #202323;
 }
@@ -1230,6 +1234,7 @@ ul.registerForm li.buttons a.btn { margin-top: 20px; }
 		min-width: 0px;
 		width: 100%;
 		box-sizing: border-box;
+		position: initial;
 	}
 
 	.row {
