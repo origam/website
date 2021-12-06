@@ -1008,7 +1008,7 @@ ul.registerForm li.buttons a.btn { margin-top: 20px; }
 	min-width: 1086px;
 	padding: 60px 0 30px 0;
 }
-.grey-container .column_1, .grey-container .column_2, .grey-container .column_3 { width: 500px; margin-bottom: 60px; }
+.grey-container .column_1, .grey-container .column_2, .grey-container .column_3 { max-width: 500px; margin-bottom: 60px; }
 .grey-container .column_1, .grey-container .column_2 { float: left; }
 .grey-container .column_1 { margin: 0 30px; }
 .grey-container .column_3 {
