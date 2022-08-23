@@ -89,7 +89,22 @@ customer-logos:
 
 page-about:
   title: O nás
-  description:
+  description: Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové vývojáře, kteří vyžadují maximum flexibility a zároveň spolehlivosti s rychlou technickou podporou.
+
+origam-timeline:
+  -
+    date: 2003
+    title: Založili jsme společnost
+    explanation: Nejdříve jsme se zaměřili na všeobecná IT řešení pro malé a střední podniky. Ale brzy jsme si uvědomili, že existuje poptávka po řešení, které by mělo všechny výhody zakázkového softwaru, ale bez jeho nevýhod. A tak jsme začali vyvíjet software. Zrodil se ORIGAM.
+  -
+    date: 2013
+    title: Zacílení na partnery
+    explanation: Rozhodli jsme se změnit strategii a zaměřit se zcela na implementátory softwaru a vývojáře. Místo abychom byli v přímém kontaktu se zákazníky, rozhodli jsme se aby toto zastali naši partneři. Věříme, že znají své zákazníky lépe, než bychom kdy mohli my, a tak se naší starostí stalo dodávat partnerům správné nástroje, aby mohli tuto práci provádět co nejlépe.
+  -
+    date: 2017
+    title: Opensource
+    explanation: Rozhodli jsme se uvolnit ORIGAM jako svobodný software – opensource.
+
 
 page-contact:
   title: Kontakt
