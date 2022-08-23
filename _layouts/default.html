@@ -42,7 +42,7 @@
 	<body>
 		<header class="l-header">
 			<div class="container">
-				<a class="l-header-logo" href="{% if site.baseurl == '' %}/{% endif %}{{ site.baseurl }}">
+				<a class="l-header-logo" href="{% if site.baseurl == '/' %}/{% else %}{{ site.baseurl | remove_first: '/'}}{% endif %}">
 					<img src="{{ site.assetsPath }}/img/ORIGAM-logo.svg" alt="ORIGAM" width="137" height="24" alt="ORIGAM logo">
 				</a>
 				<nav class="l-header-main-menu">
