@@ -3,7 +3,46 @@ layout: default
 title: page-community.title
 description: page-community.description
 namespace:     community
-
+load_gsap: true
 permalink:      /komunita/
 permalink_en:   /community/
 ---
+<section class="community">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/komunita-triangle.svg" class="bg-triangle" width="317" height="293" alt="trojúhelník">
+        <img src="{{ site.assetsPath }}/img/icons/komunita-bg.svg" class="bg-pic" width="249" height="241" alt="čtverec">
+        <div class="titles">
+            <h1>
+                Mít znalosti a informace – to je konkurenční výhoda.
+            </h1>
+            <p>
+                Hledáte pomoc od ostatních nebo ji naopak nabízíte? O tom právě komunita je. Dostupná každému. Sdílíme své poznatky o vývoji platformy, radíme si jak opravit jednotlivé procesy, navrhujeme zlepšení a nové funkcionality.
+            </p>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <h4>Komunitní fórum</h4>
+                <img src="{{ site.assetsPath }}/img/icons/forum.svg" alt="forum" width="104" height="104">
+                <p>Na komunitním fóru najdete veškerou dokumentaci, zdrojové kódy i další informace.</p>
+                {% include button.html 
+                    text="Otevřít fórum"
+                    translate=false
+                    link="https://community.origam.com"
+                    primary=false
+                %}
+            </section>
+            <section class="card">
+                <h4>Discord</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_logo-discord.svg" alt="discord" width="104" height="104">
+                <p>Na našem Discordu se můžeme vzájemně potkávat a poznávat.</p>
+                {% include button.html 
+                    text="Chci se přidat"
+                    translate=false
+                    link="https://discord.com/invite/MkneJ3bS"
+                    primary=false
+                %}
+            </section>
+        </div>
+    </div>
+</section>
+{% include interested.html  %}
