@@ -4,14 +4,9 @@ plugins:
 languages: ["cs", "en"]
 exclude_from_localizations: ["assets"]
 assetsPath: "/assets"
+baseurl: "/"
 
 sass:
   implementation: sass-embedded
 
 collections:
-  industries:
-  benefits:
-  pains:
-  features:
-  customer-steps:
-  partners:
