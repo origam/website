@@ -1,97 +1,148 @@
 ---
 layout: default
-title: ORIGAM Home
-headerstyle: startpage
+title: page-home.title
+description: page-home.description
+load_gsap: true
 ---
-<div class="image-container clearfix">
-    <div class="origami-container">
-        <img src="/assets/images/mainOrigami.png"/>
-    </div>
-    <!-- #origami-container -->
-    <div class="claim-container">
-        {% translate_file home/claim.html %}
-    </div>
-    <!-- #claim-container -->
-</div>
-<!-- #image-container -->
-
-<div class="main-container startpage clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                <div class="teaser">
-                    <h2>{% translate titles.benefits %}</h2>
-                </div>
-                    {% for benefit in site.benefits %}
-                    <div class="column_{{forloop.index}}_1_3 teaser">
-                        <div class="box orange">
-                            <h3>
-                                {% translate benefit.name %}
-                            </h3>
-                            <p>
-                                {{ benefit.content | markdownify}}
-                            </p>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+<section class="intro">
+    <div class="container">
+        <div class="titles">
+            <h1>
+                {% t page-home.intro.title %}
+            </h1>
+            <p>
+                {% t page-home.intro.subtitle %}
+            </p>
         </div>
-        <div class="row lightGrey">
-            <div class="teaser">
-                <h2>{% translate titles.pains %}</h2>
-            </div>
-        </div>
-            <div class="row white clearfix">
-                <div class="wrapper">
-                    <div class="news-container">
-                        {% for pain in site.pains %}
-                        <div class="news-entry clearfix">
-                            <div class="news-left ">
-                                <div class="entry-title">
-                                    {% translate pain.name %}
-                                </div>
-                            </div>
-                            <div class="news-right ">
-                                {{ pain.content | markdownify}}
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        <div class="row darkGrey clearfix">
-            <div class="wrapper">
-                <div class="special teaser">
-                    <h2>{% translate titles.screenshots %}</h2>
-                    {% include carousel.html height="60" unit="%" color="#F15B47" %}
-                </div>
-            </div>
+        <div class="buttons">
+            {% include button.html 
+                text="page-home.intro.button-start"
+				translate=true
+                link="/"
+             %}
+             {% include button.html 
+                text="page-home.intro.button-learn"
+				translate=true
+                link="#learn-more"
+                primary=false
+                icon="/img/icons/arrow-down.svg"
+             %}
         </div>
 
-        <div class="row white clearfix">
-            <div class="wrapper">
-                <div class="teaser">
-                    <h2>{% translate titles.industries %}</h2>
-                </div>
-				<div class="accordion">
-					{% for industry in site.industries %}
-						<div class="accordionHeader stateDefault" data-key="{{ industry.name }}"> 
-    						<a><i class="fa fa-chevron-up"></i>{% translate industry.name %}</a> 
-						</div>
-						<div class="accordionContent stateActive"  data-key="{{ industry.name }}" style="display:none">
-                            {{ industry.content | markdownify}}
-                        </div>
-                    {% endfor %}
-				</div> <!-- #accordion  -->
-            </div>
-        </div>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                <div class="teaser">
-                    <a class="btn" href="contact-form">{% translate buttons.contact %}</a>
-                </div>
-            </div>
-        </div>
-    </article>
-</div>
-<!-- #main-container -->	
+        <img src="{{ site.assetsPath }}/img/pages/home/home-bg.svg" class="home-bg-pic">
+        <img src="{{ site.assetsPath }}/img/pages/home/triangle-gradient.svg" class="home-triangle-gradient">
+        <img src="{{ site.assetsPath }}/img/pages/home/origam.png" class="screenshot" width="1200" height="675" alt="Origam dashboard">
+    </div>
+</section>
+	<section class="flexibility" id="learn-more">
+		<div class="container">
+			<div class="caption-title">
+				<div class="headers">
+					<h5>
+						{% t page-home.benefits.title %}
+					</h5>
+					<h2>
+						{% t page-home.benefits.subtitle %}
+					</h2>
+				</div>
+				<div class="headers">
+					<p>
+						{% t page-home.benefits.intro %}
+					</p>
+				</div>
+			</div>
+			<div class="cards">
+			{% for benefit in site.translations[site.lang].benefits %}
+				<section class="card">
+					<h4>
+						{{ benefit.name }}
+					</h4>
+					<img src="{{ site.assetsPath }}{{ benefit.image }}" alt="{{ benefit.name }}" width="104" height="104" loading="lazy">
+					<p>
+						{{ benefit.content }}
+					</p>
+				</section>
+			{% endfor %}
+			</div>
+            {% include button.html 
+                text="page-home.benefits.button-learn"
+				translate=true
+                link="product"
+                primary=false
+             %}
+		</div>
+	</section>
+	<section class="advantages">
+		<div class="container">
+			<h5>
+				{% translate page-home.features.title %}
+			</h5>
+			<h2>
+				{% translate page-home.features.subtitle %}
+			</h2>
+            {% assign features = site.translations[site.lang].features-general  %}
+            {% include grid.html 
+                items = features
+             %}
+		</div>
+		<div class="link">
+            {% include button.html 
+                text="page-home.features.button-text"
+                link="product"
+				translate=true
+                primary=false
+             %}
+		</div>
+	</section>
+	<section class="scroller">
+		<div class="container">
+			<h5>
+				{% t page-home.examples.title %}
+			</h5>
+			<h2>
+                {% t page-home.examples.subtitle %}
+			</h2>
+			{% for example in site.translations[site.lang].examples %}
+			<div class="pic-text">
+				<div class="text">
+					<h4>
+						{{ example.name }}
+					</h4>
+					<p>
+						{{ example.content }}
+					</p>
+				</div>
+				<img src="{{ site.assetsPath }}{{ example.image }}" width="670" height="386" alt="Ukázka Origamu" loading="lazy">
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+	<section class="satisfied">
+		<div class="container">
+			<div class="titles">
+				<h5>
+					{% t page-home.customer-logos.title %}
+				</h5>
+				<h2>
+					{% t page-home.customer-logos.subtitle %}
+				</h2>
+			</div>
+			<div class="logos">
+			{% for logo in site.translations[site.lang].customer-logos %}
+				<img src="{{ site.assetsPath }}{{ logo.image }}" width="26" height="24" alt="{{ logo.alt }}" loading="lazy">
+			{% endfor %}
+				{% include button.html 
+					text="page-home.customer-logos.button-partners"
+					translate=true
+					link="partners"
+					primary=false
+				%}
+			</div>
+		</div>
+	</section>
+	<section class="quotes">
+		<div class="scroll-wrapper">
+			<ul class="quote-container">
+			</ul>
+		</div>
+	</section>

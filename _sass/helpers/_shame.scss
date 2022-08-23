@@ -1,0 +1,52 @@
+/*
+ *	Read more about this file at https://csswizardry.com/2013/04/shame-css/
+ */
+
+/* page headers */
+h1 {
+	text-align: center;
+}
+
+h3 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h5 {
+	color: #f15b47;
+	margin-bottom: 1rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 80em;
+}
+
+html {
+	scroll-behavior: smooth;
+
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+
+/* Pagination for Concrete CMS */
+.ccm-pagination-wrapper {
+	margin-top: 2rem;
+
+	.pagination {
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		gap: 1rem;
+	}
+
+	.pagination a {
+		color: #3c3f4c;
+
+		&:hover {
+			color: #3c3f4c;
+		}
+	}
+}

@@ -1,0 +1,187 @@
+:root {
+	--L-breakpoint: #{bps.$L};
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+::selection {
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   Browser CSS resets and default styles
+   ========================================================================== */
+
+/*
+ * Basic typography and color style.
+ */
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+/*
+ * Set box-sizing globally to handle padding and border widths.
+ * Reset all margins.
+ */
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+/*
+ * Make body 100% height and reset spacing.
+ */
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5; // Line height is unitless (http://allthingssmitty.com/2017/01/30/nope-nope-nope-line-height-is-unitless/).
+	font-size: 100%;
+	background-color: colors.$body-bg;
+	color: colors.$body-font-color;
+}
+
+main {
+	position: relative; // z-index context
+	z-index: z.index(page-content);
+}
+
+/*
+ * Headings are always just a bit bigger than general text:
+ * https://csswizardry.com/2016/02/managing-typography-on-large-apps/
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1.25em;
+}
+
+/*
+ * Reset normalize.css behavior.
+ */
+h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*
+ * Links have low affordance.
+ * https://www.w3.org/TR/CSS21/ui.html#propdef-cursor
+ */
+a:hover {
+	cursor: pointer;
+}
+
+/*
+ * Full-width images.
+ */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+ * Hide visually and from screen readers.
+ */
+[hidden] {
+	display: none !important;
+}
+
+/*
+ * Make sure textarea takes on height automatically.
+ * Allow only vertical resizing of textareas. (h5bp)
+ */
+textarea {
+	height: auto;
+	resize: vertical;
+}
+
+/*
+ * Darker strong color.
+ */
+strong {
+	@include type.bold-black;
+}
+
+/*
+ * Localize blockquotes.
+ */
+blockquote {
+	&::before { content: "„"; }
+	&::after { content: "“"; }
+}
+
+/* ==========================================================================
+   Print styles. (h5bp)
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		/* Always enforce this to ensure better readability, printing and paint savings when printing on paper. */
+		background: #fff !important;
+		color: #000 !important; /* Black prints faster */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	pre {
+		white-space: pre-wrap !important;
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

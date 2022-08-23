@@ -1,0 +1,139 @@
+.l-footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background: colors.brand(gray, 900);
+	padding: 4.5rem 1.5rem 4.5rem;
+	width: 100%;
+
+	@media (min-width: bps.$L) {
+		padding: 4.5rem 2.5rem 7.5rem;
+	}
+
+	@media (min-width: bps.$XL) {
+		padding: 4.5rem 7.5rem 7.5rem;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 80em;
+		width: 100%;
+	}
+
+	.l-footer-about-n-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		gap: 2rem 5.5rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid colors.brand(gray, 800);
+
+		@media (min-width: bps.$L) {
+			flex-direction: row;
+		}
+
+		.l-footer-about {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2rem;
+
+			img {
+				height: 1.125rem;
+				width: auto;
+
+				@media (min-width: bps.$L) {
+					height: 1.5rem;
+				}
+			}
+			.description {
+				font-size: 16px;
+				color: colors.brand(white, 0);
+				max-width: 36rem;
+				display: inline-block;
+			}
+		}
+		.contact {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 1rem;
+
+			a {
+				font-size: 1.125rem;
+				gap: 0.5rem;
+			}
+
+			img {
+				max-width: none;
+			}
+		}
+
+		.logos {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+
+			a {
+				display: block;
+				padding: 0.5rem;
+
+				img {
+					height: 2rem;
+					width: 2rem;
+					display: block;
+					max-width: none;
+				}
+			}
+		}
+	}
+	.l-footer-meta {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 1rem 4.5rem;
+		margin-top: 3rem;
+		width: 100%;
+		color: colors.brand(gray, 400);
+
+		@media (min-width: bps.$L) {
+			gap: 0.75rem 4.5rem;
+		}
+
+		.l-footer-meta-text {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+
+			@media (min-width: bps.$L) {
+				gap: 1rem;
+			}
+
+			p {
+				flex-grow: 1;
+			}
+
+			.legal-links {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+				align-items: flex-start;
+
+				@media (min-width: bps.$L) {
+					flex-direction: row;
+					gap: 1rem;
+				}
+
+				a {
+					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+}

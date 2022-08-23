@@ -1,0 +1,20 @@
+.secondary-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: $archivo-stack;
+	column-gap: 0.25rem;
+	border-bottom: 1px solid colors.brand(gray, 200);
+	padding-bottom: 0.25rem;
+	font-weight: 600;
+	font-size: 1.125rem;
+	letter-spacing: 0.0125em;
+	color: colors.brand(gray, 900);
+	text-decoration: none;
+	white-space: nowrap;
+
+	&.dark {
+		color: colors.brand(white, 0);
+		border-bottom-color: colors.brand(grey, 800);
+	}
+}

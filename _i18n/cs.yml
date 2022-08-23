@@ -1,84 +1,173 @@
-titles:
-  benefits: Co vám ORIGAM přinese?
-  pains: Co vás nejčastěji trápí?
-  industries: Kdo ORIGAM používá?
-  screenshots: Jak ORIGAM vypadá?
-  product: Produkt
-  partners: Partneři
-  community: Komunita
-  about: O nás
-  contact-form: Představíme Vám ORIGAM osobně nebo online
-  not-found: Stránka nenalezena :(
+main:
+  header:
+    menu: Nabidka
+    button-start: Chci začít
+  footer:
+    claim: Jsme česká společnost založená v roce 2003. Naším posláním je efektivně pomáhat firmám a institucím k digitalizaci.
+    copyright: ORIGAM je ochranná známka společnosti Advantage Solutions, s. r. o., Jihovýchodní II. 887, 141 00 Praha 4, Czech Republic. Copyright © 2014&ndash;2022.
+    terms: Podmínky
+    privacy: Ochrana soukromí a GDPR
 
-buttons:
-  contact: Ukažte mi ORIGAM osobně
-  start: Chci začít
-  partner: Chci se stát oficiálním partnerem
-  community: Chci se přidat ke komunitě
+page-home:
+  title: Home
+  description:
+  intro:
+    title: Open source stavebnice pro&nbsp;vývoj interních systémů
+    subtitle: Složte si vlastní software na míru.
+    button-start: Chci začít
+    button-learn: Zjistit více
+  benefits:
+    title: Flexibilita
+    subtitle: Co je ORIGAM?
+    intro: S ORIGAM skládáme software na míru pomocí bloků. Díky tomu je vývoj rychlý a spolehlivý a Vy máte v krátkém čase hotový produkt k užití. Ušetřený čas a náklady můžete využít k dalším inovacím svého podnikání.
+    button-learn: Více o produktu
+  features:
+    title: Výhody
+    subtitle: Co vám ORIGAM přinese?
+    button-text: Všechny výhody
+  examples:
+    title: Flexibilita
+    subtitle: Co v ORIGAMU vytvoříte?
+  customer-logos:
+    title: Spokojení zákazníci
+    subtitle: Kdo ORIGAM používá?
+    button-partners: a desítky dalších&hellip;
 
-industry-titles:
-  travel: Cestovní ruch
-  food: Potravinářský průmysl
-  commerce: Obchod a eCommerce
-  real-estate: Reality
-  logistics: Logistika
-  telco: Telco
-  services: Služby
-  non-profit: Neziskovky
-  public-services: Státní správa
-  insurance: Pojišťovny
-  manufacturing: Výroba
-
-benefit-titles:
-  benefit1: Začněte inovovat
-  benefit2: Rozložte investice
-  benefit3: Získejte prestiž
-
-pain-titles:
-  pain1: Udržitelnost
-  pain2: Nepřehlednost
-  pain3: Dvojitá práce
-  pain4: Změny
-  pain5: Náklady
-
-feature-titles:
-  feature01: Jednoduché ovládání
-  feature02: Snadné změny
-  feature03: Dobře známé funkce
-  feature04: Reporty
-  feature05: Neomezené množství uživatelů
-  feature06: Zabezpečení dat
-  feature07: Integrace
-  feature08: Procesy
-  feature09: Mapy
-  feature10: Přizpůsobení
-  feature11: Dokumenty
-
-support-types:
+benefits:
   -
-    name: Komunitní fórum
-    description: Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.
-    link: https://community.origam.com
-    link-title: Přejít na fórum >
+    name: Začněte inovovat
+    content: Obměna interního systému je náročná a každý ji raději odkládá. Systémy vyvinuté s ORIGAM Vám budou dobře sloužit déle než běžné podnikové systémy. O tom se už přesvědčila nejedna česká i zahraniční firma.
+    image: /img/icons/carbon_rocket.svg
   -
-    name: Partneři
-    description: Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
-    link: partners
-    link-title: O partnerství >
+    name: Rozložte investice
+    content: Nenechte se zahltit implementací rozsáhlého systému, který nevyužijete. Poskládáme Vám software podle aktuálních potřeb a finančních možností. Další agendy snadno přidáte časem.
+    image: /img/icons/carbon_direction-fork.svg
   -
-    name: Zakladatelé
-    description: Pořád je tady i ORIGAM guru – zakladatelský tým. Kryjeme záda našim partnerům a důležitým zákazníkům. Bez pomoci rozhodně nezůstanete.
-    link: https://community.origam.com/t/partner-profile-advantage-solutions/1318
-    link-title: Profil zakladatelů >
+    name: Získejte prestiž
+    content: ORIGAM Vám pomůže propojit další aplikace a mít jednotný pohled na data. Jdeme ale ještě dál. Zajistí i unikátní a náročné operace nad daty. Buďte jedineční ve svém podnikání.
+    image: /img/icons/carbon_graphical-data-flow.svg
 
-contact-form:
-  welcome-text: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.
-  submit-text: Odeslat
-  question1-text: Čím Vás ORIGAM zaujal?
-  question1-option1: Jsme organizace a potřebujeme inovovat náš interní systém.
-  question1-option2: Chceme se stát ORIGAM partnerem.
-  question2-text: Vaše jméno nebo název organizace
-  question3-text: Váš e-mail
-  question4-text: Váš telefon
-  question5-text: S čím byste chtěli pomoci?
-  error-text: Vyplňte prosím všechny odpovědi. Děkujeme!
+features-general:
+  -
+    name: Udržitelnost
+    content: Obměna interního systému je náročná a každý ji raději odkládá. Systémy vyvinuté s ORIGAM Vám budou dobře sloužit déle než běžné podnikové systémy. O tom se už přesvědčila nejedna česká i zahraniční firma.
+    image: /img/icons/carbon_earth-europe-africa.svg
+  -
+    name: Vše na jednom místě
+    content: Mít stejná data na různých místech znamená dvojitou práci a také chybovost. S integrovaným systémem to lehce eliminujete a uvolníte ruce zaměstnancům na efektivnější činnosti.
+    image: /img/icons/carbon_data-collection.svg
+  -
+    name: Nízké náklady
+    content: Bojíte se, že software na míru bude za vysokou cenu? Naopak. Nečekají Vás žádné licenční poplatky ani práce obchodníka, manažera nebo grafika navíc. Kompletní služby zajistí partner.
+    image: /img/icons/carbon_increase-level.svg
+  -
+    name: Přehlednost
+    content: Také si vedete pracovní agendu i mimo interní systém? Efektivita se vytrácí. ORIGAM si poradí s tvorbou nových databázových aplikací i s integrací stávajících. Ať máte znovu o všem dobrý přehled.
+    image: /img/icons/carbon_connect.svg
+  -
+    name: Jednoduché změny
+    content: A co když budete potřebovat něco upravit nebo přidat? Na rozdíl od korporátních procesů máte vždy po ruce partnera - specialistu na ORIGAM platformu. Zanalyzuje, vyřeší a předá hotový produkt.
+    image: /img/icons/carbon_user-simulation.svg
+  -
+    name: Integrace
+    content: Využívejte nadále Vaše oblíbené nástroje jako Microsoft Office, Google Maps, Mailchimp, Pohoda a další a propojte je s ORIGAMem.
+    image: /img/icons/carbon_data-vis-1.svg
+
+examples:
+  -
+    name: Databázové aplikace
+    content: Systémy na práci s big data či archivaci kritických dat s možností pokročilých dotazů a robustním zálohováním.
+    image: /img/pages/home/Clay Dark.svg
+
+customer-logos:
+  -
+    image: /img/pages/home/logos_microsoft-teams.svg
+    alt: Microsoft
+  -
+    image: /img/pages/home/logos_android.svg
+    alt: Google
+
+page-about:
+  title: O nás
+  description:
+
+page-contact:
+  title: Kontakt
+  description:
+
+page-product:
+  title: Produkt
+  description:
+  features:
+    title: Co s ORIGAM dokážete?
+    subtitle: Poskládejte si s ORIGAM software, který vyhovuje Vaší organizaci. Rychle a za cenu hotového řešení.
+  aspects:
+    title: Rozšiřitelnost
+    subtitle: Funkce ORIGAM
+    intro: Vyberte si z více jak 30 komponent a sestavte si aplikaci přesně na míru vašim potřebám. To vše bez jediné řádky kódu.
+
+aspects:
+  -
+    name: Reporty
+    content: Systém bez výstupů je jako černá díra. Když už dostanete data a procesy do pořádku, můžete využít jedinečné možnosti reportovacích a analytických nástrojů, se kterými ORIGAM spolupracuje. Umožněte svým uživatelům zkoumat vaše data.
+    image: /img/icons/carbon_report-data.svg
+  -
+    name: Neomezený počet uživatelů
+    content: Nyní už se nemusíte bát přizvat do systému všechny vaše zákazníky a partnery a zapojit je tak do společných procesů, protože byste se nedoplatili. ORIGAM je svobodný software a nevyděláváme na licencích.
+    image: /img/icons/carbon_user-multiple.svg
+  -
+    name: Zabezpečení dat
+    content: Na rozdíl od Office dokumentů jsou data uložena v databázi a je možné jejich správnost kontrolovat i složitými obchodními pravidly. Celý systém je chráněn podrobnými přístupovými právy.
+    image: /img/icons/carbon_ibm-security.svg
+  -
+    name: Integrace
+    content: Proč ručně přepisovat data z nebo do jiných systémů? S Vaší aplikaci můžete komunikovat snadno s jinými systémy anebo jiné systémy pomocí API snadno propojit.
+    image: /img/icons/carbon_data-vis-1.svg
+  -
+    name: Procesy
+    content: Ještě lepší, než zapamatovat si interní proces je, pokud je tento proces “zakódován” přímo v systému. Hlídejte stavy svých agend, upozorňujte uživatele a automatizujte tam, kde to dává smysl (např. automatizovaná fakturace při schválení objednávky).
+    image: /img/icons/carbon_connect.svg
+  -
+    name: Mapy
+    content: Je součástí vaší práce logistika, jste zemědělec, realitní kancelář nebo prostě pracujete s mapovými podklady? ORIGAM umí data vizualizovat na mapách. Můžete mapy používat přímo pro zakreslování bodů, ploch nebo tras. Mapy mohou být běžnou součástí Vašeho informačního systému.
+    image: /img/icons/carbon_map.svg
+  -
+    name: Přizpůsobení potřebám
+    content: Ačkoli ORIGAM obsahuje hotové osvědčené komponenty, které jsou společné pro všechny zákazníky, je možné přizpůsobit výsledný systém i Vašim přesným potřebám. Ať jsou to speciální vizuální prvky, napojení na Váš specifický systém nebo neobvyklé algoritmy.
+    image: /img/icons/carbon_flow-modeler-reference.svg
+  -
+    name: Dokumenty
+    content: Ať je to archiv dokumentů, které sami v systému vygenerujete nebo chcete ukládat dokumenty od svých zákazníků či do Vašich procesů zařadit fotografie z terénu, není to problém. Ve svých agendách můžete pracovat s přílohami, sdílet je se svými partnery nebo s nimi pracovat v jiných webových či mobilních aplikacích.
+    image: /img/icons/carbon_document.svg
+
+timeline:
+  -
+    title: Domluvte si s námi schůzku
+    explanation: Povíte nám, co Vás trápí a co potřebujete změnit.
+  -
+    title: Připravíme prototyp zdarma
+    explanation: Ten nám zabere pár dní a Vy si zkusíte, jak bude Váš nový systém fungovat i vypadat.
+  -
+    title: Domluvíme si podrobnosti
+    explanation: Upřesníme si všechny technologické a procesní požadavky, cenu i čas.
+  -
+    title: Vyvíjíme a ladíme
+    explanation: K vývoji přistupujeme agilně. Po menších částech. Tak, abyste viděli progres a mohli nám včas říci své připomínky.
+  -
+    title: Nasazujeme!
+    explanation: Nasazení do Vašeho provozu i se zaškolením.
+  -
+    title: Pomáháme
+    explanation: Nenecháme Vás na holičkách. Poradí i pomůže komunita vývojářů nebo certifikovaní partneři.
+
+page-partners:
+  title: Partneři
+  description:
+
+page-community:
+  title: Komunita
+  description:
+
+page-not-found:
+  title: Stránka nenalezena :(
+  description:

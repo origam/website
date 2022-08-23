@@ -1,34 +1,11 @@
 ---
 layout: default
-title: ORIGAM Home
-headerstyle: 
----
-<div class="pagetitle-container wrapper clearfix">
-    <h1>{% translate titles.partners %}</h1>
-</div>
+title: page-partners.title
+description: page-partners.description
 
-<div class="main-container clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                {% translate_file partners/main.md %}
-                <a class="btn" href="contact-form">{% translate buttons.partner %}</a>
-            </div>
-        </div>
-        <div class="row lightGrey clearfix last">
-            <div class="wrapper">
-                {% translate_file partners/list.md %}
-                {% for partner in site.partners %}
-                <p>
-                {% if partner.link %}
-                    <a href="{{ partner.link }}">{{ partner.name }}</a>
-                {% else %}
-                    {{ partner.name }}
-                {% endif %}
-                </p>
-                {% endfor %}
-            </div>
-        </div>
-    </article>
-</div>
-<!-- #main-container -->	
+namespace:     partners
+
+permalink:      /partneri/
+permalink_en:   /partners/
+---
+aaaa

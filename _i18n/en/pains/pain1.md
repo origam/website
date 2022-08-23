@@ -1,0 +1,1 @@
+Obměna interního systému je náročná a každý ji raději odkládá. Systémy vyvinuté s ORIGAM Vám budou dobře sloužit déle než běžné podnikové systémy. O tom se už přesvědčila nejedna česká i zahraniční firma.

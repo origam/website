@@ -1,3 +1,32 @@
-industry-titles:
-  travel: Travel
-  food: Food
+main:
+  header:
+    menu: Menu
+  footer:
+    claim: We are a European company in enterprise business since 2003. Our mission is to help companies effectively digitize their businesses.
+    copyright: ORIGAM is a product of Advantage Solutions, s. r. o., Jihovýchodní II. 887, 141 00 Praha 4, Czech Republic. Copyright © 2014&ndash;2021. All Rights Reserved.
+    terms: Terms and Conditions
+    privacy: Privacy Policy & GDPR
+
+page-home:
+  title: Home
+  benefits:
+    title: Výhody
+    subtitle: Co vám OIRGAM přinese?
+    button-text: Všechny výhody
+
+
+page-about:
+  title: About Us
+
+page-contact:
+  title: Contact
+
+page-product:
+  title: Product
+
+page-partners:
+  title: Partners
+
+page-community:
+  title: Community
+

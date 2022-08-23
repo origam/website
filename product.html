@@ -1,85 +1,253 @@
 ---
 layout: default
-title: ORIGAM Home
-headerstyle: 
----
-<div class="pagetitle-container wrapper clearfix">
-    <h1>{% translate titles.product %}</h1>
-</div>
+title: page-product.title
+description: page-product.description
+load_gsap: true
+namespace:     product
 
-<div class="main-container clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/features.md %}
+permalink:      /produkt/
+permalink_en:   /product/
+---
+<section class="product">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/produkt-triangle.svg" class="bg-triangle">
+        <img src="{{ site.assetsPath }}/img/icons/produkt-bg.svg" class="bg-pic">
+        <div class="titles">
+            <h1>
+                {% t page-product.features.title %}
+            </h1>
+            <p>
+                {% t page-product.features.subtitle %}
+            </p>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <h4>Jednoduché ovládání</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_rocket.svg" alt="rocket" lang="en">
+                <p>
+                    Uživatelské rozhraní má elegantní design, snadno se ovládá a používá. Žádné složité seznamování, jste produktivní od první chvíle.</p>
+            </section>
+            <section class="card">
+                <h4>Snadné změny</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_direction-fork.svg" alt="rocket" lang="en">
+                <p>
+                    Platforma ORIGAM je přizpůsobena častým změnám. Agilní vývoj Vám umožní průběžně zkoušet software a včas říct další připomínky. Práce s hotovými komponentami zase umožňuje snadnější a rychlejší dodání softwaru.</p>
+            </section>
+            <section class="card">
+                <h4>Dobře známé funkce</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_graphical-data-flow.svg" alt="rocket" lang="en">
+                <p>
+                    Používejte v tabulkách funkce, které dobře znáte. Filtrování, třídění nebo seskupování dat. Vlastní nastavení si můžete uložit a sdílet s ostatními. Cokoliv vidíte, můžete ihned exportovat do Excelu pro další analýzu.
+                </p>
+            </section>
+        </div>
+    </div>
+    {% include button.html 
+        text="Chci začít"
+        translate=false
+        link="/"
+    %}
+</section>
+<section class="extensibility">
+    <div class="container">
+        <h5>
+            {% t page-product.aspects.title %}
+        </h5>
+        <div class="caption-title">
+            <h2>
+                {% t page-product.aspects.subtitle %}
+            </h2>
+            <p>
+                {% t page-product.aspects.intro %}
+            </p>
+        </div>
+        {% assign aspects = site.translations[site.lang].aspects  %}
+        {% include grid.html 
+            items = aspects
+         %}
+    </div>
+</section>
+<section class="industry">
+    <div class="container">
+        <h5>
+            Odvětví
+        </h5>
+        <div class="caption-title">
+            <h2>
+                Pro koho se ORIGAM&nbsp;hodí?
+            </h2>
+            <p>
+                ORIGAM je zejména pro ty, které neuspokojí běžné aplikace dostupné na trhu nebo by museli software zdlouhavě vyvíjet od nuly. Používají ho jak malí podnikatelé, tak i velké či nadnárodní společnosti a neziskové organizace, napříč odvětvími.
+            </p>
+        </div>
+        <section class="image-holder">
+            <section class="links">
+                <ul>
+                    <li class="selected">
+                        <a href="#">Obchod &amp; E-commerce</a>
+                    </li>
+                    <li>
+                        <a href="#">Potravinářský průmysl</a>
+                    </li>
+                    <li>
+                        <a href="#">Pojišťovny</a>
+                    </li>
+                    <li>
+                        <a href="#">Státní správa</a>
+                    </li>
+                    <li>
+                        <a href="#">Reality</a>
+                    </li>
+                    <li>
+                        <a href="#">Služby</a>
+                    </li>
+                    <li>
+                        <a href="#">Telco</a>
+                    </li>
+                    <li>
+                        <a href="#">Cestovní ruch</a>
+                    </li>
+                    <li>
+                        <a href="#">Ostatní</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="images">
+                <img src="{{ site.assetsPath }}/img/pages/produkt/obchod.png">
+                <p>
+                    E-commerce aplikace postavená nad ORIGAM
+                </p>
+            </section>
+        </section>
+    </div>
+</section>
+<section class="product-process">
+    <div class="container">
+        <h5>
+            Náš proces
+        </h5>
+        <div class="caption-title">
+            <h2>
+                Jak začít
+                <br>s ORIGAM?
+            </h2>
+            <div class="caption-link">
+                <p>
+                    Už jste rozhodnutí pro změnu nebo se zatím jen poohlížíte? Nejvíc se stejně dozvíte napřímo od nás - telefonicky, osobně nebo online.
+                </p>
+                {% include button.html 
+                    text="Domluvit schůzku"
+                    translate=false
+                    link="/"
+                    primary=false
+                %}
             </div>
         </div>
-        <div class="row white clearfix">
-            <div class="wrapper">
-				<div class="accordion">
-					{% for feature in site.features %}
-						<div class="accordionHeader stateDefault" data-key="{{ feature.name }}"> 
-    						<a><i class="fa fa-chevron-up"></i>{% translate feature.name %}</a> 
-						</div>
-						<div class="accordionContent stateActive"  data-key="{{ feature.name }}" style="display:none">
-                            {{ feature.content | markdownify}}
-                        </div>
-                    {% endfor %}
-				</div> <!-- #accordion  -->
-            </div>
+        {% assign timeline = site.translations[site.lang].timeline  %}
+        {% include timeline.html 
+            items = timeline
+            years = false
+         %}
+    </div>
+    <div class="button">
+        {% include button.html 
+            text="Chci začít"
+            translate=false
+            link="/"
+            small=false
+            dark=false
+        %}
+    </div>
+</section>
+<section class="support">
+    <div class="container">
+        <h5>
+            Podpora
+        </h5>
+        <div class="titles">
+            <h2>
+                Kdo mi pomůže
+                <br>v nesnázích?
+            </h2>
+            <p>
+                Výhodou open source softwaru je široká základna lidí a organizací, která pomáhá s rozvojem systému. Nemusíte se tak omezovat na jednoho partnera.
+            </p>
         </div>
-        <div class="row lightGrey clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/audience.md %}
-            </div>
+        <div class="cards">
+            <section class="card">
+                <h4>Komunitní fórum</h4>
+                <img src="{{ site.assetsPath }}/img/icons/forum.svg" alt="forum" width="104" height="104" loading="lazy">
+                <p>Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.</p>
+                {% include button.html 
+                    text="Fórum"
+                    translate=false
+                    link="/"
+                    primary=false
+                %}
+            </section>
+            <section class="card">
+                <h4>Partneři</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_partnership.svg" alt="partnership" width="104" height="104" loading="lazy">
+                <p>
+                    Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
+                </p>
+                {% include button.html 
+                    text="Seznam partnerů"
+                    translate=false
+                    link="/"
+                    primary=false
+                %}
+            </section>
+            <section class="card">
+                <h4>Core Team</h4>
+                <img src="{{ site.assetsPath }}/img/icons/carbon_star-filled.svg" alt="star" width="104" height="104" loading="lazy">
+                <p>
+                    Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně nezůstanete.
+                </p>
+                {% include button.html 
+                    text="Advantage Solutions"
+                    translate=false
+                    link="/"
+                    primary=false
+                %}
+            </section>
         </div>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/roadmap.md %}
-            </div>
-        </div>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                {% for step in site.customer-steps %}
-                <div class="box {{ step.type }} roadmap center">
-                        {{ step.content | markdownify}}
-                </div>
-                {% endfor %}
-                <div class="teaser">
-                    <a class="btn" href="contact-form">{% translate buttons.start %}</a>
-                </div>
-            </div>
-        </div>
-        <div class="row lightGrey clearfix ">
-            <div class="wrapper">
-                <div class="teaser">
-                    {% translate_file product/support.md %}
-                </div>
-                {% for item in site.translations[site.lang].support-types %}
-                <a href="{{ item['link'] }}">
-                    <div class="column_{{forloop.index}}_1_3 teaser">
-                        <div class="box orange">
-                            <h3>
-                                {{ item["name"] }}
-                            </h3>
-                            <p>
-                                {{ item["description"] }}
-                            </p>
-                            <p>
-                                {{ item["link-title"] }}
-                            </p>
-                        </div>
-                    </div>
+    </div>
+</section>
+<section class="used">
+    <div class="container">
+        <h2>
+            Jak ORIGAM používají naši zákazníci
+        </h2>
+
+        <div class="image-container">
+            <div class="logos">
+                <a href="#" class="active">
+                    <img src="{{ site.assetsPath }}/img/pages/produkt/swiss.svg" width="165" height="40" alt="Swiss confederation" loading="lazy">
                 </a>
-                {% endfor %}
+                <a href="#">
+                    <img src="{{ site.assetsPath }}/img/pages/produkt/tereos.svg" width="115" height="40" alt="Tereos TTD" loading="lazy">
+                </a>
+                <a href="#">
+                    <img src="{{ site.assetsPath }}/img/pages/produkt/agv.svg" width="80" height="40" alt="AGV" loading="lazy">
+                </a>
+            </div>
+
+            <div class="image" style="background-image: url({{ site.assetsPath }}/img/pages/produkt/prison.jpg)">
+                <article>
+                    <h3>Věznice taky potřebuje sofistikovaný software</h3>
+                    <p>ORIGAM tvoří základ systému vyvinutého pro švýcarský úřad. Umožňuje rychlou, objektivní a datově řízenou analýzu případu každého vězně, včetně nebezpečí recidivy. Eliminuje možnost lidské chyby v úsudku a přináší novou úroveň přísnosti do hodnocení případů zločinců. Projekt jsme zvládli s velkou úsporou času i zdrojů.
+                    </p>
+                    <div>Swiss Office for the Execution of Penal Sentences and Justice</div>
+                    {% include button.html 
+                        text="ww.rosnet.ch"
+                        translate=false
+                        link="https://www.rosnet.ch/"
+                        primary=false
+                    %}
+                </article>
             </div>
         </div>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/customers.md %}
-                <a class="btn teaser" href="contact-form">{% translate buttons.contact %}</a>
-            </div>
-        </div>
-    </article>
-</div>
-<!-- #main-container -->	
+    </div>
+</section>
+{% include interested.html  %}

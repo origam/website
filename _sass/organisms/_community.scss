@@ -1,0 +1,117 @@
+.community {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 3rem 1.5rem 4.5rem;
+	background: colors.brand(gray, 50);
+
+	@media (min-width: bps.$L) {
+		padding: 5rem 2.5rem 7.5rem;
+	}
+
+	@media (min-width: bps.$XL) {
+		padding: 5rem 7.5rem 7.5rem;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 80em;
+		justify-content: center;
+		width: 100%;
+	}
+	.bg-triangle {
+		height: auto;
+		position: absolute;
+		width: 10rem;
+		top: 26rem;
+		right: 0rem;
+
+		@media (min-width: bps.$L) {
+			width: 18rem;
+			top: 14rem;
+			right: 0rem;
+		}
+	}
+	.bg-pic {
+		height: auto;
+		position: absolute;
+		width: 6rem;
+		top: 27rem;
+		left: 0rem;
+
+		@media (min-width: bps.$L) {
+			width: 15rem;
+			top: 22rem;
+			left: 0rem;
+		}
+	}
+	.titles {
+		margin-bottom: 4.5rem;
+		max-width: 46em;
+		h1 {
+			padding-bottom: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+			text-align: center;
+			color: colors.brand(gray, 600);
+		}
+	}
+	.cards {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		gap: 1.5rem;
+		z-index: 1;
+		width: 100%;
+
+		@media (min-width: bps.$L) {
+			flex-direction: row;
+			margin-left: 2.5rem;
+			margin-right: 2.5rem;
+		}
+
+		@media (min-width: bps.$XL) {
+			margin-left: 7.5rem;
+			margin-right: 7.5rem;
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			flex: 0 1 auto;
+			width: 100%;
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+			padding-left: 2rem;
+			background: colors.brand(white, 0);
+
+			> img {
+				width: 6.5rem;
+				height: 6.5rem;
+				align-self: flex-start;
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+
+			p {
+				padding-right: 2rem;
+				padding-bottom: 1.5rem;
+				text-align: start;
+				font-size: 16px;
+				color: colors.brand(gray, 600);
+				flex-grow: 1;
+			}
+		}
+	}
+
+	// @media (min-width: bps.$L) {
+	// 	padding-top: 4.5rem;
+	// }
+}
