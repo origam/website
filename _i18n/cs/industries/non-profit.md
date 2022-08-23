@@ -1,4 +1,0 @@
-- Elpida
-- Arnika
-- Fotbalová asociace ČR
-- Kinder und Familie K&F (CH)

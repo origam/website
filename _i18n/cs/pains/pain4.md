@@ -1,1 +1,0 @@
-A co když budete potřebovat něco upravit nebo přidat? Na rozdíl od těžkopádných a drahých platforem máte vždy po ruce komunitu či partnera - specialisty na ORIGAM. Zanalyzují, vyřeší a předají hotovou funkci tak rychle, jak ji potřebujete.

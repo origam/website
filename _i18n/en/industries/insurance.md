@@ -1,1 +1,0 @@
-- Aargauische Gebäudeversicherung (CH)
