@@ -1,0 +1,11 @@
+{%- capture translation -%}
+    {% tl include.link %}
+{%- endcapture -%}
+{%- capture beginning -%}
+    {{ translation | truncate: 2, "" }}
+{%- endcapture -%}
+{%- if beginning == "//" -%}
+    {{ translation | remove_first: "/" }}
+{%- else -%}
+    {{ translation }}
+{%- endif -%}

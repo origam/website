@@ -7,7 +7,7 @@
 {% capture link %}
     {% assign firstletter = include.link | truncate: 1, '' %}
     {% if translate == true and firstletter != "#" %}
-        {% translate_link {{ include.link }}  %}
+        {% include link link=include.link %}
     {% else %}
         {{ include.link }}
     {% endif %}
