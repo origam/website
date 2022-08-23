@@ -164,6 +164,50 @@ page-partners:
   title: Partneři
   description:
 
+partner-advantages:
+  -
+    name: Naučíme Vás stavět enterprise software
+    content: Vyvíjet backend pro interní systémy na míru je zdlouhavé a náročné. Díky ORIGAM platformě už máte velkou část hotovou, tím si <strong>vývoj podstatně zjednodušíte.</strong> Stihnete tak věnovat pozornost i dalším zákazníkům.
+    image: /img/icons/carbon_model-alt.svg
+  -
+    name: Zákazníka zaujmete prototypem na míru
+    content: Prototyp v ORIGAM vytvoříte za pár dní. 
+      Zákazníkovi ukážete jeho představy o novém softwaru a získáte cennou zpětnou vazbu hned na začátku. S prototypem máte už na první schůzce <strong>konkurenční výhodu jak zaujmout zákazníka.</strong>
+    image: /img/icons/carbon_user-simulation.svg
+  -
+    name: Budete spolehlivým dodavatelem
+    content: Vyberte si model spolupráce podle oboru Vašemu podnikání. Ať už jste softwaroví specialisté nebo podnikáte v jiném odvětví, ORIGAM platforma bude pro Vás <strong>osvědčeným a profesionálním nástrojem,</strong> který nesklame Vás ani Vaše zákazníky.
+    image: /img/icons/carbon_security.svg
+  -
+    name: Partnerství na dlouhá léta
+    content: ORIGAM platforma je open source, nic před Vámi neskrýváme. Máte úplný přístup ke kódu i dokumentaci a tím <strong>plnou kontrolu nad fungováním svého systému.</strong> Platformu budete využívat i dlouho poté, co běžné podnikové systémy už zákazníkovi nestačí.
+    image: /img/icons/carbon_rocket.svg
+  -
+    name: Stojíme za Vámi
+    content: I když jste malá firma, s komunitou za zády budete konkurovat těm větším. Využijte <strong>znalosti komunity,</strong> najměte si <strong>externí vývojářský tým</strong> jiných partnerů nebo administrátory z komunity. Na tak dlouho, jak potřebujete.
+    image: /img/icons/carbon_share-knowledge.svg
+  -
+    name: Pomůžeme Vám se zakázkami
+    content: Být součástí ORIGAM komunity Vám umožní nejen sdílet znalosti, ale také <strong>spolupracovat s jinými partnery,</strong> podílet se na společném marketingu nebo využít případové studie.
+    image: /img/icons/carbon_chart-venn-diagram.svg
+
+partner-timeline:
+  -
+    title: Napište nám
+    explanation: Povězte nám, s čím potřebujete pomoct.
+  -
+    title: Probereme možnosti
+    explanation: Promluvíme si o technických možnostech ORIGAMu a jak platformu využijete pro své klienty.
+  -
+    title: Vyberete si model spolupráce
+    explanation: Spolupráce přesně podle Vašich potřeb - až už jste IT vývojáři nebo podnikáte v jiném oboru.
+  -
+    title: Akcelerujeme Vás
+    explanation: Zaučíme Vás, poskytneme podporu, pomůžeme v začátcích nebo si najmete externí tým, který Vám se vším pomůže.
+  -
+    title: Jsme spolu na dlouho
+    explanation: Systém vyvinutý na ORIGAM je dlouhodobě udržitelný jak pro Vás, tak i pro Vaše klienty.
+
 page-community:
   title: Komunita
   description:

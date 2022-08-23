@@ -2,10 +2,176 @@
 layout: default
 title: page-partners.title
 description: page-partners.description
-
+load_gsap: true
 namespace:     partners
 
 permalink:      /partneri/
 permalink_en:   /partners/
 ---
-aaaa
+<section class="partners">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/partneri-triangle.svg" class="bg-triangle">
+        <div class="titles">
+            <h1>
+                Poskytujte svým zákazníkům
+                <br>
+                jen kvalitní služby
+            </h1>
+            <p>
+                Stát se certifikovaným partnerem ORIGAM je známka toho, že svým zákazníkům poskytujete kvalitní služby s ORIGAM. A my Vás na to připravíme.
+            </p>
+        </div>
+        {% include button.html 
+            text="Chci začít"
+            translate=false
+            small=false
+            dark=false
+            link="/"
+        %}
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <h5>
+            Výhody
+        </h5>
+        <h2>
+            Proč být partnerem
+        </h2>
+        {% assign advantages = site.translations[site.lang].partner-advantages  %}
+        {% include grid.html 
+            items = advantages
+         %}
+    </div>
+    <div class="button">
+        {% include button.html 
+            text="Chci být oficiálním partnerem"
+            translate=false
+            small=false
+            dark=false
+            link="/"
+        %}
+    </div>
+</section>
+<section class="samples">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/partneri-triangle-2.svg" class="bg-triangle">
+        <h5>
+            Ukázky
+        </h5>
+        <h2>
+            Jak ORIGAM vypadá?
+        </h2>
+        <div class="slideshow">
+            <div class="btn-row">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Komponenty</a>
+                <a href="#">Databáze</a>
+                <a href="#">CMS</a>
+                <a href="#">Reality</a>
+                <a href="#">Služby</a>
+            </div>
+            <img id="samples" src="{{ site.assetsPath }}/img/pages/partneri/dashboard.png">
+        </div>
+    </div>
+</section>
+<section class="benefits">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/partneri-bg.svg" class="bg-pic">
+        <h5>
+            Benefity
+        </h5>
+        <h2>
+            Co udělá ORIGAM za Vás?
+        </h2>
+        <div class="cards">
+            <section class="card">
+                <img src="{{ site.assetsPath }}/img/icons/carbon_connect-dark.svg" lang="en">
+                <h4>Zjednodušíte si vývoj interních systémů</h4>
+            </section>
+            <section class="card">
+                <img src="{{ site.assetsPath }}/img/icons/carbon_scis-transparent-supply.svg" lang="en">
+                <h4>Rychlé a efektivní prototypování zaujme zákazníka</h4>
+            </section>
+            <section class="card">
+                <img src="{{ site.assetsPath }}/img/icons/carbon_user-admin.svg" lang="en">
+                <h4>Máte k dispozici externí vývojářský tým a administrátory</h4>
+            </section>
+        </div>
+    </div>
+</section>
+<section class="process">
+    <div class="container">
+        <h5>
+            Proces
+        </h5>
+        <h2>
+            Zaujal Vás ORIGAM?
+        </h2>
+        {% assign timeline = site.translations[site.lang].partner-timeline  %}
+        {% include timeline.html 
+            items = timeline
+            years = false
+         %}
+    </div>
+    <div class="button">
+        {% include button.html 
+            text="Chci se s Vámi spojit"
+            translate=false
+            link="/"
+        %}
+    </div>
+</section>
+<section class="partner-grid">
+    <div class="container">
+        <h2>
+            Seznam partnerů
+        </h2>
+        <div class="partner-cards-row">
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/advantage-solutions-partner.svg" width="" height="" alt="Advantage Solutions, s. r. o.">
+                <p>Advantage Solutions, s. r. o.</p>
+            </a>
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/cnw.svg" width="" height="" alt="CNW Computer Network">
+                <p>CNW Computer Network</p>
+            </a>
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/icontel.svg" width="" height="" alt="Icontel AG">
+                <p>Icontel AG</p>
+            </a>
+        </div>
+        <div class="partner-cards-row">
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/bez.svg" width="" height="" alt="be clever">
+                <p>be clever</p>
+            </a>
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/indacom.svg" width="" height="" alt="Indacom">
+                <p>Indacom</p>
+            </a>
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/synergine-logo.svg" width="" height="" alt="Synergine, s. r. o.">
+                <p>Synergine, s. r. o.</p>
+            </a>
+        </div>
+        <div class="partner-cards-row">
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/metio.svg" width="" height="" alt="Metio Software s.r.o.">
+                <p>Metio Software s.r.o.</p>
+            </a>
+            <a href="#" target="_blank" class="card">
+                <img src="{{ site.assetsPath }}/img/icons/bewotec.svg" width="" height="" alt="Bewotec GmbH">
+                <p>Bewotec GmbH</p>
+            </a>
+            <div class="card-link">
+                {% include button.html 
+                    text="Chci se s Vámi spojit"
+                    translate=false
+                    link="contact"
+                %}
+            </div>
+        </div>
+    </div>
+</section>
+{% include interested.html  %}
