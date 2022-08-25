@@ -18,8 +18,11 @@ page-home:
     button-learn: Zjistit více
   benefits:
     title: Flexibilita
-    subtitle: Co je ORIGAM?
-    intro: S ORIGAM skládáme software na míru pomocí bloků. Díky tomu je vývoj rychlý a spolehlivý a Vy máte v krátkém čase hotový produkt k užití. Ušetřený čas a náklady můžete využít k dalším inovacím svého podnikání.
+    subtitle: Proč ORIGAM?
+    intro: ORIGAM je open source platforma pro každého, kdo potřebuje podnikový
+      systém či aplikaci na míru, a to rychle a za cenu hotového řešení.
+      Tato backendová "skládačka" umožňuje rychlý, spolehlivý a pružný vývoj
+      bez licenčních poplatků a závislosti na jednom dodavateli.
     button-learn: Více o produktu
   features:
     title: Výhody
@@ -36,7 +39,10 @@ page-home:
 benefits:
   -
     name: Začněte inovovat
-    content: Obměna interního systému je náročná a každý ji raději odkládá. Systémy vyvinuté s ORIGAM Vám budou dobře sloužit déle než běžné podnikové systémy. O tom se už přesvědčila nejedna česká i zahraniční firma.
+    content: S ORIGAM skládáme software na míru pomocí bloků. Díky tomu je
+      vývoj rychlý a spolehlivý a Vy máte v krátkém čase hotový produkt k
+      užití. Ušetřený čas a náklady můžete využít k dalším inovacím svého
+      podnikání.
     image: /img/icons/carbon_rocket.svg
   -
     name: Rozložte investice
@@ -114,8 +120,10 @@ page-product:
   title: Produkt
   description:
   features:
-    title: Co s ORIGAM dokážete?
-    subtitle: Poskládejte si s ORIGAM software, který vyhovuje Vaší organizaci. Rychle a za cenu hotového řešení.
+    title: Začít s ORIGAM je prosté
+    subtitle: Usnadněte si práci a soustřeďte se na své podnikání. 
+      Poskládejte si s ORIGAM software, který vyhovuje Vaší organizaci. 
+      Rychle a za cenu hotového řešení.
   aspects:
     title: Rozšiřitelnost
     subtitle: Funkce ORIGAM
