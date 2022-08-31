@@ -13,17 +13,15 @@ permalink_en:   /partners/
         <img src="{{ site.assetsPath }}/img/icons/partneri-triangle.svg" class="bg-triangle">
         <div class="titles">
             <h1>
-                Poskytujte svým zákazníkům
-                <br>
-                jen kvalitní služby
+                {% t page-partners.intro.title %}
             </h1>
             <p>
-                Stát se certifikovaným partnerem ORIGAM je známka toho, že svým zákazníkům poskytujete kvalitní služby s ORIGAM. A my Vás na to připravíme.
+                {% t page-partners.intro.text %}
             </p>
         </div>
         {% include button.html 
-            text="Chci začít"
-            translate=false
+            text="main.button-start"
+            translate=true
             small=false
             dark=false
             link="/"
@@ -33,10 +31,10 @@ permalink_en:   /partners/
 <section class="advantages">
     <div class="container">
         <h5>
-            Výhody
+            {% t page-partners.advantages.title %}
         </h5>
         <h2>
-            Proč být partnerem
+            {% t page-partners.advantages.subtitle %}
         </h2>
         {% assign advantages = site.translations[site.lang].partner-advantages  %}
         {% include grid.html 
@@ -45,8 +43,8 @@ permalink_en:   /partners/
     </div>
     <div class="button">
         {% include button.html 
-            text="Chci být oficiálním partnerem"
-            translate=false
+            text="page-partners.advantages.button-text"
+            translate=true
             small=false
             dark=false
             link="/"
@@ -57,10 +55,10 @@ permalink_en:   /partners/
     <div class="container">
         <img src="{{ site.assetsPath }}/img/icons/partneri-triangle-2.svg" class="bg-triangle">
         <h5>
-            Ukázky
+            {% t page-partners.examples.title %}
         </h5>
         <h2>
-            Jak ORIGAM vypadá?
+            {% t page-partners.examples.subtitle %}
         </h2>
         <div class="slideshow">
             <div class="btn-row">
@@ -79,34 +77,28 @@ permalink_en:   /partners/
     <div class="container">
         <img src="{{ site.assetsPath }}/img/icons/partneri-bg.svg" class="bg-pic">
         <h5>
-            Benefity
+            {% t page-partners.benefits.title %}
         </h5>
         <h2>
-            Co udělá ORIGAM za Vás?
+            {% t page-partners.benefits.subtitle %}
         </h2>
         <div class="cards">
+			{% for benefit in site.translations[site.lang].partner-benefits %}
             <section class="card">
-                <img src="{{ site.assetsPath }}/img/icons/carbon_connect-dark.svg" lang="en">
-                <h4>Zjednodušíte si vývoj interních systémů</h4>
+                <img src="{{ site.assetsPath }}{{ benefit.image }}" lang="en">
+                <h4>{{ benefit.title }}</h4>
             </section>
-            <section class="card">
-                <img src="{{ site.assetsPath }}/img/icons/carbon_scis-transparent-supply.svg" lang="en">
-                <h4>Rychlé a efektivní prototypování zaujme zákazníka</h4>
-            </section>
-            <section class="card">
-                <img src="{{ site.assetsPath }}/img/icons/carbon_user-admin.svg" lang="en">
-                <h4>Máte k dispozici externí vývojářský tým a administrátory</h4>
-            </section>
+            {% endfor %}
         </div>
     </div>
 </section>
 <section class="process">
     <div class="container">
         <h5>
-            Proces
+            {% t page-partners.process.title %}
         </h5>
         <h2>
-            Zaujal Vás ORIGAM?
+            {% t page-partners.process.subtitle %}
         </h2>
         {% assign timeline = site.translations[site.lang].partner-timeline  %}
         {% include timeline.html 
@@ -116,8 +108,8 @@ permalink_en:   /partners/
     </div>
     <div class="button">
         {% include button.html 
-            text="Chci se s Vámi spojit"
-            translate=false
+            text="page-partners.process.button-text"
+            translate=true
             link="/"
         %}
     </div>
@@ -125,52 +117,36 @@ permalink_en:   /partners/
 <section class="partner-grid">
     <div class="container">
         <h2>
-            Seznam partnerů
+            {% t page-partners.partner-list.title %}
         </h2>
-        <div class="partner-cards-row">
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/advantage-solutions-partner.svg" width="" height="" alt="Advantage Solutions, s. r. o.">
-                <p>Advantage Solutions, s. r. o.</p>
-            </a>
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/cnw.svg" width="" height="" alt="CNW Computer Network">
-                <p>CNW Computer Network</p>
-            </a>
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/icontel.svg" width="" height="" alt="Icontel AG">
-                <p>Icontel AG</p>
-            </a>
-        </div>
-        <div class="partner-cards-row">
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/bez.svg" width="" height="" alt="be clever">
-                <p>be clever</p>
-            </a>
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/indacom.svg" width="" height="" alt="Indacom">
-                <p>Indacom</p>
-            </a>
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/synergine-logo.svg" width="" height="" alt="Synergine, s. r. o.">
-                <p>Synergine, s. r. o.</p>
-            </a>
-        </div>
-        <div class="partner-cards-row">
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/metio.svg" width="" height="" alt="Metio Software s.r.o.">
-                <p>Metio Software s.r.o.</p>
-            </a>
-            <a href="#" target="_blank" class="card">
-                <img src="{{ site.assetsPath }}/img/icons/bewotec.svg" width="" height="" alt="Bewotec GmbH">
-                <p>Bewotec GmbH</p>
-            </a>
-            <div class="card-link">
-                {% include button.html 
-                    text="Chci se s Vámi spojit"
-                    translate=false
-                    link="contact"
-                %}
+        {% assign items = site.translations[site.lang].partner-list %}
+        {% for i in (1..items.size) %}
+            {% assign remainder =  i | modulo: 3 %}
+            {% if remainder == 1 %}
+            <div class="partner-cards-row">
+                {% for j in (0..2) -%}
+                    {% assign index = i | plus: j | minus: 1 %}
+                    {% assign partner = items[index] %}
+                    {% if index < items.size %}
+                    <a href="#" target="_blank" class="card">
+                        <img src="{{ site.assetsPath }}{{ partner.logo }}" width="" height="" alt="logo">
+                        <p>{{ partner.name }}</p>
+                    </a>
+                    {% endif %}
+                    {% if index == items.size %}
+                    <div class="card-link">
+                        {% include button.html 
+                            text="page-partners.partner-list.button-text"
+                            translate=true
+                            link="contact"
+                        %}
+                    </div>
+                    {% endif %}
+                {% endfor -%}
             </div>
+            {% endif %}
+
+        {% endfor %}
         </div>
     </div>
 </section>
