@@ -1,7 +1,7 @@
 main:
+  button-start: Chci začít
   header:
     menu: Nabidka
-    button-start: Chci začít
   footer:
     claim: Jsme česká společnost založená v roce 2003. 
       Naším posláním je efektivně pomáhat firmám a institucím k digitalizaci.
@@ -226,6 +226,7 @@ page-product:
     subtitle: Jak začít<br>s ORIGAM?
     intro: Už jste rozhodnutí pro změnu nebo se zatím jen poohlížíte? Nejvíc
       se stejně dozvíte napřímo od nás - telefonicky, osobně nebo online.
+    button-text: Domluvit schůzku
 
 start-reasons:
   -
