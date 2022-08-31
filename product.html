@@ -14,32 +14,22 @@ permalink_en:   /product/
         <img src="{{ site.assetsPath }}/img/icons/produkt-bg.svg" class="bg-pic">
         <div class="titles">
             <h1>
-                {% t page-product.features.title %}
+                {% t page-product.start.title %}
             </h1>
             <p>
-                {% t page-product.features.subtitle %}
+                {% t page-product.start.subtitle %}
             </p>
         </div>
         <div class="cards">
+			{% for start-reason in site.translations[site.lang].start-reasons %}
             <section class="card">
-                <h4>Jednoduché ovládání</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_rocket.svg" alt="rocket" lang="en">
+                <h4>{{ start-reason.title }}</h4>
+                <img src="{{ site.assetsPath }}{{ start-reason.image }}" alt="{{ start-reason.image-alt }}" lang="en">
                 <p>
-                    Uživatelské rozhraní má elegantní design, snadno se ovládá a používá. Žádné složité seznamování, jste produktivní od první chvíle.</p>
-            </section>
-            <section class="card">
-                <h4>Snadné změny</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_direction-fork.svg" alt="rocket" lang="en">
-                <p>
-                    Platforma ORIGAM je přizpůsobena častým změnám. Agilní vývoj Vám umožní průběžně zkoušet software a včas říct další připomínky. Práce s hotovými komponentami zase umožňuje snadnější a rychlejší dodání softwaru.</p>
-            </section>
-            <section class="card">
-                <h4>Dobře známé funkce</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_graphical-data-flow.svg" alt="rocket" lang="en">
-                <p>
-                    Používejte v tabulkách funkce, které dobře znáte. Filtrování, třídění nebo seskupování dat. Vlastní nastavení si můžete uložit a sdílet s ostatními. Cokoliv vidíte, můžete ihned exportovat do Excelu pro další analýzu.
+                    {{ start-reason.text}}
                 </p>
             </section>
+            {% endfor %}
         </div>
     </div>
     {% include button.html 
@@ -70,14 +60,14 @@ permalink_en:   /product/
 <section class="industry">
     <div class="container">
         <h5>
-            Odvětví
+            {% t page-product.industries.title %}
         </h5>
         <div class="caption-title">
             <h2>
-                Pro koho se ORIGAM&nbsp;hodí?
+                {% t page-product.industries.subtitle %}
             </h2>
             <p>
-                Digitální transformace. Inovativní firmy a oddělení. Specifické nároky na procesy. ORIGAM je zejména pro ty, které neuspokojí běžné aplikace dostupné na trhu nebo by museli software zdlouhavě vyvíjet od nuly. Používají ho jak malí podnikatelé, tak i velké či nadnárodní společnosti a neziskové organizace, napříč odvětvími.
+                {% t page-product.industries.intro %}
             </p>
         </div>
         <section class="image-holder">
@@ -124,16 +114,15 @@ permalink_en:   /product/
 <section class="product-process">
     <div class="container">
         <h5>
-            Náš proces
+            {% t page-product.process.title %}
         </h5>
         <div class="caption-title">
             <h2>
-                Jak začít
-                <br>s ORIGAM?
+                {% t page-product.process.subtitle %}
             </h2>
             <div class="caption-link">
                 <p>
-                    Už jste rozhodnutí pro změnu nebo se zatím jen poohlížíte? Nejvíc se stejně dozvíte napřímo od nás - telefonicky, osobně nebo online.
+                    {% t page-product.process.intro %}
                 </p>
                 {% include button.html 
                     text="Domluvit schůzku"
@@ -162,58 +151,20 @@ permalink_en:   /product/
 <section class="support">
     <div class="container">
         <h5>
-            Podpora
+            {% t support.title %}
         </h5>
         <div class="titles">
             <h2>
-                Kdo mi pomůže
-                <br>v nesnázích?
+                {% t support.subtitle %}
             </h2>
             <p>
-                Výhodou open source softwaru je široká základna lidí a organizací, která pomáhá s rozvojem systému. Nemusíte se tak omezovat na jednoho partnera.
+                {% t support.intro %}
             </p>
         </div>
-        <div class="cards">
-            <section class="card">
-                <h4>Komunitní fórum</h4>
-                <img src="{{ site.assetsPath }}/img/icons/forum.svg" alt="forum" width="104" height="104" loading="lazy">
-                <p>Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.</p>
-                {% include button.html 
-                    text="Fórum"
-                    translate=false
-                    link="/"
-                    primary=false
-                %}
-            </section>
-            <section class="card">
-                <h4>Partneři</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_partnership.svg" alt="partnership" width="104" height="104" loading="lazy">
-                <p>
-                    Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
-                </p>
-                {% include button.html 
-                    text="Seznam partnerů"
-                    translate=false
-                    link="/"
-                    primary=false
-                %}
-            </section>
-            <section class="card">
-                <h4>Core Team</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_star-filled.svg" alt="star" width="104" height="104" loading="lazy">
-                <p>
-                    Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně nezůstanete.
-                </p>
-                {% include button.html 
-                    text="Advantage Solutions"
-                    translate=false
-                    link="/"
-                    primary=false
-                %}
-            </section>
-        </div>
     </div>
+    {% include support.html %}
 </section>
+
 <section class="used">
     <div class="container">
         <h2>

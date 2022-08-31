@@ -159,14 +159,15 @@ page-contact:
     phone: Telefon
     help: V čem Vám můžeme pomoci?
     button-send: Odeslat
-  help-types:
-    title: Další kontakty
-    subtitle: Kdo mi pomůže v&nbsp;nesnázích?
-    intro: Výhodou open source softwaru je široká základna lidí a organizací,
+
+support:
+  title: Podpora
+  subtitle: Kdo mi pomůže v&nbsp;nesnázích?
+  intro: Výhodou open source softwaru je široká základna lidí a organizací,
       která pomáhá s rozvojem systému. Nemusíte se tak omezovat na jednoho
       partnera.
 
-help-types:
+support-types:
   -
     title: Komunitní fórum
     image: /img/icons/forum.svg
@@ -202,7 +203,7 @@ help-types:
 page-product:
   title: Produkt
   description:
-  features:
+  start:
     title: Začít s ORIGAM je prosté
     subtitle: Usnadněte si práci a soustřeďte se na své podnikání. 
       Poskládejte si s ORIGAM software, který vyhovuje Vaší organizaci. 
@@ -212,6 +213,42 @@ page-product:
     subtitle: Funkce ORIGAM
     intro: Vyberte si z více jak 30 komponent a sestavte si aplikaci přesně na
       míru vašim potřebám. To vše bez jediné řádky kódu.
+  industries:
+    title: Odvětví
+    subtitle: Pro koho se ORIGAM&nbsp;hodí?
+    intro: Digitální transformace. Inovativní firmy a oddělení. Specifické
+      nároky na procesy. ORIGAM je zejména pro ty, které neuspokojí běžné
+      aplikace dostupné na trhu nebo by museli software zdlouhavě vyvíjet od
+      nuly. Používají ho jak malí podnikatelé, tak i velké či nadnárodní
+      společnosti a neziskové organizace, napříč odvětvími.
+  process:
+    title: Náš proces
+    subtitle: Jak začít<br>s ORIGAM?
+    intro: Už jste rozhodnutí pro změnu nebo se zatím jen poohlížíte? Nejvíc
+      se stejně dozvíte napřímo od nás - telefonicky, osobně nebo online.
+
+start-reasons:
+  -
+    title: Jednoduché ovládání
+    image: /img/icons/carbon_rocket.svg
+    image-alt: rocket
+    text: Uživatelské rozhraní má elegantní design, snadno se ovládá a používá.
+      Žádné složité seznamování, jste produktivní od první chvíle.
+  -
+    title: Snadné změny
+    image: /img/icons/carbon_direction-fork.svg
+    image-alt: direction-fork
+    text: Platforma ORIGAM je přizpůsobena častým změnám. Agilní vývoj Vám
+      umožní průběžně zkoušet software a včas říct další připomínky. Práce s
+      hotovými komponentami zase umožňuje snadnější a rychlejší dodání softwaru.
+  -
+    title: Dobře známé funkce
+    image: /img/icons/carbon_graphical-data-flow.svg
+    image-alt: flowchart
+    text: Používejte v tabulkách funkce, které dobře znáte. Filtrování,
+      třídění nebo seskupování dat. Vlastní nastavení si můžete uložit a sdílet
+      s ostatními. Cokoliv vidíte, můžete ihned exportovat do Excelu pro další
+      analýzu.
 
 aspects:
   -

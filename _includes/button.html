@@ -19,9 +19,8 @@
         {{ include.text }}
     {% endif %}
 {% endcapture %}
-
 {% if primary == false %}
-    <a href="{{ link }}" class="secondary-button{% if include.dark == true %} dark{% endif %}">
+    <a href="{{ link }}" class="secondary-button{% if dark == true %} dark{% endif %}">
         {% if iconLeft == true %}
             <img src="{{ icon }}" alt="Icon" width="20" height="20"/>
         {% endif %}

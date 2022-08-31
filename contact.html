@@ -45,38 +45,19 @@ permalink_en:   /contact/
     <div class="container">
         <div class="caption">
             <h5>
-                {% t page-contact.help-types.title %}
+                {% t support.title %}
             </h5>
             <div class="titles">
                 <h2>
-                    {% t page-contact.help-types.subtitle %}
+                    {% t support.subtitle %}
                 </h2>
                 <p>
-                    {% t page-contact.help-types.intro %}
+                    {% t support.intro %}
                 </p>
             </div>
         </div>
-        <div class="cards">
-            {% for help-type in site.translations[site.lang].help-types %}
-            {% capture link %}
-                {% if help-type.translate-link == true %}
-                    {% tl help-type.button-link %}
-                {% else %}
-                    {{ help-type.button-link }}
-                {% endif %}
-            {% endcapture %}
-            <section class="card">
-                <h4>{{ help-type.title }}</h4>
-                <img src="{{ site.assetsPath }}{{ help-type.image }}" alt="{{ help-type.image-alt }}" lang="en">
-                <p>{{ help-type.text }}</p>
-                {% include button.html 
-                    text=help-type.button-text
-                    translate=false
-                    link=link
-                    dark=help-type.button-dark
-                %}
-            </section>
-            {% endfor %}
-        </div>
+        {% include support.html
+            dark-buttons = true
+        %}
     </div>
 </section>

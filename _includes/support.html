@@ -1,0 +1,32 @@
+{% assign dark-buttons = include.dark-buttons | default: false %}
+<div class="cards">
+    {% for type in site.translations[site.lang].support-types %}
+    {%- capture link -%}
+        {%- if type.translate-link == true -%}
+            {%- tl type.button-link -%}
+        {% else %}
+            {{ type.button-link }}
+        {% endif %}
+    {%- endcapture -%}
+    <section class="card">
+        <h4>{{ type.title }}</h4>
+        <img src="{{ site.assetsPath }}{{ type.image }}" alt="{{ type.image-alt }}" lang="en">
+        <p>{{ type.text }}</p>
+        {% if include.dark-buttons == true %}
+            {% include button.html 
+                text=type.button-text
+                translate=false
+                link=link
+                dark=type.button-dark
+            %}
+        {% else %}
+            {% include button.html 
+                text=type.button-text
+                translate=false
+                link=link
+                dark=false
+            %}
+        {% endif %}
+    </section>
+    {% endfor %}
+</div>
