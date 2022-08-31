@@ -145,6 +145,59 @@ origam-timeline:
 page-contact:
   title: Kontakt
   description:
+  main:
+    title: Představíme Vám ORIGAM osobně nebo online
+    subtitle: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám
+      ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete.
+      Vše rádi zodpovíme.
+  form:
+    interest-type: Čím Vás ORIGAM zaujal?
+    interest1: Jsme organizace a potřebujeme inovovat náš interní systém
+    interest2: Chceme se stát ORIGAM partnerem
+    name: Vaše jméno nebo název organizace
+    e-mail: Kontaktní e-mail
+    phone: Telefon
+    help: V čem Vám můžeme pomoci?
+    button-send: Odeslat
+  help-types:
+    title: Další kontakty
+    subtitle: Kdo mi pomůže v&nbsp;nesnázích?
+    intro: Výhodou open source softwaru je široká základna lidí a organizací,
+      která pomáhá s rozvojem systému. Nemusíte se tak omezovat na jednoho
+      partnera.
+
+help-types:
+  -
+    title: Komunitní fórum
+    image: /img/icons/forum.svg
+    image-alt: forum
+    text: Fórum je dostupné pro každého. Tady najdete první stupeň 
+      podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení 
+      členové komunity.
+    button-text: Otevřít fórum
+    button-link: https://community.origam.com
+    button-dark: false
+    translate-link: false
+  -
+    title: Partneři
+    image: /img/icons/carbon_partnership.svg
+    image-alt: partnership
+    text: Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte
+      prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
+    button-text: Seznam partnerů
+    button-link: partners
+    button-dark: true
+    translate-link: true
+  -
+    title: Core Team
+    image: /img/icons/carbon_star-filled.svg
+    image-alt: star
+    text: Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně
+      nezůstanete.
+    button-text: Advantage Solutions
+    button-link: https://www.advantages.cz
+    button-dark: true
+    translate-link: false
 
 page-product:
   title: Produkt

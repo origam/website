@@ -11,31 +11,31 @@ permalink_en:   /contact/
     <div class="container">
         <img src="{{ site.assetsPath }}/img/icons/kontakt-triangle.svg" class="bg-triangle">
         <img src="{{ site.assetsPath }}/img/icons/kontakt-bg.svg" class="bg-pic">
-        <h1>Představíme Vám ORIGAM osobně nebo online</h1>
-        <p>Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.</p>
+        <h1>{% t page-contact.main.title %}</h1>
+        <p>{% t page-contact.main.subtitle %}</p>
         <form>
-            <label class="big-label">Čím Vás ORIGAM zaujal?</label>
+            <label class="big-label">{% t page-contact.form.interest-type %}</label>
             <div class="radio">
                 <div class="option">
                     <input type="radio" id="innovate" name="attracted" required>
-                    <label for="innovate">Jsme organizace a potřebujeme inovovat náš interní systém</label><br>
+                    <label for="innovate">{% t page-contact.form.interest1 %}</label><br>
                 </div>
                 <div class="option">
                     <input type="radio" id="partner" name="attracted">
-                    <label for="partner">Chceme se stát ORIGAM partnerem</label><br>
+                    <label for="partner">{% t page-contact.form.interest2 %}</label><br>
                 </div>
             </div>
-            <label for="name" class="big-label">Vaše jméno nebo název organizace</label>
+            <label for="name" class="big-label">{% t page-contact.form.name %}</label>
             <input type="text" id="name" required>
-            <label for="email" class="big-label">Kontaktní e-mail</label>
+            <label for="email" class="big-label">{% t page-contact.form.e-mail %}</label>
             <input type="text" id="email" required>
-            <label for="phone" class="big-label">Telefon</label>
+            <label for="phone" class="big-label">{% t page-contact.form.phone %}</label>
             <input type="text" id="phone" value="+420" required>
-            <label for="help" class="big-label">V čem Vám můžeme pomoci?</label>
+            <label for="help" class="big-label">{% t page-contact.form.help %}</label>
             <textarea id="help" required></textarea>
             {% include button.html 
-                text="Odeslat"
-                translate=false
+                text="page-contact.form.button-send"
+                translate=true
                 link="#"
             %}
         </form>
@@ -45,54 +45,38 @@ permalink_en:   /contact/
     <div class="container">
         <div class="caption">
             <h5>
-                Další kontakty
+                {% t page-contact.help-types.title %}
             </h5>
             <div class="titles">
                 <h2>
-                    Kdo mi pomůže v&nbsp;nesnázích?
+                    {% t page-contact.help-types.subtitle %}
                 </h2>
                 <p>
-                    Výhodou open source softwaru je široká základna lidí a organizací, která pomáhá s rozvojem systému. Nemusíte se tak omezovat na jednoho partnera.
+                    {% t page-contact.help-types.intro %}
                 </p>
             </div>
         </div>
         <div class="cards">
+            {% for help-type in site.translations[site.lang].help-types %}
+            {% capture link %}
+                {% if help-type.translate-link == true %}
+                    {% tl help-type.button-link %}
+                {% else %}
+                    {{ help-type.button-link }}
+                {% endif %}
+            {% endcapture %}
             <section class="card">
-                <h4>Komunitní fórum</h4>
-                <img src="{{ site.assetsPath }}/img/icons/forum.svg" alt="forum" lang="en">
-                <p>Fórum je dostupné pro každého. Tady najdete první stupeň podpory. Na relevantní dotazy a návrhy na zlepšení odpovídají zkušení členové komunity.</p>
+                <h4>{{ help-type.title }}</h4>
+                <img src="{{ site.assetsPath }}{{ help-type.image }}" alt="{{ help-type.image-alt }}" lang="en">
+                <p>{{ help-type.text }}</p>
                 {% include button.html 
-                    text="Otevřít fórum"
+                    text=help-type.button-text
                     translate=false
-                    link="https://community.origam.com"
+                    link=link
+                    dark=help-type.button-dark
                 %}
             </section>
-            <section class="card">
-                <h4>Partneři</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_partnership.svg" alt="partnership" lang="en">
-                <p>
-                    Partneři jsou certifikovaní specialisté na ORIGAM. S nimi řešíte prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
-                </p>
-                {% include button.html 
-                    text="Seznam partnerů"
-                    translate=false
-                    dark=true
-                    link="partneri"
-                %}
-            </section>
-            <section class="card">
-                <h4>Core Team</h4>
-                <img src="{{ site.assetsPath }}/img/icons/carbon_star-filled.svg" alt="star" lang="en">
-                <p>
-                    Pořád je tady i ORIGAM guru - zakladatelský tým. Bez pomoci rozhodně nezůstanete.
-                </p>
-                {% include button.html 
-                    text="Advantage Solutions"
-                    translate=false
-                    dark=true
-                    link="#"
-                %}
-            </section>
+            {% endfor %}
         </div>
     </div>
 </section>
