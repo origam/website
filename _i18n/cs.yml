@@ -117,6 +117,25 @@ page-about:
   description: Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové
     vývojáře, kteří vyžadují maximum flexibility a zároveň spolehlivosti s
     rychlou technickou podporou.
+  intro:
+    title: Historie
+    subtitle: Jak to vše začalo
+  mission:
+    title: Mise
+    subtitle: Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové
+      vývojáře, kteří vyžadují maximum flexibility a zároveň spolehlivosti s
+      rychlou technickou podporou.
+  story:
+    title: ORIGAM
+    subtitle: Příběh značky
+    text: "<p>Představte si origami: začnete nápadem, finální představou, kterou
+      máte v hlavě. Ohnete papír, a poté znovu. Trénujete, začnete něčím
+      snadným a držíte se instrukcí. Prototypujete. Naberete zkušenosti a
+      začnete zkoušet více a více sofistikované modely. Nakonec to celé
+      zvládnete od myšlenky přes zakázkový vývoj až do funkčního řešení.</p>
+      <p>Přesně takhle ORIGAM funguje.</p>"
+    quote: „I cesta dlouhá tisíc mil začíná jediným krokem.“
+    quote-author: Lao Tse
 
 origam-timeline:
   -

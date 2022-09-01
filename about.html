@@ -11,8 +11,8 @@ permalink_en:   /about-us/
     <div class="container">
         <img src="{{ site.assetsPath }}/img/icons/o-nas-triangle.svg" class="bg-triangle">
         <div>
-            <h5>Historie</h5>
-            <h1>Jak to vše začalo</h1>
+            <h5>{% t page-about.intro.title %}</h5>
+            <h1>{% t page-about.intro.subtitle %}</h1>
         </div>
         {% assign timeline = site.translations[site.lang].origam-timeline  %}
         {% include timeline.html 
@@ -25,10 +25,8 @@ permalink_en:   /about-us/
 <section class="about-mission">
     <div class="container">
         <div class="text">
-            <h5>Mise</h5>
-            <h2>
-                Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové vývojáře, kteří vyžadují maximum flexibility a zároveň spolehlivosti s rychlou technickou podporou.
-            </h2>
+            <h5>{% t page-about.mission.title %}</h5>
+            <h2>{% t page-about.mission.subtitle %}</h2>
         </div>
         <img src="{{ site.assetsPath }}/img/icons/o-nas-bg.svg" class="bg-pic" width="209" height="347">
     </div>
@@ -40,26 +38,21 @@ permalink_en:   /about-us/
             <img src="{{ site.assetsPath }}/img/icons/origami.svg">
             <ul>
                 <li>
-                    <h5>ORIGAM</h5>
+                    <h5>{% t page-about.story.title %}</h5>
                 </li>
                 <li>
-                    <h2>Příběh značky</h2>
+                    <h2>{% t page-about.story.subtitle %}</h2>
                 </li>
             </ul>
         </div>
         <div class="body">
             <div class="story">
-                <p>
-                    Představte si origami: začnete nápadem, finální představou, kterou máte v hlavě. Ohnete papír, a poté znovu. Trénujete, začnete něčím snadným a držíte se instrukcí. Prototypujete. Naberete zkušenosti a začnete zkoušet více a více sofistikované modely. Nakonec to celé zvládnete od myšlenky přes zakázkový vývoj až do funkčního řešení.
-                </p>
-                <p>
-                    Přesně takhle ORIGAM funguje.
-                </p>
+                {% t page-about.story.text %}
             </div>
             <div class="quote">
                 <img src="{{ site.assetsPath }}/img/icons/carbon_quotes.svg" width="104" height="104">
-                <h3>„I cesta dlouhá tisíc mil začíná jediným krokem.“</h3>
-                &mdash; Lao Tse
+                <h3>{% t page-about.story.quote %}</h3>
+                &mdash; {% t page-about.story.quote-author %}
             </div>
         </div>
     </div>
