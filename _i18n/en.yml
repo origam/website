@@ -2,6 +2,7 @@ main:
   button-start: Let me start!
   header:
     menu: Menu
+    follow: Follow Us
   footer:
     claim: We are a European company in enterprise business since 2003. Our
       mission is to help companies effectively digitize their businesses.

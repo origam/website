@@ -2,6 +2,7 @@ main:
   button-start: Chci začít
   header:
     menu: Nabidka
+    follow: Sledovat
   footer:
     claim: Jsme česká společnost založená v roce 2003. 
       Naším posláním je efektivně pomáhat firmám a institucím k digitalizaci.
