@@ -2,19 +2,44 @@
 layout: default
 permalink: /404.html
 ---
-<div class="pagetitle-container wrapper clearfix">
-    <h1>{% translate page-not-found.title %}</h1>
-</div>
-
-<div class="main-container clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                {% translate_file 404.md %}
-            </div>
+<section class="community">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/komunita-triangle.svg" class="bg-triangle" width="317" height="293" alt="bg-triangle">
+        <img src="{{ site.assetsPath }}/img/icons/komunita-bg.svg" class="bg-pic" width="249" height="241" alt="bg-square">
+        <div class="titles">
+            <h1>
+                Page not found :(
+            </h1>
+            <p>
+                The page you are looking for does not exist. Maybe you wanted to visite one of these?
+            </p>
         </div>
-    </article>
-</div> 
+        <div class="cards">
+            <section class="card">
+                <h4>Community Forums</h4>
+                <img src="{{ site.assetsPath }}/img/icons/forum.svg" alt="forum" width="104" height="104">
+                <p>Connect with people, find documentation and other resources on our community forums.</p>
+                {% include button.html 
+                    text="Visit forums"
+                    translate=false
+                    link="https://community.origam.com"
+                    primary=false
+                %}
+            </section>
+            <section class="card">
+                <h4>Downloads</h4>
+                <img src="{{ site.assetsPath }}/img/icons/mark-github.svg" alt="forum" width="104" height="104">
+                <p>Download the all the ORIGAM releases on GitHub.</p>
+                {% include button.html 
+                    text="Visit downloads"
+                    translate=false
+                    link="https://github.com/origam/origam/releases"
+                    primary=false
+                %}
+            </section>
+        </div>
+    </div>
+</section>
 
 <script>
     if(window.location.pathname.substring(0,5) === "/doc/")
