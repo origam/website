@@ -470,6 +470,29 @@ partner-list:
 page-community:
   title: Komunita
   description:
+  intro:
+    title: Mít znalosti a informace – to je konkurenční výhoda.
+    text: Hledáte pomoc od ostatních nebo ji naopak nabízíte? O tom právě
+      komunita je. Dostupná každému. Sdílíme své poznatky o vývoji platformy,
+      radíme si jak opravit jednotlivé procesy, navrhujeme zlepšení a nové
+      funkcionality.
+
+community-links:
+  -
+    title: Komunitní fórum
+    image: /img/icons/forum.svg
+    image-alt: forum
+    text: Na komunitním fóru najdete veškerou dokumentaci, zdrojové kódy i
+      další informace.
+    button-text: Otevřít fórum
+    button-link: https://community.origam.com
+  -
+    title: Discord
+    image: /img/icons/carbon_logo-discord.svg
+    image-alt: discord-logo
+    text: Na našem Discordu se můžeme vzájemně potkávat a poznávat.
+    button-text: Chci se přidat
+    button-link: https://discord.com/invite/MkneJ3bS
 
 page-not-found:
   title: Stránka nenalezena :(
