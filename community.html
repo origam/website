@@ -22,7 +22,7 @@ permalink_en:   /community/
         <div class="cards">
 			{% for community-link in site.translations[site.lang].community-links %}
             <section class="card">
-                <h4>Komunitní fórum</h4>
+                <h4>{{ community-link.title }}</h4>
                 <img src="{{ site.assetsPath }}{{ community-link.image }}" alt="{{ community-link.image-alt }}" width="104" height="104">
                 <p>{{ community-link.text }}</p>
                 {% include button.html 
