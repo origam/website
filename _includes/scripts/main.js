@@ -1,6 +1,7 @@
 const onDOMContentLoaded = () => {
 	nav();
 	industry();
+	testimonials();
 };
 
 document.readyState !== "loading"

@@ -247,6 +247,8 @@ page-product:
     intro: Už jste rozhodnutí pro změnu nebo se zatím jen poohlížíte? Nejvíc
       se stejně dozvíte napřímo od nás - telefonicky, osobně nebo online.
     button-text: Domluvit schůzku
+  testimonials:
+    title: Jak ORIGAM používají naši zákazníci
 
 start-reasons:
   -
@@ -385,6 +387,39 @@ timeline:
     title: Pomáháme
     explanation: Nenecháme Vás na holičkách. Poradí i pomůže komunita vývojářů
       nebo certifikovaní partneři.
+
+testimonials:
+  -
+    logo: /img/pages/produkt/swiss.svg
+    logo-alt: Švýcarská konfederace
+    image: /img/pages/produkt/prison.jpg
+    title: Věznice taky potřebuje sofistikovaný software
+    content: ORIGAM tvoří základ systému vyvinutého pro švýcarský úřad.
+      Umožňuje rychlou, objektivní a datově řízenou analýzu případu každého
+      vězně, včetně nebezpečí recidivy. Eliminuje možnost lidské chyby v úsudku
+      a přináší novou úroveň přísnosti do hodnocení případů zločinců. Projekt
+      jsme zvládli s velkou úsporou času i zdrojů.
+    name: Swiss Office for the Execution of Penal Sentences and Justice
+    link-text: www.rosnet.ch
+    link: https://www.rosnet.ch/
+  -
+    logo: /img/pages/produkt/tereos.svg
+    logo-alt: Tereos TTD
+    image: 
+    title: Cukrovary také potřebují sofistikovaný software
+    content: text k TTD
+    name: Tereos TTD
+    link-text: www.cukrovaryttd.cz
+    link: http://www.cukrovaryttd.cz
+  -
+    logo: /img/pages/produkt/agv.svg
+    logo-alt: AGV
+    image: 
+    title: Pojišťovny také potřebují sofistikovaný software
+    content: text k AGV
+    name: Aargauische Gebäudeversicherung
+    link-text: agv-ag.ch
+    link: https://agv-ag.ch/
 
 page-partners:
   title: Partneři
