@@ -62,14 +62,20 @@ permalink_en:   /partners/
         </h2>
         <div class="slideshow">
             <div class="btn-row">
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Komponenty</a>
-                <a href="#">Databáze</a>
-                <a href="#">CMS</a>
-                <a href="#">Reality</a>
-                <a href="#">Služby</a>
+                {% for i in (1..site.translations[site.lang].partner-examples.size) %}
+                {% assign index = i | minus: 1 %}
+                {% assign example = site.translations[site.lang].partner-examples[index] %}
+                <a href="#slide-{{i}}" class="{% if i == 1 %}active{% endif %}">{{ example.name }}</a>
+                {% endfor %}
             </div>
-            <img id="samples" src="{{ site.assetsPath }}/img/pages/partneri/dashboard.png">
+            <div class="images">
+                {% for i in (1..site.translations[site.lang].partner-examples.size) %}
+                {% assign index = i | minus: 1 %}
+                {% assign example = site.translations[site.lang].partner-examples[index] %}
+                <img class="{% if i == 1 %}active{% endif %}" id="slide-{{i}}" 
+                    src="{{ site.assetsPath }}{{ example.image }}" width="1200" height="675" alt="{{ example.name }}">
+                {% endfor %}
+			</div>
         </div>
     </div>
 </section>

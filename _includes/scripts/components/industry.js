@@ -1,7 +1,10 @@
 const industry = () => {
 	var $industry = document.querySelector(".industry .image-holder");
-	var $buttons = $industry.querySelectorAll(".links ul li");
-	var $images = $industry.querySelectorAll(".images ul li");
+
+	if ($industry) {
+		var $buttons = $industry.querySelectorAll(".links ul li");
+		var $images = $industry.querySelectorAll(".images ul li");
+	}
 
 	function clearSelected() {
 		$buttons.forEach(($button) => {
@@ -28,5 +31,7 @@ const industry = () => {
 		});
 	}
 
-	init();
+	if ($industry) {
+		init();
+	}
 };

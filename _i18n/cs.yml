@@ -490,6 +490,26 @@ partner-advantages:
       společném marketingu nebo využít případové studie.
     image: /img/icons/carbon_chart-venn-diagram.svg
 
+partner-examples:
+  -
+    name: Dashboard
+    image: /img/pages/partneri/dashboard.png
+  -
+    name: Komponenty
+    image: 
+  -
+    name: Databáze
+    image: 
+  -
+    name: CMS
+    image: 
+  -
+    name: Reality
+    image: 
+  -
+    name: Služby
+    image: 
+
 partner-benefits:
   -
     title: Zjednodušíte si vývoj interních systémů

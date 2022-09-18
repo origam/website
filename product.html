@@ -73,9 +73,10 @@ permalink_en:   /product/
         <section class="image-holder">
             <section class="links">
                 <ul>
-                    {% for i in (0..site.translations[site.lang].industries.size) %}
-                    {% assign industry = site.translations[site.lang].industries[i] %}
-                    <li class="{% if i == 0 %}selected{% endif %}">
+                    {% for i in (1..site.translations[site.lang].industries.size) %}
+                    {% assign index = i | minus: 1 %}
+                    {% assign industry = site.translations[site.lang].industries[index] %}
+                    <li class="{% if i == 1 %}selected{% endif %}">
                         <a href="#industry-{{i}}">{{ industry.name }}</a>
                     </li>
                     {% endfor %}
@@ -83,9 +84,10 @@ permalink_en:   /product/
             </section>
             <section class="images">
                 <ul>
-                    {% for i in (0..site.translations[site.lang].industries.size) %}
-                    {% assign industry = site.translations[site.lang].industries[i] %}
-                    <li id="industry-{{i}}" class="{% if i == 0 %}selected{% endif %}">
+                    {% for i in (1..site.translations[site.lang].industries.size) %}
+                    {% assign index = i | minus: 1 %}
+                    {% assign industry = site.translations[site.lang].industries[index] %}
+                    <li id="industry-{{i}}" class="{% if i == 1 %}selected{% endif %}">
                         <figure>
                             <img src="{{ site.assetsPath }}{{ industry.image }}" width="552" height="409" alt="{{ industry.name }}">
                             <figcaption>
@@ -160,18 +162,20 @@ permalink_en:   /product/
         </h2>
         <div class="image-container">
             <div class="logos">
-                {% for i in (0..site.translations[site.lang].testimonials.size) %}
-                {% assign testimonial = site.translations[site.lang].testimonials[i] %}
-                <a href="#testimonial-{{i}}" class="{% if i == 0 %}active{% endif %}">
+                {% for i in (1..site.translations[site.lang].testimonials.size) %}
+                {% assign index = i | minus: 1 %}
+                {% assign testimonial = site.translations[site.lang].testimonials[index] %}
+                <a href="#testimonial-{{i}}" class="{% if i == 1 %}active{% endif %}">
                     <img src="{{ site.assetsPath }}{{ testimonial.logo }}" 
                         width="165" height="40" alt="{{ testimonial.logo-alt }}" loading="lazy">
                 </a>
                 {% endfor %}
             </div>
 				<div class="images">
-                    {% for i in (0..site.translations[site.lang].testimonials.size) %}
-                    {% assign testimonial = site.translations[site.lang].testimonials[i] %}
-					<div class="image {% if i == 0 %}active{% endif %}" id="#testimonial-{{i}}" 
+                    {% for i in (1..site.translations[site.lang].testimonials.size) %}
+                    {% assign index = i | minus: 1 %}
+                    {% assign testimonial = site.translations[site.lang].testimonials[index] %}
+					<div class="image {% if i == 1 %}active{% endif %}" id="#testimonial-{{i}}" 
                         style="background-image: url({{ site.assetsPath }}{{ testimonial.image }})">
 						<article>
 							<h3>{{ testimonial.title }}</h3>

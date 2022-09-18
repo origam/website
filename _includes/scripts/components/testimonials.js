@@ -1,7 +1,10 @@
 const testimonials = () => {
 	var $testimonials = document.querySelector(".used .image-container");
-	var $logos = $testimonials.querySelectorAll(".logos a");
-	var $images = $testimonials.querySelectorAll(".images .image");
+
+	if ($testimonials) {
+		var $logos = $testimonials.querySelectorAll(".logos a");
+		var $images = $testimonials.querySelectorAll(".images .image");
+	}
 
 	function clearSelected() {
 		$logos.forEach(($logo) => {
@@ -28,5 +31,7 @@ const testimonials = () => {
 		});
 	}
 
-	init();
+	if ($testimonials) {
+		init();
+	}
 };
