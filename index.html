@@ -102,19 +102,21 @@ load_gsap: true
 			<h2>
                 {% t page-home.examples.subtitle %}
 			</h2>
-			{% for example in site.translations[site.lang].examples %}
 			<div class="pic-text">
-				<div class="text">
-					<h4>
-						{{ example.name }}
-					</h4>
-					<p>
-						{{ example.content }}
-					</p>
+				<div class="texts">
+					{% for example in site.translations[site.lang].examples %}
+					<div class="text">
+						<h4>
+							{{ example.name }}
+						</h4>
+						<p>
+							{{ example.content }}
+						</p>
+					</div>
+					{% endfor %}
 				</div>
-				<img src="{{ site.assetsPath }}{{ example.image }}" width="670" height="386" alt="Ukázka Origamu" loading="lazy">
+				<img src="{{ site.assetsPath }}/img/pages/home/Clay Dark.svg" width="670" height="386" alt="Ukázka Origamu" loading="lazy">
 			</div>
-			{% endfor %}
 		</div>
 	</section>
 	<section class="satisfied">

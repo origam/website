@@ -103,7 +103,12 @@ examples:
     name: Databázové aplikace
     content: Systémy na práci s big data či archivaci kritických dat s možností
       pokročilých dotazů a robustním zálohováním.
-    image: /img/pages/home/Clay Dark.svg
+  -
+    name: Logistické a rozpočtové aplikace
+    content: popis logistiky
+  -
+    name: Aplikace pro analýzu a vyhodnocování dat
+    content: popis analytiky
 
 customer-logos:
   -
