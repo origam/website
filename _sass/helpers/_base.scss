@@ -66,6 +66,11 @@ body {
 main {
 	position: relative; // z-index context
 	z-index: z.index(page-content);
+	margin-top: 4rem;
+
+	@media (min-width: bps.$L) {
+		margin-top: 7.25rem;
+	}
 }
 
 /*

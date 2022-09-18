@@ -21,6 +21,12 @@ const industry = () => {
 			$btn.addEventListener("click", function ($e) {
 				$e.preventDefault();
 
+				if (window.innerWidth <= 928) {
+					$industry
+						.querySelector(".images")
+						.scrollIntoView({ block: "start", behavior: "smooth" });
+				}
+
 				// Clear selected
 				clearSelected();
 

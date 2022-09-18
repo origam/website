@@ -9,11 +9,11 @@ const slideshow = () => {
 
 	function clearSelected() {
 		$buttons.forEach(($btn) => {
-			$btn.classList.remove("active");
+			$btn.classList.remove("active", "stopped");
 		});
 
 		$slides.forEach(($slide) => {
-			$slide.classList.remove("active");
+			$slide.classList.remove("active", "stopped");
 		});
 	}
 
@@ -52,12 +52,11 @@ const slideshow = () => {
 				clearSelected();
 
 				// Set selected
-				$btn.classList.toggle("active");
-				$slides[$i].classList.toggle("active");
+				$btn.classList.add("active", "stopped");
+				$slides[$i].classList.add("active", "stopped");
 
 				// Reset timer
 				window.clearTimeout(timeoutHandle);
-				timeout();
 			});
 		});
 

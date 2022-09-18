@@ -2,7 +2,12 @@
 	display: flex;
 	z-index: z.index(l-header);
 	padding: 0.5rem 1.5rem;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: colors.brand(white, 0);
+	transition: all 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 	@media (min-width: bps.$L) {
 		justify-content: center;
@@ -13,9 +18,25 @@
 		padding: 2rem 7.5rem;
 	}
 
+	&.scrolling {
+		padding: 0 1.5rem;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04),
+			0px 4px 8px rgba(0, 0, 0, 0.06);
+		border-bottom: 1px solid colors.brand(gray, 100);
+		transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		@media (min-width: bps.$L) {
+			padding: 0.5rem 2.5rem;
+		}
+
+		@media (min-width: bps.$XL) {
+			padding: 0.5rem 7.5rem;
+		}
+	}
+
 	&.menu-visible {
 		height: 100%;
-		position: relative;
+		position: fixed;
 
 		@media (min-width: bps.$L) {
 			height: auto;
