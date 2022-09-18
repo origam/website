@@ -73,40 +73,28 @@ permalink_en:   /product/
         <section class="image-holder">
             <section class="links">
                 <ul>
-                    <li class="selected">
-                        <a href="#">Obchod &amp; E-commerce</a>
+                    {% for i in (0..site.translations[site.lang].industries.size) %}
+                    {% assign industry = site.translations[site.lang].industries[i] %}
+                    <li class="{% if i == 0 %}selected{% endif %}">
+                        <a href="#{{ industry.name }}">{{ industry.name }}</a>
                     </li>
-                    <li>
-                        <a href="#">Potravinářský průmysl</a>
-                    </li>
-                    <li>
-                        <a href="#">Pojišťovny</a>
-                    </li>
-                    <li>
-                        <a href="#">Státní správa</a>
-                    </li>
-                    <li>
-                        <a href="#">Reality</a>
-                    </li>
-                    <li>
-                        <a href="#">Služby</a>
-                    </li>
-                    <li>
-                        <a href="#">Telco</a>
-                    </li>
-                    <li>
-                        <a href="#">Cestovní ruch</a>
-                    </li>
-                    <li>
-                        <a href="#">Ostatní</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </section>
             <section class="images">
-                <img src="{{ site.assetsPath }}/img/pages/produkt/obchod.png">
-                <p>
-                    E-commerce aplikace postavená nad ORIGAM
-                </p>
+                <ul>
+                    {% for i in (0..site.translations[site.lang].industries.size) %}
+                    {% assign industry = site.translations[site.lang].industries[i] %}
+                    <li id="{{ industry.name }}" class="{% if i == 0 %}selected{% endif %}">
+                        <figure>
+                            <img src="{{ site.assetsPath }}{{ industry.image }}" width="552" height="409" alt="{{ industry.name }}">
+                            <figcaption>
+                                {{ industry.description }}
+                            </figcaption>
+                        </figure>
+                    </li>
+                    {% endfor %}
+                </ul>
             </section>
         </section>
     </div>

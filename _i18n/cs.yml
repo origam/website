@@ -328,6 +328,40 @@ aspects:
       webových či mobilních aplikacích.
     image: /img/icons/carbon_document.svg
 
+industries:
+  -
+    name: Obchod & e-commerce
+    image: /img/pages/produkt/obchod.png
+    description: E-commerce aplikace postavená nad ORIGAM
+  -
+    name: Potravinářský průmysl
+    image: 
+    description: popisek
+  -
+    name: Pojišťovny
+    image: 
+    description: popisek
+  -
+    name: Reality
+    image: 
+    description: popisek
+  -
+    name: Služby
+    image: 
+    description: popisek
+  -
+    name: Telco
+    image: 
+    description: popisek
+  -
+    name: Cestovní ruch
+    image: 
+    description: popisek
+  -
+    name: Ostatní
+    image: 
+    description: popisek
+
 timeline:
   -
     title: Domluvte si s námi schůzku

@@ -271,14 +271,23 @@
 				display: block;
 			}
 
-			img {
-				margin-bottom: 1rem;
-				width: 100%;
-				height: auto;
-			}
-
-			p {
-				color: colors.brand(gray, 300);
+			ul {
+				list-style-type: none;
+				padding: 0;
+				li {
+					display: none;
+					&.selected {
+						display: block;
+					}
+					img {
+						margin-bottom: 1rem;
+						width: 100%;
+						height: auto;
+					}
+					figcaption {
+						color: colors.brand(gray, 300);
+					}
+				}
 			}
 		}
 	}
