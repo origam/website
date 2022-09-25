@@ -78,16 +78,6 @@ permalink_en:   /product/
                     {% assign industry = site.translations[site.lang].industries[index] %}
                     <li class="{% if i == 1 %}selected{% endif %}">
                         <a href="#industry-{{i}}">{{ industry.name }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
-            <section class="images">
-                <ul>
-                    {% for i in (1..site.translations[site.lang].industries.size) %}
-                    {% assign index = i | minus: 1 %}
-                    {% assign industry = site.translations[site.lang].industries[index] %}
-                    <li id="industry-{{i}}" class="{% if i == 1 %}selected{% endif %}">
                         <figure>
                             <img src="{{ site.assetsPath }}{{ industry.image }}" width="552" height="409" alt="{{ industry.name }}">
                             <figcaption>

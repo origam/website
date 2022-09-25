@@ -231,11 +231,18 @@
 			ul {
 				padding: 0;
 				list-style-type: none;
-				display: flex;
-				flex-direction: column;
 				gap: 0.5rem;
+				position: relative;
 
 				li {
+					width: 100%;
+					margin-bottom: 0.25rem;
+					scroll-margin-top: 4.5rem;
+
+					@media (min-width: bps.$L) {
+						margin-bottom: 0;
+					}
+
 					a {
 						font-weight: 500;
 						font-size: 1.25rem;
@@ -247,7 +254,8 @@
 						background: colors.brand(gray, 800);
 
 						@media (min-width: bps.$L) {
-							display: block;
+							display: inline-block;
+							width: 50%;
 							background: none;
 						}
 
@@ -257,54 +265,48 @@
 					}
 
 					&.selected {
-						background-color: colors.brand(gray, 800);
-
 						a {
 							background: colors.brand(gray, 700);
 
 							@media (min-width: bps.$L) {
-								display: block;
-								background: none;
+								background: colors.brand(gray, 800);
 							}
 						}
 
 						h5 {
 							color: colors.brand(white, 0);
 						}
-					}
-				}
-			}
-		}
 
-		.images {
-			width: 100%;
-			padding: 1.5rem;
-			background-color: colors.brand(gray, 800);
-			scroll-margin-top: 4rem;
+						figure {
+							display: block;
+							background: colors.brand(gray, 700);
 
-			@media (min-width: bps.$L) {
-				display: block;
-			}
-
-			ul {
-				list-style-type: none;
-				padding: 0;
-
-				li {
-					display: none;
-
-					&.selected {
-						display: block;
+							@media (min-width: bps.$L) {
+								position: absolute;
+								right: 0;
+								top: 0;
+								width: 50%;
+								height: 100%;
+								background: colors.brand(gray, 800);
+							}
+						}
 					}
 
-					img {
-						margin-bottom: 1rem;
-						width: 100%;
-						height: auto;
-					}
+					figure {
+						padding: 1.5rem;
+						scroll-margin-top: 4rem;
+						display: none;
+						background: colors.brand(gray, 800);
 
-					figcaption {
-						color: colors.brand(gray, 300);
+						img {
+							margin-bottom: 1rem;
+							width: 100%;
+							height: auto;
+						}
+
+						figcaption {
+							color: colors.brand(gray, 300);
+						}
 					}
 				}
 			}
