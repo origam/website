@@ -3,7 +3,7 @@
     {% for type in site.translations[site.lang].support-types %}
     {%- capture link -%}
         {%- if type.translate-link == true -%}
-            {%- tl type.button-link -%}
+            {% include link link=type.button-link %}    
         {% else %}
             {{ type.button-link }}
         {% endif %}
