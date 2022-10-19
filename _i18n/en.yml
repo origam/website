@@ -178,7 +178,6 @@ support-types:
     text: The forum is open to everyone. You can find first-level support here. Experienced members of the community respond to relevant questions and improvement proposals. 
     button-text: Open the forum 
     button-link: https://community.origam.com 
-    button-dark: false 
     translate-link: false 
   - 
     title: Partners 
@@ -187,7 +186,6 @@ support-types:
     text: Partners are certified ORIGAM specialists. They are here to discuss prototype, custom development and support. You pay for the time devoted to you. 
     button-text: List of partners 
     button-link: partners 
-    button-dark: true 
     translate-link: true 
   - 
     title: Core Team 
@@ -196,7 +194,6 @@ support-types:
     text: There is always ORIGAM guru - our team of founders. You won't be left without help. 
     button-text: Advantage Solutions 
     button-link: https://www.advantages.cz 
-    button-dark: true 
     translate-link: false 
  
 page-product: 
@@ -220,7 +217,9 @@ page-product:
     subtitle: How to start with ORIGAM? 
     intro: Made up your mind already, or still looking around? You will get most answers to your questions from us directly - by phone, in person or online. 
     button-text: Book a meeting 
- 
+  testimonials:
+    title: How do our customers use ORIGAM?
+
 start-reasons: 
   - 
     title: Easy to use 
