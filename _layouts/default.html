@@ -65,6 +65,28 @@
 					</ul>
 				</nav>
 				<div class="l-header-buttons">
+                    {%- capture link -%}
+                        {%- if site.lang == "cs" -%}
+                            {%- if page.url == "/" -%}
+                                /
+                            {%- else -%}
+                                {{ page.permalink }}
+                            {%- endif -%}
+                        {%- else if site.lang == "en" -%}
+                            {%- if page.url == "/" -%}
+                                /cs
+                            {%- else -%}
+                                /cs{{ page.permalink_cs }}
+                            {%- endif -%}
+                        {%- endif -%}
+                    {% endcapture %}
+					<a href="{{ link }}" >
+                        {%- if site.lang == "cs" -%}
+                            English
+                        {%- else if site.lang == "en" -%}
+                            Česky
+                        {%- endif -%}
+					</a>
 					<a href="https://github.com/origam" target="_blank">
 						<img src="{{ site.assetsPath }}/img/icons/mark-github.svg" width="24" height="24" alt="github">
 						{% t main.header.follow %}

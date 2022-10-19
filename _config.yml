@@ -1,7 +1,7 @@
 plugins:
   - jekyll-multiple-languages-plugin
 
-languages: ["cs", "en"]
+languages: ["en", "cs"]
 exclude_from_localizations: ["assets"]
 assetsPath: "/assets"
 baseurl: "/"
