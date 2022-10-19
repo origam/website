@@ -202,7 +202,6 @@ support-types:
       členové komunity.
     button-text: Otevřít fórum
     button-link: https://community.origam.com
-    button-dark: false
     translate-link: false
   -
     title: Partneři
@@ -212,7 +211,6 @@ support-types:
       prototyp, vývoj na míru i podporu. Platíte za čas, který se Vám věnuje.
     button-text: Seznam partnerů
     button-link: partners
-    button-dark: true
     translate-link: true
   -
     title: Core Team
@@ -222,7 +220,6 @@ support-types:
       nezůstanete.
     button-text: Advantage Solutions
     button-link: https://www.advantages.cz
-    button-dark: true
     translate-link: false
 
 page-product:

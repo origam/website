@@ -1,9 +1,9 @@
-{% assign primary = include.primary | default: true %}
-{% assign translate = include.translate %}
+{% assign secondary = include.secondary | default: false %}
+{% assign translate = include.translate | default: false %}
 {% assign iconLeft = include.iconLeft | default: false %}
 {% assign dark = include.dark | default: false %}
 {% assign small = include.small | default: false %}
-{% assign icon = site.assetsPath | default: "/img/icons/link-arrow.svg" | append: include.icon  %}
+{% assign icon = include.icon | default: "/img/icons/link-arrow.svg" | prepend: site.assetsPath  %}
 {% capture link %}
     {% assign firstletter = include.link | truncate: 1, '' %}
     {% if translate == true and firstletter != "#" %}
@@ -19,7 +19,7 @@
         {{ include.text }}
     {% endif %}
 {% endcapture %}
-{% if primary == false %}
+{% if secondary == true %}
     <a href="{{ link }}" class="secondary-button{% if dark == true %} dark{% endif %}">
         {% if iconLeft == true %}
             <img src="{{ icon }}" alt="Icon" width="20" height="20"/>
