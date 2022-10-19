@@ -1,13 +1,13 @@
 <section class="interested">
     <div class="inner">
-        <h1>Zaujal Vás ORIGAM?</h1>
+        <h1>{% t interested.title %}</h1>
         <p>
-            Chcete si vyzkoušet prototyp? Nebo se Vám ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete. Vše rádi zodpovíme.
+            {% t interested.text %}
         </p>
         {% include button.html 
-            text="Chci začít"
-            translate=false
-            link="/"
+            text="interested.button-text"
+            translate=true
+            link="contact"
             dark=true
         %}
     </div>
