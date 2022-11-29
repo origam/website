@@ -331,26 +331,33 @@ testimonials:
     logo-alt: Swiss Confederation 
     image: /img/pages/produkt/prison.jpg 
     title: A prison needs a sophisticated software, too 
-    content: The system developed for a Swiss Office is based on ORIGAM. It enables quick, objective and data-driven analysis of each convict's case, including the risk of relapse. It eliminates human error in judgment and presents a new level of rigidity in the evaluation of criminal cases. We've managed the project with great savings in time and resources. 
+    content: The system developed for a Swiss Office is based on ORIGAM. 
+      It enables quick, objective and data-driven analysis of each convict's
+      case, including the risk of relapse. It eliminates human error in
+      judgment and presents a new level of rigidity in the evaluation of
+      criminal cases. We've managed the project with great savings in time
+      and resources. 
     name: Swiss Office for the Execution of Penal Sentences and Justice 
     link-text: www.rosnet.ch 
     link: https://www.rosnet.ch/ 
   - 
     logo: /img/pages/produkt/tereos.svg 
     logo-alt: Tereos TTD 
-    image:
-    title: Sugar mills need a sophisticated software, too 
-    content: text k TTD 
+    image: /img/pages/produkt/Dobrovice-sugar_factory.jpg
+    title: Sugar refinery solves logistics
+    content: TTD, the biggest sugar refinery in the country, had a problem with trucks. Anywhere between 50 and 200 unload their loads of beets at the refinery's doorstep every day. Come too many, the roads get jammed. Come too few and the whole operation might shut down. So all drivers used to be manually coordinated via cellphones. Labor intensive, imprecise, messy… until they turned to ORIGAM.
+      Real time tracking. Automatic monitoring of the cargo’s size. Ongoing correlation with lab analyses determining the quality of the beets. The platform now monitors inputs from the producers regarding soil quality, creates invoices based on lab results and much much more.
+      (image &copy; GT1976 CC BY-SA 4.0)
     name: Tereos TTD 
     link-text: www.cukrovaryttd.cz 
     link: http://www.cukrovaryttd.cz 
   - 
     logo: /img/pages/produkt/agv.svg 
     logo-alt: AGV 
-    image:
-    title: Insurance companies need a sophisticated software, too 
-    content: text k AGV 
-    name: Aargauische Gebäudeversicherung 
+    image: /img/pages/produkt/Laufenburg_aargau_strassenbild.jpg
+    title: Insurance policies under control
+    content: How do you keep track of thousands of insurance contracts? You could use MS Office – slow, messy, cumbersome. Or you could build your own system underpinned by ORIGAM. AGV, a Swiss insurance company, did just that. In less than ninety „man–days“, we had a working system that automated document creation, scanning, barcode based sorting and even allowed the civil service access via extranet. All that for 50% less than the standard issue software running on SAP. (image &copy; Klaus Graf, CC-BY 2.5)
+    name: Aargauische Gebäudeversicherung, Switzerland
     link-text: agv-ag.ch 
     link: https://agv-ag.ch/ 
  

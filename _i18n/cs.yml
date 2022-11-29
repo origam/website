@@ -395,31 +395,40 @@ testimonials:
     logo: /img/pages/produkt/swiss.svg
     logo-alt: Švýcarská konfederace
     image: /img/pages/produkt/prison.jpg
-    title: Věznice taky potřebuje sofistikovaný software
+    title: Věznice také potřebuje sofistikovaný software
     content: ORIGAM tvoří základ systému vyvinutého pro švýcarský úřad.
       Umožňuje rychlou, objektivní a datově řízenou analýzu případu každého
       vězně, včetně nebezpečí recidivy. Eliminuje možnost lidské chyby v úsudku
       a přináší novou úroveň přísnosti do hodnocení případů zločinců. Projekt
       jsme zvládli s velkou úsporou času i zdrojů.
-    name: Swiss Office for the Execution of Penal Sentences and Justice
+    name: Úřad probačních a nápravných služeb, Švýcarsko
     link-text: www.rosnet.ch
     link: https://www.rosnet.ch/
   -
     logo: /img/pages/produkt/tereos.svg
     logo-alt: Tereos TTD
-    image: 
-    title: Cukrovary také potřebují sofistikovaný software
-    content: text k TTD
-    name: Tereos TTD
+    image: /img/pages/produkt/Dobrovice-sugar_factory.jpg
+    title: Český cukrovar zvládá logistiku surovin bez problémů
+    content: Dříve byl dovoz surovin koordinován telefonicky s řidiči. Náročná,
+      chaotická a neudržitelná situace. S novou podnikovou platformou na ORIGAM
+      firma automaticky sleduje polohu vozidel a objem dovážených surovin v
+      reálném čase, monitoruje další vstupy od zemědělců jako je kvalita půdy
+      i surovin, vytváří faktury a mnoho dalšího. První verzi aplikace jsme
+      dodali za 2 měsíce. (obrázek &copy; GT1976 CC BY-SA 4.0)
+    name: Tereos TTD, Česká republika
     link-text: www.cukrovaryttd.cz
     link: http://www.cukrovaryttd.cz
   -
     logo: /img/pages/produkt/agv.svg
     logo-alt: AGV
-    image: 
-    title: Pojišťovny také potřebují sofistikovaný software
-    content: text k AGV
-    name: Aargauische Gebäudeversicherung
+    image: /img/pages/produkt/Laufenburg_aargau_strassenbild.jpg
+    title: Přehledná evidence a správa pojistných smluv
+    content: Evidence tisíců pojistných smluv se nejlépe zvládá ve vlastním
+      systému založeném na ORIGAM. Švýcarská pojišťovna využívá automatickou
+      tvorbu dokumentů, skenování, třídění na základě čárových kódů a dokonce
+      umožňuje státní správě přístup přes extranet. To vše s 50% úsporou
+      nákladů oproti standardnímu softwaru. (obrázek &copy; Klaus Graf, CC-BY 2.5)
+    name: Pojišťovna budov kantonu Aargau, Švýcarsko
     link-text: agv-ag.ch
     link: https://agv-ag.ch/
 
