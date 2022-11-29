@@ -413,24 +413,12 @@ partner-advantages:
     image: /img/icons/carbon_chart-venn-diagram.svg 
  
 partner-examples: 
-  - 
-    name: Dashboard 
-    image: /img/pages/partneri/dashboard.png 
-  - 
-    name: Components 
-    image:
-  - 
-    name: Database 
-    image:
-  - 
-    name: CMS 
-    image:
-  - 
-    name: Real estate 
-    image:
-  - 
-    name: Services 
-    image:
+  -
+    name: Dashboard
+    image: /img/pages/partneri/dashboard.png
+  -
+    name: Database
+    image: /img/pages/partneri/database.png
  
 partner-benefits: 
   - 

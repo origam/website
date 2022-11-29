@@ -506,20 +506,8 @@ partner-examples:
     name: Dashboard
     image: /img/pages/partneri/dashboard.png
   -
-    name: Komponenty
-    image: 
-  -
     name: Databáze
-    image: 
-  -
-    name: CMS
-    image: 
-  -
-    name: Reality
-    image: 
-  -
-    name: Služby
-    image: 
+    image: /img/pages/partneri/database.png
 
 partner-benefits:
   -
