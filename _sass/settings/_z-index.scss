@@ -1,0 +1,23 @@
+/* default global context */
+$all: (
+	page-content,
+	l-header,
+	a11y-skip-to
+);
+
+$pattern: (
+	pattern,
+	content
+);
+
+$about-team-member: (
+	img,
+	text-bg,
+	name-position,
+	bio
+);
+
+$contact-office: (
+	map,
+	info
+);

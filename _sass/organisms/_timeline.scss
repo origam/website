@@ -1,0 +1,84 @@
+.timeline {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	width: 100%;
+
+	@media (min-width: bps.$L) {
+		margin-top: 5.5rem;
+	}
+
+	.divider {
+		border: 0;
+		border-top: 1px solid colors.brand(gray, 200);
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem 7.875rem;
+		margin-top: 1.5rem;
+		margin-bottom: 2.5rem;
+
+		@media (min-width: bps.$L) {
+			margin-bottom: 3rem;
+			flex-direction: row;
+		}
+	}
+
+	.column-left {
+		font-family: $archivo-stack;
+		font-weight: 100;
+		font-size: 2rem;
+		line-height: 2rem;
+
+		@media (min-width: bps.$L) {
+			line-height: 4rem;
+			font-size: 4rem;
+		}
+	}
+
+	.left-years {
+		@media (min-width: bps.$L) {
+			width: 12rem;
+		}
+	}
+
+	.left-nums {
+		@media (min-width: bps.$L) {
+			width: 5rem;
+		}
+	}
+
+	.column-mid {
+		font-family: $archivo-stack;
+		font-weight: 600;
+		font-size: 1.5rem;
+		align-items: center;
+
+		@media (min-width: bps.$L) {
+			font-size: 2rem;
+		}
+	}
+
+	.mid-years {
+		@media (min-width: bps.$L) {
+			width: 17.625rem;
+		}
+	}
+
+	.mid-nums {
+		@media (min-width: bps.$L) {
+			width: 24rem;
+		}
+	}
+
+	.column-right {
+		margin-top: 0.5rem;
+		color: colors.brand(gray, 600);
+
+		@media (min-width: bps.$L) {
+			width: 30.375rem;
+		}
+	}
+}

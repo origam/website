@@ -1,0 +1,63 @@
+@use "sass:map";
+
+/*
+ * Contrast reference:
+ * https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23a2acd7%2C%20Blue%2010%0D%0A%23354691%2C%20Blue%2020%0D%0A%23313b68%2C%20Blue%2030%0D%0A%23252e56%2C%20Blue%2040%0D%0A%231d264e%2C%20Blue%2050%0D%0A%230e1639%2C%20Blue%2060%0D%0A%23fcfbf7%2C%20Gold%2010%0D%0A%23f8f6ec%2C%20Gold%2020%0D%0A%23f3efdd%2C%20Gold%2030%0D%0A%23c7b361%2C%20Gold%2040%0D%0A%2381702d%2C%20Gold%2050%0D%0A%23ffffff%2C%20Gray%2010%0D%0A%23f9f9fa%2C%20Gray%2020%0D%0A%23ededef%2C%20Gray%2030%0D%0A%23d4d4d9%2C%20Gray%2040%0D%0A%23696c76%2C%20Gray%2050%0D%0A%233c3f4c%2C%20Gray%2060%0D%0A%2323272f%2C%20Gray%2070%0D%0A%23219655%2C%20Green&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18
+ */
+
+$brand: (
+	orange: (
+		origam: #F15B47,
+		light: #FF8906,
+	),
+	white: (
+		0: #FFFFFF,
+	),
+	pink: #E53170,
+	gray: (
+		50: #F4F7F9,
+		100: #F0F4F7,
+		200: #DADFE5,
+		300: #BCC1C6,
+		400: #9199A1,
+		500: #72797F,
+		600: #585D62,
+		700: #43464A,
+		800: #2B2F33,
+		900: #1A1C1F,
+	),
+	gradients: (
+		primary: linear-gradient(87.21deg, #4787F0 0%, #6451F2 100%),
+		secondary: linear-gradient(45.31deg, #FF8906 -0.55%, #F15B47 50.25%, #E53170 100%),
+		secondary-dark: linear-gradient(45.31deg, rgba(255, 137, 6, 0.75) -0.55%, rgba(241, 91, 71, 0.75) 50.25%, rgba(229, 49, 112, 0.75) 100%),
+		light: linear-gradient(90deg, #D6DEE3 0%, #D6DEE3 6.25%, #D7DFE5 12.5%, #D9DFE7 18.75%, #DCE0E9 25%, #E0E1EB 31.25%, #E6E2EC 37.5%, #ECE2ED 43.75%, #F2E3EC 50%, #F7E5EA 56.25%, #FBE7E7 62.5%, #FCE9E4 68.75%, #FDEBE3 75%, #FCEEE1 81.25%, #FBEFE1 87.5%, #FAF1E1 93.75%, #FAF1E1 100%),
+	),
+	buttons: (
+		dark: rgba(26, 28, 31, 0.4),
+		gray: rgba(218, 223, 229, 0.4),
+	),
+	blue: (
+		10: #a2acd7,
+		20: #354691,
+		30: #313b68,
+		40: #252e56,
+		50: #1d264e,
+		60: #0e1639
+	),
+	gold: (
+		10: #fcfbf7,
+		20: #f8f6ec,
+		30: #f3efdd,
+		40: #c7b361,
+		50: #81702d
+	),
+);
+
+@function brand($color, $tone) {
+	@return map.get($brand, $color, $tone);
+}
+
+$body-bg: #fff;
+$body-font-color: brand(gray, 60);
+
+$green: #219655;

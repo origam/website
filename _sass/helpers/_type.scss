@@ -1,0 +1,6 @@
+@use "settings/colors";
+
+@mixin bold-black {
+	font-weight: 700;
+	color: colors.brand(gray, 70);
+}

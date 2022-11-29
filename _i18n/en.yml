@@ -1,3 +1,513 @@
-industry-titles:
-  travel: Travel
-  food: Food
+main: 
+  button-start: Get started 
+  header: 
+    menu: Menu 
+    follow: Follow Us 
+  footer: 
+    claim: We are a Czech company, active since 2003. Our 
+      mission is to help companies and institutions effectively digitize their business. 
+    copyright: ORIGAM is a product of Advantage Solutions, s. r. o., 
+      Jihovýchodní II. 887, 141 00 Praha 4, Czech Republic.  
+      Copyright © 2014&ndash;2021. All Rights Reserved. 
+    terms: Terms and Conditions 
+    privacy: Privacy Policy & GDPR 
+ 
+page-home: 
+  title: Home 
+  description: 
+  intro: 
+    title: Open-source information system development kit 
+    subtitle: Customise your own software 
+    button-start: Get started 
+    button-learn: Find out more 
+  benefits: 
+    title: Flexibility 
+    subtitle: Why ORIGAM? 
+    intro: ORIGAM is an open-source platform for anyone looking for a  
+      custom enterprise system or application. You can build state-of-the-art backends as 
+      easy and quickly as when implementing a packaged product. The result 
+      will be dependable, flexible and free from license fees or a vendor 
+      lock-in. 
+    button-learn: More about the product 
+  features: 
+    title: Benefits 
+    subtitle: What will you get? 
+    button-text: More benefits 
+  examples: 
+    title: Flexibility 
+    subtitle: What can you do with ORIGAM? 
+  customer-logos: 
+    title: Success stories 
+    subtitle: Who uses ORIGAM? 
+    button-partners: and many more&hellip; 
+ 
+benefits: 
+  - 
+    name: Start innovating 
+    content: ORIGAM lets you compose the software using ready-made blocks. 
+      You save time and hassle so your product is ready sooner for your  
+      users. Save the money to grow your business or to innovate. 
+    image: /img/icons/carbon_rocket.svg 
+  - 
+    name: Spread your investments 
+    content: Don't get stuck by implementing a giant system you won't even 
+      use in full. We can assemble just the software you currently need the 
+      most and can invest in. The rest you can easily add later. 
+    image: /img/icons/carbon_direction-fork.svg 
+  - 
+    name: Be the leader 
+    content: ORIGAM helps you connect other applications and have an integrated view of your data. 
+      On top, it also ensures unique and complex operations over data. Be unique in your business. 
+    image: /img/icons/carbon_graphical-data-flow.svg 
+ 
+features-general: 
+  - 
+    name: Sustainability 
+    content: Changing an internal system is tough and prone to delays. 
+      ORIGAM based systems serve longer than typical business applications. 
+      Many companies have had this experience already. 
+    image: /img/icons/carbon_earth-europe-africa.svg 
+  - 
+    name: Everything in one place 
+    content: Managing duplicate data sources means duplicate work and is prone 
+      to errors. By integrating them in a single system you eliminate that 
+      easily and let your staff work on something more effective. 
+    image: /img/icons/carbon_data-collection.svg 
+  - 
+    name: Low costs 
+    content: Think custom software must be expensive? Quite the contrary. 
+      There are no license fees and you don't have to pay for a sales department, 
+      project manager or a graphic designer. Your partner delivers the full service. 
+    image: /img/icons/carbon_increase-level.svg 
+  - 
+    name: Clarity 
+    content: Do you also keep your work agenda outside of the internal system? Where is the efficiency? 
+      With ORIGAM you can create new database applications and integrate the 
+      existing ones. So your reports are valid and up to date again. 
+    image: /img/icons/carbon_connect.svg 
+  - 
+    name: Adoption to changes 
+    content: And what if you need to add or change something?Save yourself from corporate processes and 
+      just call your partner - ORIGAM platform specialist. They will analyse and implement any changes and deliver the final product. 
+    image: /img/icons/carbon_user-simulation.svg 
+  - 
+    name: Integration 
+    content: You can still use your favourite tools like Microsoft Office,  
+      Google Maps, Mailchimp, accounting software and others. You can connect 
+      them to ORIGAM. 
+    image: /img/icons/carbon_data-vis-1.svg 
+ 
+examples: 
+  - 
+    name: Database applications 
+    content: Big data & critical data storage systems that enable advanced queries and robust backup. 
+    image: /img/pages/home/Clay Dark.svg 
+  - 
+    name: Logistics and budgeting applications 
+    content: description of logistics 
+  - 
+    name: Data analysis and evaluation applications 
+    content: description of analytics 
+ 
+customer-logos:  
+  - 
+    image: /img/pages/home/logos_microsoft-teams.svg 
+    alt: Microsoft 
+  - 
+    image: /img/pages/home/logos_android.svg 
+    alt: Google 
+ 
+page-about: 
+  title: About Us 
+  description: We want ORIGAM to become the no. 1 solution for all software developers who seek maximum flexibility and reliability with quick technical support. 
+  intro: 
+    title: History 
+    subtitle: How it all began 
+  mission: 
+    title: Mission 
+    subtitle: We want ORIGAM to become the no. 1 solution for all software developers who seek maximum flexibility and reliability with quick technical support. 
+  story: 
+    title: ORIGAM 
+    subtitle: Brand story 
+    text: "<p> Imagine origami: start with an idea, a final concept on your mind. Fold a piece of paper, and then once again. Practice, begin with something simple and follow the instructions. Prototype. Gain experience and try more sophisticated models. Eventually, you can do the whole thing: from an idea to custom development and workable solution.</p> 
+      <p>This is exactly how ORIGAM works.</p>" 
+    quote: „A journey of a thousand miles begins with a single step.“ 
+    quote-author: Lao Tse 
+ 
+origam-timeline: 
+  - 
+    date: 2003 
+    title: New company founded 
+    explanation: At first we focused on general IT solutions for SMEs. But we soon spotted a high demand for a solution that would have all the benefits of a custom software but offset its drawbacks. So we got into software development, and ORIGAM was born. 
+  - 
+    date: 2013 
+    title: Focus on partners 
+    explanation: We decided to change our strategy and put 100% focus on software implementers and developers. We leave it to our partners to be in direct contact with the customer, as they know them better than we ever could. Our responsibility was therefore to supply the right tools so that our partners can do their job the best way possible. 
+  - 
+    date: 2017 
+    title: Open source 
+    explanation: We decided to provide ORIGAM as a free, open-source software. 
+ 
+ 
+page-contact: 
+  title: Contacts 
+  description: 
+  main: 
+    title: We will present ORIGAM to you in person or online 
+    subtitle: Do you like ORIGAM's functionalities? Do you want to test a prototype? Do you want to become ORIGAM partner? Tell us what you need. We will happily answer all your questions. 
+  form: 
+    interest-type: How would you like to work with ORIGAM? 
+    interest1: We are an organization seeking to innovate our internal system 
+    interest2: We want to become an ORIGAM partner 
+    name: Your name or the name of your organization  
+    e-mail: Contact e-mail 
+    phone: Phone 
+    help: How can we help you? 
+    button-send: Send 
+ 
+support: 
+  title: Support 
+  subtitle: Get help when in need 
+  intro: One advantage of open-source software is a large pool of individuals and organizations who help develop the system. You don't have to work with a single partner only. 
+ 
+support-types: 
+  - 
+    title: Community forum 
+    image: /img/icons/forum.svg 
+    image-alt: forum 
+    text: The forum is open to everyone. You can find first-level support here. Experienced members of the community respond to relevant questions and improvement proposals. 
+    button-text: Open the forum 
+    button-link: https://community.origam.com 
+    translate-link: false 
+  - 
+    title: Partners 
+    image: /img/icons/carbon_partnership.svg 
+    image-alt: partnership 
+    text: Partners are certified ORIGAM specialists. They are here to discuss prototype, custom development and support. You pay for the time devoted to you. 
+    button-text: List of partners 
+    button-link: partners 
+    translate-link: true 
+  - 
+    title: Core Team 
+    image: /img/icons/carbon_star-filled.svg 
+    image-alt: star 
+    text: There is always ORIGAM guru - our team of founders. You won't be left without help. 
+    button-text: Advantage Solutions 
+    button-link: https://www.advantages.cz 
+    translate-link: false 
+ 
+page-product: 
+  title: Product 
+  description: 
+  start: 
+    title: Starting with ORIGAM is easy 
+    subtitle: Make your work easier and focus on your business. 
+      With ORIGAM, assemble a software that fits your organization. 
+      Quickly and for the price of a packaged product. 
+  aspects: 
+    title: Scalability 
+    subtitle: ORIGAM functionalities 
+    intro: Choose from over 30 components and build an application tailored to your needs. All this without a single line of code. 
+  industries: 
+    title: Industries 
+    subtitle: Who is ORIGAM made for? 
+    intro: Digital transformation. Innovative companies and departments. Specific process requirements. ORIGAM is mainly for those who find typical mass-market applications unsatisfactory or those who would have to develop software from scratch. ORIGAM is used by small businesses as well as big multinationals and NGOs, across all industries. 
+  process: 
+    title: Our process 
+    subtitle: How to start with ORIGAM? 
+    intro: Made up your mind already, or still looking around? You will get most answers to your questions from us directly - by phone, in person or online. 
+    button-text: Book a meeting 
+  testimonials:
+    title: How do our customers use ORIGAM?
+
+start-reasons: 
+  - 
+    title: Easy to use 
+    image: /img/icons/carbon_rocket.svg 
+    image-alt: rocket 
+    text: The user interface is elegant, easy to use and operate. No need for long onboardings. You are productive from the first moment. 
+  - 
+    title: Easy changes 
+    image: /img/icons/carbon_direction-fork.svg 
+    image-alt: direction-fork 
+    text: The ORIGAM platform is adapted to frequent changes. Agile development enables continuous software testing and feedback. Working with ready components enables easier and faster delivery of the software. 
+  - 
+    title: Well-known functionalities 
+    image: /img/icons/carbon_graphical-data-flow.svg 
+    image-alt: flowchart 
+    text: Use functionalities you know well in charts. Data filtering, sorting or grouping. You can save your own settings and share with others. You can also instantly export any data to Excel for further analysis.  
+ 
+aspects: 
+  - 
+    name: Reports 
+    content: A system with no outputs is like a black hole. When you've put your data and processes in order, you can leverage the unique reporting and analytics tools ORIGAM partners up with. Enable your users to investigate your data. 
+    image: /img/icons/carbon_report-data.svg 
+  - 
+    name: Unlimited number of users 
+    content: Now you can invite all your customers and partners into your system, and involve them in your common processes without the risk of extra costs. ORIGAM is a free software. We don't earn money on licences. 
+    image: /img/icons/carbon_user-multiple.svg 
+  - 
+    name: Data security 
+    content: Unlike Office documents, all data is saved in a database. Data correctness can be checked via complex business rules. The whole system is protected by detailed access rights. 
+    image: /img/icons/carbon_ibm-security.svg 
+  - 
+    name: Integrations 
+    content: Why manually rewrite data from or to other systems? With your app, you can easily communicate with other systems or connect other systems via API. 
+    image: /img/icons/carbon_data-vis-1.svg 
+  - 
+    name: Processes 
+    content: It's always best when an internal process is "recorded" directly within the system. Monitor your agenda, notify users and automate where it makes sense (such as automated billing following order approval).  
+    image: /img/icons/carbon_connect.svg 
+  - 
+    name: Maps 
+    content: Do you deal with logistics? Are you a farmer or a real estate agency? Or do you simply work with maps? ORIGAM can visualise data on maps. You can use maps to plot points, areas or routes. Maps can be an integral part of your information system. 
+    image: /img/icons/carbon_map.svg 
+  - 
+    name: Tailored to your needs 
+    content: Although ORIGAM contains ready components common to all customers, the system can be tailored to your individual needs. This may include special visual elements, connection to your specific system or unorthodox algorithms. 
+    image: /img/icons/carbon_flow-modeler-reference.svg 
+  - 
+    name: Documents 
+    content: Need a documents archive that you can generate within the system on your own? Want to save your customer documents? Or do you want to incorporate field images into your processes? Not a problem. You can work with attachments in your agendas, share them with your partners or work with them in other web or mobile applications. 
+    image: /img/icons/carbon_document.svg 
+ 
+industries: 
+  - 
+    name: Sales & e-commerce 
+    image: /img/pages/produkt/obchod.png 
+    description: E-commerce application based on ORIGAM 
+  - 
+    name: Food industry 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+  - 
+    name: Insurance companies 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+  - 
+    name: Real estate 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+  - 
+    name: Services 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+  - 
+    name: Telco 
+    image: /img/pages/produkt/obchod.png
+    description:  
+  - 
+    name: Tourism 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+  - 
+    name: Other 
+    image: /img/pages/produkt/obchod.png 
+    description:  
+ 
+timeline: 
+  - 
+    title: Book a meeting with us 
+    explanation: Tell us about your pain points and needs.  
+  - 
+    title: We'll prepare a free prototype 
+    explanation: This will take us a few days. In turn, you will test the usability and look & feel of your new system. 
+  - 
+    title: Let's fix the details 
+    explanation: We'll agree on all technology and process requirements, price and timeframe. 
+  - 
+    title: Developing and finetuning 
+    explanation: Our agile, step-by-step approach to development allows you to follow all progress closely and feedback anything in time. 
+  - 
+    title: Deployment 
+    explanation: Deploying your website, including training 
+  - 
+    title: Help & support 
+    explanation: We won't let you down. Our developer community or certified partners are here to help and advise. 
+ 
+testimonials: 
+  - 
+    logo: /img/pages/produkt/swiss.svg 
+    logo-alt: Swiss Confederation 
+    image: /img/pages/produkt/prison.jpg 
+    title: A prison needs a sophisticated software, too 
+    content: The system developed for a Swiss Office is based on ORIGAM. 
+      It enables quick, objective and data-driven analysis of each convict's
+      case, including the risk of relapse. It eliminates human error in
+      judgment and presents a new level of rigidity in the evaluation of
+      criminal cases. We've managed the project with great savings in time
+      and resources. 
+    name: Swiss Office for the Execution of Penal Sentences and Justice 
+    link-text: www.rosnet.ch 
+    link: https://www.rosnet.ch/ 
+  - 
+    logo: /img/pages/produkt/tereos.svg 
+    logo-alt: Tereos TTD 
+    image: /img/pages/produkt/Dobrovice-sugar_factory.jpg
+    title: Sugar refinery solves logistics
+    content: TTD, the biggest sugar refinery in the country, had a problem with trucks. Anywhere between 50 and 200 unload their loads of beets at the refinery's doorstep every day. Come too many, the roads get jammed. Come too few and the whole operation might shut down. So all drivers used to be manually coordinated via cellphones. Labor intensive, imprecise, messy… until they turned to ORIGAM.
+      Real time tracking. Automatic monitoring of the cargo’s size. Ongoing correlation with lab analyses determining the quality of the beets. The platform now monitors inputs from the producers regarding soil quality, creates invoices based on lab results and much much more.
+      (image &copy; GT1976 CC BY-SA 4.0)
+    name: Tereos TTD 
+    link-text: www.cukrovaryttd.cz 
+    link: http://www.cukrovaryttd.cz 
+  - 
+    logo: /img/pages/produkt/agv.svg 
+    logo-alt: AGV 
+    image: /img/pages/produkt/Laufenburg_aargau_strassenbild.jpg
+    title: Insurance policies under control
+    content: How do you keep track of thousands of insurance contracts? You could use MS Office – slow, messy, cumbersome. Or you could build your own system underpinned by ORIGAM. AGV, a Swiss insurance company, did just that. In less than ninety „man–days“, we had a working system that automated document creation, scanning, barcode based sorting and even allowed the civil service access via extranet. All that for 50% less than the standard issue software running on SAP. (image &copy; Klaus Graf, CC-BY 2.5)
+    name: Aargauische Gebäudeversicherung, Switzerland
+    link-text: agv-ag.ch 
+    link: https://agv-ag.ch/ 
+ 
+page-partners: 
+  title: Partners 
+  description: 
+  intro: 
+    title: We only provide top-quality services to our customers 
+    text: Becoming a certified ORIGAM partner is a proof that you provide top-quality services to your customers with ORIGAM. We'll set you up for that. 
+  advantages: 
+    title: Advantages 
+    subtitle: Why become a partner 
+    button-text: Become an official partner 
+  examples: 
+    title: Examples 
+    subtitle: What does ORIGAM look like? 
+  benefits: 
+    title: Benefits 
+    subtitle: What can ORIGAM do for you? 
+  process: 
+    title: Process 
+    subtitle: Interested in ORIGAM? 
+    button-text: Get in touch 
+  partner-list: 
+    title: List of partners 
+    button-text: Get in touch 
+ 
+partner-advantages: 
+  - 
+    name: We'll show you how to build enterprise software 
+    content: Developing backend for internal custom systems is time-consuming and demanding. Thanks to ORIGAM, you have this part almost ready, which makes development much easier. You can then focus more on other customers. 
+    image: /img/icons/carbon_model-alt.svg 
+  - 
+    name: Your customers will appreciate custom prototypes 
+    content: ORIGAM lets you create prototypes in a few days' time. 
+      Your customers will see their ideas of the new software and can provide valuable feedback at the beginning of the process.  A prototype gives you a great competitive advantage from the very first meeting. 
+    image: /img/icons/carbon_user-simulation.svg 
+  - 
+    name: Become a reliable supplier 
+    content: Choose a cooperation model based on your industry. The ORIGAM platform is a dependable and professional tool both for you and your customers, no matter if you are a software specialist or from another industry. 
+    image: /img/icons/carbon_security.svg 
+  - 
+    name: Partnership for the long run 
+    content: ORIGAM is an open-source platform. We're 100% transparent. You have full access to the code and documentation, and therefore full control over your system's operation. You will use the platform long after typical business applications turn out to be insufficient for the customer. 
+    image: /img/icons/carbon_rocket.svg 
+  - 
+    name: We've got your back 
+    content: Although you might be a small business, with a community behind your back you can compete with the big guys. Use community knowledge, hire an external developer team from other partners or admins from the community. For as long as you may need. 
+    image: /img/icons/carbon_share-knowledge.svg 
+  - 
+    name: We'll help you with your business 
+    content: Being part of the ORIGAM community means knowledge sharing. On top, you can also cooperate with other partners, take part in our common marketing activities or use case studies. 
+    image: /img/icons/carbon_chart-venn-diagram.svg 
+ 
+partner-examples: 
+  -
+    name: Dashboard
+    image: /img/pages/partneri/dashboard.png
+  -
+    name: Database
+    image: /img/pages/partneri/database.png
+ 
+partner-benefits: 
+  - 
+    title: Make your internal system development easier 
+    image: /img/icons/carbon_connect-dark.svg 
+  - 
+    title: Customers will appreciate fast and efficient prototyping  
+    image: /img/icons/carbon_scis-transparent-supply.svg 
+  - 
+    title: An external team of developers and admins is at your disposal 
+    image: /img/icons/carbon_user-admin.svg 
+ 
+partner-timeline: 
+  - 
+    title: Contact us 
+    explanation: Tell us what we can help you with 
+  - 
+    title: Let's discuss options 
+    explanation: We'll discuss ORIGAM's technical capabilities and ways you can leverage the platform for your clients. 
+  - 
+    title: You'll choose a cooperation model 
+    explanation: Cooperation tailored to your needs - for IT developers as well as for other industries. 
+  - 
+    title: We'll accelerate you 
+    explanation: We'll train you, provide support and help at the beginning. You can also hire an external time to help you with everything you need. 
+  - 
+    title: We're here for the long run 
+    explanation: An ORIGAM-developed system is a long-term, sustainable one for you and your clients. 
+ 
+partner-list: 
+  - 
+    name: Advantage Solutions, s. r. o. 
+    logo: /img/icons/advantage-solutions-partner.svg 
+    link:  
+  - 
+    name: CNW Computer Network 
+    logo: /img/icons/cnw.svg 
+    link:  
+  - 
+    name: Icontel AG 
+    logo: /img/icons/icontel.svg 
+    link:  
+  - 
+    name: be clever 
+    logo: /img/icons/bez.svg 
+    link:  
+  - 
+    name: Indacom 
+    logo: /img/icons/indacom.svg 
+    link:  
+  - 
+    name: Synergine, s. r. o. 
+    logo: /img/icons/synergine-logo.svg 
+    link:  
+  - 
+    name: Metio Software s.r.o. 
+    logo: /img/icons/metio.svg 
+    link:  
+  - 
+    name: Bewotec GmbH 
+    logo: /img/icons/bewotec.svg 
+    link:  
+   
+page-community: 
+  title: Community 
+  description: 
+  intro: 
+    title: Knowledge and information is a competitive advantage 
+    text: Seeking help from others or offering help in turn? This is what community is about. It's here for anyone. We share tips about the platform development, advise each other on how to fix the individual processes, propose improvements and new functionalities. 
+ 
+community-links: 
+  - 
+    title: Community forum 
+    image: /img/icons/forum.svg 
+    image-alt: forum 
+    text: Find all documents, source codes and other information on our community forum. 
+    button-text: Open the forum 
+    button-link: https://community.origam.com 
+  - 
+    title: Discord 
+    image: /img/icons/carbon_logo-discord.svg 
+    image-alt: discord-logo 
+    text: Let's meet and get to know each other on our Discord channel 
+    button-text: Join the channel 
+    button-link: https://discord.com/invite/MkneJ3bS 
+
+interested:
+  title: Are you interested in ORIGAM?
+  text: Do you want to try a prototype? Or you find ORIGAM so interesting that
+    you want to become a partner? Contact us and tell us what you need. We will
+    be glad to come back to you.
+  button-text: Get started

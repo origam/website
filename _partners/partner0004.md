@@ -1,4 +1,0 @@
----
-name: be clever
-link: 
----

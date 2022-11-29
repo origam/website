@@ -1,85 +1,188 @@
 ---
 layout: default
-title: ORIGAM Home
-headerstyle: 
----
-<div class="pagetitle-container wrapper clearfix">
-    <h1>{% translate titles.product %}</h1>
-</div>
+title: page-product.title
+description: page-product.description
+load_gsap: true
+namespace:     product
 
-<div class="main-container clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/features.md %}
-            </div>
+permalink_cs: /produkt/
+permalink:    /product/
+---
+<section class="product">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/produkt-triangle.svg" class="bg-triangle">
+        <img src="{{ site.assetsPath }}/img/icons/produkt-bg.svg" class="bg-pic">
+        <div class="titles">
+            <h1>
+                {% t page-product.start.title %}
+            </h1>
+            <p>
+                {% t page-product.start.subtitle %}
+            </p>
         </div>
-        <div class="row white clearfix">
-            <div class="wrapper">
-				<div class="accordion">
-					{% for feature in site.features %}
-						<div class="accordionHeader stateDefault" data-key="{{ feature.name }}"> 
-    						<a><i class="fa fa-chevron-up"></i>{% translate feature.name %}</a> 
-						</div>
-						<div class="accordionContent stateActive"  data-key="{{ feature.name }}" style="display:none">
-                            {{ feature.content | markdownify}}
-                        </div>
+        <div class="cards">
+			{% for start-reason in site.translations[site.lang].start-reasons %}
+            <section class="card">
+                <h4>{{ start-reason.title }}</h4>
+                <img src="{{ site.assetsPath }}{{ start-reason.image }}" alt="{{ start-reason.image-alt }}" lang="en">
+                <p>
+                    {{ start-reason.text}}
+                </p>
+            </section>
+            {% endfor %}
+        </div>
+    </div>
+    {% include button.html 
+        text="main.button-start"
+        translate=true
+        link="contact"
+    %}
+</section>
+<section class="extensibility">
+    <div class="container">
+        <h5>
+            {% t page-product.aspects.title %}
+        </h5>
+        <div class="caption-title">
+            <h2>
+                {% t page-product.aspects.subtitle %}
+            </h2>
+            <p>
+                {% t page-product.aspects.intro %}
+            </p>
+        </div>
+        {% assign aspects = site.translations[site.lang].aspects  %}
+        {% include grid.html 
+            items = aspects
+         %}
+    </div>
+</section>
+<section class="industry">
+    <div class="container">
+        <h5>
+            {% t page-product.industries.title %}
+        </h5>
+        <div class="caption-title">
+            <h2>
+                {% t page-product.industries.subtitle %}
+            </h2>
+            <p>
+                {% t page-product.industries.intro %}
+            </p>
+        </div>
+        <section class="image-holder">
+            <section class="links">
+                <ul>
+                    {% for i in (1..site.translations[site.lang].industries.size) %}
+                    {% assign index = i | minus: 1 %}
+                    {% assign industry = site.translations[site.lang].industries[index] %}
+                    <li class="{% if i == 1 %}selected{% endif %}">
+                        <a href="#industry-{{i}}">{{ industry.name }}</a>
+                        <figure>
+                            <img src="{{ site.assetsPath }}{{ industry.image }}" width="552" height="409" alt="{{ industry.name }}">
+                            <figcaption>
+                                {{ industry.description }}
+                            </figcaption>
+                        </figure>
+                    </li>
                     {% endfor %}
-				</div> <!-- #accordion  -->
+                </ul>
+            </section>
+        </section>
+    </div>
+</section>
+<section class="product-process">
+    <div class="container">
+        <h5>
+            {% t page-product.process.title %}
+        </h5>
+        <div class="caption-title">
+            <h2>
+                {% t page-product.process.subtitle %}
+            </h2>
+            <div class="caption-link">
+                <p>
+                    {% t page-product.process.intro %}
+                </p>
+                {% include button.html 
+                    text="page-product.process.button-text"
+                    translate=true
+                    link="contact"
+                    secondary=true
+                %}
             </div>
         </div>
-        <div class="row lightGrey clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/audience.md %}
-            </div>
+        {% assign timeline = site.translations[site.lang].timeline  %}
+        {% include timeline.html 
+            items = timeline
+            years = false
+         %}
+    </div>
+    <div class="button">
+        {% include button.html 
+            text="main.button-start"
+            translate=true
+            link="contact"
+            small=false
+            dark=false
+        %}
+    </div>
+</section>
+<section class="support">
+    <div class="container">
+        <h5>
+            {% t support.title %}
+        </h5>
+        <div class="titles">
+            <h2>
+                {% t support.subtitle %}
+            </h2>
+            <p>
+                {% t support.intro %}
+            </p>
         </div>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/roadmap.md %}
-            </div>
-        </div>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                {% for step in site.customer-steps %}
-                <div class="box {{ step.type }} roadmap center">
-                        {{ step.content | markdownify}}
-                </div>
-                {% endfor %}
-                <div class="teaser">
-                    <a class="btn" href="contact-form">{% translate buttons.start %}</a>
-                </div>
-            </div>
-        </div>
-        <div class="row lightGrey clearfix ">
-            <div class="wrapper">
-                <div class="teaser">
-                    {% translate_file product/support.md %}
-                </div>
-                {% for item in site.translations[site.lang].support-types %}
-                <a href="{{ item['link'] }}">
-                    <div class="column_{{forloop.index}}_1_3 teaser">
-                        <div class="box orange">
-                            <h3>
-                                {{ item["name"] }}
-                            </h3>
-                            <p>
-                                {{ item["description"] }}
-                            </p>
-                            <p>
-                                {{ item["link-title"] }}
-                            </p>
-                        </div>
-                    </div>
+    </div>
+    {% include support.html %}
+</section>
+
+<section class="used">
+    <div class="container">
+        <h2>
+             {% t page-product.testimonials.title %}
+        </h2>
+        <div class="image-container">
+            <div class="logos">
+                {% for i in (1..site.translations[site.lang].testimonials.size) %}
+                {% assign index = i | minus: 1 %}
+                {% assign testimonial = site.translations[site.lang].testimonials[index] %}
+                <a href="#testimonial-{{i}}" class="{% if i == 1 %}active{% endif %}">
+                    <img src="{{ site.assetsPath }}{{ testimonial.logo }}" 
+                        width="165" height="40" alt="{{ testimonial.logo-alt }}" loading="lazy">
                 </a>
                 {% endfor %}
             </div>
-        </div>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                {% translate_file product/customers.md %}
-                <a class="btn teaser" href="contact-form">{% translate buttons.contact %}</a>
+				<div class="images">
+                    {% for i in (1..site.translations[site.lang].testimonials.size) %}
+                    {% assign index = i | minus: 1 %}
+                    {% assign testimonial = site.translations[site.lang].testimonials[index] %}
+					<div class="image {% if i == 1 %}active{% endif %}" id="#testimonial-{{i}}" 
+                        style="background-image: url({{ site.assetsPath }}{{ testimonial.image }})">
+						<article>
+							<h3>{{ testimonial.title }}</h3>
+							<p>{{ testimonial.content }}</p>
+							<div>{{ testimonial.name }}</div>
+                            {% include button.html 
+                                text=testimonial.link-text
+                                translate=false
+                                link=testimonial.link
+                                secondary=true
+                            %}
+						</article>
+					</div>
+                    {% endfor %}
+				</div>
             </div>
         </div>
-    </article>
-</div>
-<!-- #main-container -->	
+    </div>
+</section>
+{% include interested.html  %}

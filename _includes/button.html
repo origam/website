@@ -1,0 +1,53 @@
+{% assign secondary = include.secondary | default: false %}
+{% assign translate = include.translate | default: false %}
+{% assign iconLeft = include.iconLeft | default: false %}
+{% assign dark = include.dark | default: false %}
+{% assign small = include.small | default: false %}
+{% assign icon = include.icon | default: "/img/icons/link-arrow.svg" | prepend: site.assetsPath  %}
+{% capture link %}
+    {% assign firstletter = include.link | truncate: 1, '' %}
+    {% assign httpsPrefix = include.link | truncate: 8, '' %}
+    {% if translate == true and firstletter != "#" and httpsPrefix != "https://" %}
+        {% include link link=include.link %}
+    {% else %}
+        {{ include.link }}
+    {% endif %}
+{% endcapture %}
+{% capture text %}
+    {% if translate == true %}
+        {% t include.text %}
+    {% else %}
+        {{ include.text }}
+    {% endif %}
+{% endcapture %}
+{% if secondary == true %}
+    <a href="{{ link }}" class="secondary-button{% if dark == true %} dark{% endif %}">
+        {% if iconLeft == true %}
+            <img src="{{ icon }}" alt="Icon" width="20" height="20"/>
+        {% endif %}
+        {{ text }}
+        {% if iconLeft == false %}
+            <img src="{{ icon }}" alt="Icon" width="20" height="20"/>
+        {% endif %}
+    </a>
+{% else %}
+    <a href="{{ link }}" class="primary-button">
+        {% if dark == true and small == false %}
+            <button class="large dark">
+                {{ text }}
+            </button>
+        {% elsif dark == true and small == false %}
+            <button class="small dark">
+                {{ text }}
+            </button>
+        {% elsif dark == false and small == true %}
+            <button class="small primary">
+                {{ text }}
+            </button>
+        {% else %}
+            <button class="large primary">
+                {{ text }}
+            </button>
+        {% endif %}
+    </a>
+{% endif %}

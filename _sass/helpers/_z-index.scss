@@ -1,0 +1,17 @@
+@forward "settings/z-index";
+@use "sass:list";
+@use "settings/z-index" as settings;
+
+// Use to declare `z-index` values. Select `$element` from `$list` and return it's depth (lower in list ~ higher z-index).
+// For each context of `z-index` use new list. Lists live in `settings/_z-index.scss`. Default global context is `$z-all`.
+// from https://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+@function index($element, $list: settings.$all) {
+	$z-index: list.index($list, $element);
+
+	@if $z-index {
+		@return $z-index;
+	}
+
+	@warn "There is no item "#{$element}" in this list; choose one of: #{$list}";
+	@return null;
+}

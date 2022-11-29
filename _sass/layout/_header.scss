@@ -1,0 +1,260 @@
+.l-header {
+	display: flex;
+	z-index: z.index(l-header);
+	padding: 0.5rem 1.5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: colors.brand(white, 0);
+	transition: all 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	@media (min-width: bps.$L) {
+		justify-content: center;
+		padding: 2rem 2.5rem;
+	}
+
+	@media (min-width: bps.$XL) {
+		padding: 2rem 7.5rem;
+	}
+
+	&.scrolling {
+		padding: 0 1.5rem;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04),
+			0px 4px 8px rgba(0, 0, 0, 0.06);
+		border-bottom: 1px solid colors.brand(gray, 100);
+		transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		@media (min-width: bps.$L) {
+			padding: 0.5rem 2.5rem;
+		}
+
+		@media (min-width: bps.$XL) {
+			padding: 0.5rem 7.5rem;
+		}
+	}
+
+	&.menu-visible {
+		height: 100%;
+		position: fixed;
+
+		@media (min-width: bps.$L) {
+			height: auto;
+		}
+
+		.l-header-main-menu {
+			display: flex;
+		}
+
+		.l-header-buttons {
+			display: flex;
+		}
+
+		.l-header-logo {
+			position: absolute;
+
+			@media (min-width: bps.$L) {
+				position: static;
+			}
+		}
+
+		.menu-toggle {
+			position: absolute;
+
+			@media (min-width: bps.$L) {
+				position: static;
+			}
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		max-width: 80em;
+		width: 100%;
+		justify-content: space-between;
+
+		@media (min-width: bps.$L) {
+			justify-content: center;
+		}
+	}
+}
+
+.l-header-logo {
+	top: 1.45rem;
+	left: 1.5rem;
+
+	@media (min-width: bps.$L) {
+		position: static;
+	}
+
+	img {
+		max-height: 100%;
+		width: auto;
+		height: 1.125rem;
+		display: block;
+
+		@media (min-width: bps.$L) {
+			height: 1.5rem;
+		}
+	}
+}
+
+.l-header-main-menu {
+	font-weight: 500;
+	flex-grow: 1;
+	position: absolute;
+	top: 6rem;
+	left: 0;
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	@media (min-width: bps.$L) {
+		display: flex;
+		position: static;
+		width: auto;
+		height: auto;
+		padding-left: 3.5rem;
+		justify-content: flex-start;
+	}
+
+	ul {
+		padding: 0rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style-type: none;
+		gap: 0.5rem;
+
+		@media (min-width: bps.$L) {
+			flex-direction: row;
+		}
+
+		li {
+			font-size: 1.5rem;
+
+			@media (min-width: bps.$L) {
+				font-size: 1rem;
+			}
+
+			img {
+				height: 1.5rem;
+			}
+		}
+		a {
+			display: block;
+			color: colors.brand(gray, 600);
+			padding: 0.875rem 1rem;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.l-header-buttons {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 0;
+	width: 100vw;
+	display: none;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 1rem;
+
+	@media (min-width: bps.$L) {
+		gap: 2rem;
+		flex-direction: row;
+		position: static;
+		width: auto;
+		display: flex;
+	}
+
+	a:first-of-type {
+		font-weight: 500;
+		color: colors.brand(gray, 600);
+		text-decoration: none;
+		white-space: nowrap;
+		display: flex;
+		gap: 0.5rem;
+		padding: 0.875rem 1rem;
+		align-items: center;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		img {
+			height: 1.25rem;
+		}
+	}
+
+	a:last-of-type button {
+		padding: 1rem 2.5rem;
+		font-size: 1.25rem;
+
+		@media (min-width: bps.$L) {
+			font-size: 1rem;
+			padding: 0.5rem 2.5rem;
+		}
+	}
+}
+
+.menu-toggle {
+	height: 48px;
+	border: 0;
+	background: 0;
+	font-weight: 500;
+	color: colors.brand(gray, 600);
+	right: 1.5rem;
+	top: 0.5rem;
+	display: inline-flex;
+	gap: 0.25rem;
+	align-items: center;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		background: url("/assets/img/icons/carbon_menu.svg") no-repeat center;
+	}
+
+	@media (min-width: bps.$L) {
+		position: static;
+		display: none;
+	}
+}
+
+/* first level item */
+.l-header-main-menu p,
+.l-header-submenu-toggle,
+.l-header-main-menu > ul > li > a {
+	text-decoration: none;
+}
+
+.l-header-submenu-toggle {
+	appearance: none;
+	gap: 1rem;
+	border: none;
+	line-height: 1.5;
+	text-align: left;
+	background: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&[aria-expanded="true"] svg {
+		transform: rotate(180deg);
+	}
+}

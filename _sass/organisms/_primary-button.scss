@@ -1,0 +1,38 @@
+.primary-button {
+	button {
+		border-radius: 999px;
+		border: 0rem;
+		font-family: $archivo-stack;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.0125em;
+		color: colors.brand(white, 0);
+		white-space: nowrap;
+	}
+
+	.small {
+		font-size: sizes.$button-font-size;
+		padding: 0.5rem 1.5rem;
+
+		@media (min-width: bps.$L) {
+			padding: 0.5rem 2.5rem;
+		}
+	}
+
+	.large {
+		font-size: sizes.$button-font-size-l;
+		padding: 1.125rem 2rem;
+
+		@media (min-width: bps.$L) {
+			padding: 1.5rem 3rem;
+		}
+	}
+
+	.primary {
+		background: colors.brand(gradients, primary);
+	}
+
+	.dark {
+		background: colors.brand(buttons, dark);
+	}
+}

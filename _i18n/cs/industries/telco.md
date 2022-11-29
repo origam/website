@@ -1,2 +1,0 @@
-- STAR 21 Networks
-- Swisscom (CH)

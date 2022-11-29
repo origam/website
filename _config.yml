@@ -1,13 +1,12 @@
 plugins:
   - jekyll-multiple-languages-plugin
 
-languages: ["cs", "en"]
+languages: ["en", "cs"]
 exclude_from_localizations: ["assets"]
+assetsPath: "/assets"
+baseurl: "/"
+
+sass:
+  implementation: sass-embedded
 
 collections:
-  industries:
-  benefits:
-  pains:
-  features:
-  customer-steps:
-  partners:

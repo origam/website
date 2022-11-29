@@ -1,30 +1,60 @@
 ---
 layout: default
-title: ORIGAM Home
-headerstyle: 
----
-<div class="pagetitle-container wrapper clearfix">
-    <h1>{% translate titles.about %}</h1>
-</div>
+title: page-about.title
+description: page-about.description
+namespace:     about
 
-<div class="main-container clearfix">
-    <article>
-        <div class="row white clearfix">
-            <div class="wrapper">
-                {% translate_file about/main.md %}
+permalink_cs: /o-nas/
+permalink:    /about-us/
+---
+<section class="about-reasons">
+    <div class="container">
+        <img src="{{ site.assetsPath }}/img/icons/o-nas-triangle.svg" class="bg-triangle">
+        <div>
+            <h5>{% t page-about.intro.title %}</h5>
+            <h1>{% t page-about.intro.subtitle %}</h1>
+        </div>
+        {% assign timeline = site.translations[site.lang].origam-timeline  %}
+        {% include timeline.html 
+            items = timeline
+            years = true
+         %}
+    </div>
+</section>
+
+<section class="about-mission">
+    <div class="container">
+        <div class="text">
+            <h5>{% t page-about.mission.title %}</h5>
+            <h2>{% t page-about.mission.subtitle %}</h2>
+        </div>
+        <img src="{{ site.assetsPath }}/img/icons/o-nas-bg.svg" class="bg-pic" width="209" height="347">
+    </div>
+</section>
+
+<section class="about-past">
+    <div class="container">
+        <div class="header">
+            <img src="{{ site.assetsPath }}/img/icons/origami.svg">
+            <ul>
+                <li>
+                    <h5>{% t page-about.story.title %}</h5>
+                </li>
+                <li>
+                    <h2>{% t page-about.story.subtitle %}</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="story">
+                {% t page-about.story.text %}
+            </div>
+            <div class="quote">
+                <img src="{{ site.assetsPath }}/img/icons/carbon_quotes.svg" width="104" height="104">
+                <h3>{% t page-about.story.quote %}</h3>
+                &mdash; {% t page-about.story.quote-author %}
             </div>
         </div>
-        <div class="row lightGrey clearfix">
-            <div class="wrapper teaser">
-                {% translate_file about/mission.md %}
-            </div>
-        </div>
-        <div class="row white clearfix">
-            <div class="wrapper teaser">
-                <img src="/assets/images/origami-brand.png"/>
-                {% translate_file about/brand.md %}
-            </div>
-        </div>
-    </article>
-</div>
-<!-- #main-container -->	
+    </div>
+</section>
+{% include interested.html  %}

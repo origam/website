@@ -1,0 +1,41 @@
+<div class="timeline">
+    {% capture itemsCount %}
+        {{ include.items.size | minus: 1}}
+    {% endcapture %}
+    {% for i in (0..itemsCount) %}
+        <hr class="divider">
+        <div class="row">
+            {% if include.years == true %}
+                <div class="column column-left left-years">
+                    {{ include.items[i].date }}
+                </div>
+                <div class="column column-mid mid-years">
+                    {{ include.items[i].title }}
+                </div>    
+            {% else %}
+                <div class="column column-left left-nums">
+                    {% assign index = i + 1 %}
+                    {% if i >= 10 %}
+                        {{ index | plus: 1}}
+                    {% else %}
+                        0{{ index | plus: 1}}
+                    {% endif %}
+                </div>
+                <div class="column column-mid mid-nums">
+                    {{ include.items[i].title }}
+                </div>    
+            {% endif %}
+            <div class="column column-right">
+                {{ include.items[i].explanation }}
+            </div>
+        </div>
+    {% endfor %}
+    {% if include.hasButton == true %}
+        {% include button.html 
+            text=include.button-text
+            translate=true
+            link=include.button-link
+            secondary=true
+        %}
+    {% endif %}
+</div>
