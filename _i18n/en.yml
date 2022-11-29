@@ -278,32 +278,32 @@ industries:
     description: E-commerce application based on ORIGAM 
   - 
     name: Food industry 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
   - 
     name: Insurance companies 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
   - 
     name: Real estate 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
   - 
     name: Services 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
   - 
     name: Telco 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png
+    description:  
   - 
     name: Tourism 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
   - 
     name: Other 
-    image:
-    description: popisek 
+    image: /img/pages/produkt/obchod.png 
+    description:  
  
 timeline: 
   - 

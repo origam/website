@@ -339,32 +339,32 @@ industries:
     description: E-commerce aplikace postavená nad ORIGAM
   -
     name: Potravinářský průmysl
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Pojišťovny
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Reality
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Služby
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Telco
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Cestovní ruch
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
   -
     name: Ostatní
-    image: 
-    description: popisek
+    image: /img/pages/produkt/obchod.png 
+    description: 
 
 timeline:
   -

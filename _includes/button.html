@@ -6,7 +6,8 @@
 {% assign icon = include.icon | default: "/img/icons/link-arrow.svg" | prepend: site.assetsPath  %}
 {% capture link %}
     {% assign firstletter = include.link | truncate: 1, '' %}
-    {% if translate == true and firstletter != "#" %}
+    {% assign httpsPrefix = include.link | truncate: 8, '' %}
+    {% if translate == true and firstletter != "#" and httpsPrefix != "https://" %}
         {% include link link=include.link %}
     {% else %}
         {{ include.link }}
