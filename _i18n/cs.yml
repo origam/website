@@ -105,10 +105,12 @@ examples:
       pokročilých dotazů a robustním zálohováním.
   -
     name: Logistické a rozpočtové aplikace
-    content: popis logistiky
+    content: Software pro řízení logistických procesů skladu, výroby i distribuce.
+      Přehled, řízení a monitorování podnikových financí.
   -
     name: Aplikace pro analýzu a vyhodnocování dat
-    content: popis analytiky
+    content: Celý analytický proces - sběr dat z různých zdrojů, jejich příprava,
+      zpracování, vizualizace, vyhodnocení až po vytvoření výstupů v mnoha formátech.
 
 customer-logos:
   -
