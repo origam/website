@@ -14,7 +14,8 @@ main:
 
 page-home:
   title: Home
-  description:
+  description: ORIGAM je open source software pro vývoj interních systémů i aplikací na míru.
+   Pro všechny, kterým nestačí běžné aplikace.
   intro:
     title: Open source stavebnice pro&nbsp;vývoj informačních systémů
     subtitle: Složte si vlastní software na míru.
@@ -122,9 +123,8 @@ customer-logos:
 
 page-about:
   title: O nás
-  description: Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové
-    vývojáře, kteří vyžadují maximum flexibility a zároveň spolehlivosti s
-    rychlou technickou podporou.
+  description: Naším posláním je efektivně pomáhat firmám a institucím k digitalizaci.
+    Chceme, aby se ORIGAM stal řešením č. 1 pro všechny softwarové vývojáře.
   intro:
     title: Historie
     subtitle: Jak to vše začalo
@@ -171,7 +171,8 @@ origam-timeline:
 
 page-contact:
   title: Kontakt
-  description:
+  description: Zaujal Vás ORIGAM? Chcete si vyzkoušet prototyp nebo se stát partnerem?
+    Napište nám, co potřebujete. Vše rádi zodpovíme.
   main:
     title: Představíme Vám ORIGAM osobně nebo online
     subtitle: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám
@@ -226,7 +227,9 @@ support-types:
 
 page-product:
   title: Produkt
-  description:
+  description: Poskládejte si ORIGAM software, který vyhovuje Vaší organizaci – databázové,
+   logistické a rozpočtové aplikace, analýza i vyhodnocování dat.
+   Software na míru rychle a za cenu hotového řešení.
   start:
     title: Začít s ORIGAM je prosté
     subtitle: Usnadněte si práci a soustřeďte se na své podnikání. 
@@ -436,7 +439,8 @@ testimonials:
 
 page-partners:
   title: Partneři
-  description:
+  description: Buďte pro své klienty spolehlivým dodavatelem enterprise softwaru.
+    Díky ORIGAM platformě je vývoj jednodušší a rychlejší než začít od nuly.
   intro:
     title: Poskytujte svým zákazníkům<br>jen kvalitní služby
     text: Stát se certifikovaným partnerem ORIGAM je známka toho, že svým
@@ -579,7 +583,8 @@ partner-list:
   
 page-community:
   title: Komunita
-  description:
+  description: Komunitní fórum příznívců i odborníků na ORIGAM.
+    Najdete zde poznatky o vývoji platformy i návrhy na zlepšení.
   intro:
     title: Mít znalosti a informace – to je konkurenční výhoda.
     text: Hledáte pomoc od ostatních nebo ji naopak nabízíte? O tom právě
