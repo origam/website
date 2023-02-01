@@ -14,7 +14,7 @@ main:
  
 page-home: 
   title: Home 
-  description: 
+  description: Open-source information system development kit 
   intro: 
     title: Open-source information system development kit 
     subtitle: Customise your own software 
@@ -151,7 +151,7 @@ origam-timeline:
  
 page-contact: 
   title: Contacts 
-  description: 
+  description: We will present ORIGAM to you in person or online 
   main: 
     title: We will present ORIGAM to you in person or online 
     subtitle: Do you like ORIGAM's functionalities? Do you want to test a prototype? Do you want to become ORIGAM partner? Tell us what you need. We will happily answer all your questions. 
@@ -198,7 +198,7 @@ support-types:
  
 page-product: 
   title: Product 
-  description: 
+  description: Starting with ORIGAM is easy 
   start: 
     title: Starting with ORIGAM is easy 
     subtitle: Make your work easier and focus on your business. 
@@ -363,7 +363,7 @@ testimonials:
  
 page-partners: 
   title: Partners 
-  description: 
+  description: We only provide top-quality services to our customers 
   intro: 
     title: We only provide top-quality services to our customers 
     text: Becoming a certified ORIGAM partner is a proof that you provide top-quality services to your customers with ORIGAM. We'll set you up for that. 
@@ -484,7 +484,7 @@ partner-list:
    
 page-community: 
   title: Community 
-  description: 
+  description: Knowledge and information is a competitive advantage
   intro: 
     title: Knowledge and information is a competitive advantage 
     text: Seeking help from others or offering help in turn? This is what community is about. It's here for anyone. We share tips about the platform development, advise each other on how to fix the individual processes, propose improvements and new functionalities. 
