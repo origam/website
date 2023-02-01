@@ -14,7 +14,8 @@ main:
  
 page-home: 
   title: Home 
-  description: Open-source information system development kit 
+  description: ORIGAM is an open source software for developing internal systems and custom 
+    applications. For those who find typical mass-market applications unsatisfactory.
   intro: 
     title: Open-source information system development kit 
     subtitle: Customise your own software 
@@ -104,10 +105,12 @@ examples:
     image: /img/pages/home/Clay Dark.svg 
   - 
     name: Logistics and budgeting applications 
-    content: description of logistics 
+    content: Software for managing warehouse, production and distribution logistics processes.
+      Overview, control and monitoring of corporate finances. 
   - 
     name: Data analysis and evaluation applications 
-    content: description of analytics 
+    content: The entire analytical process - data collection from various sources, preparation, 
+      processing, visualization, evaluation to creating outputs in many formats.
  
 customer-logos:  
   - 
@@ -119,7 +122,8 @@ customer-logos:
  
 page-about: 
   title: About Us 
-  description: We want ORIGAM to become the no. 1 solution for all software developers who seek maximum flexibility and reliability with quick technical support. 
+  description: Our mission is to effectively support companies and institutions in their digitalisation.
+    We want ORIGAM to become the no. 1 solution for all software developers.
   intro: 
     title: History 
     subtitle: How it all began 
@@ -151,7 +155,8 @@ origam-timeline:
  
 page-contact: 
   title: Contacts 
-  description: We will present ORIGAM to you in person or online 
+  description: Are you interested in ORIGAM? Do you want to try a prototype or become a partner? 
+    Write us what you need. We will be glad to come back to you.
   main: 
     title: We will present ORIGAM to you in person or online 
     subtitle: Do you like ORIGAM's functionalities? Do you want to test a prototype? Do you want to become ORIGAM partner? Tell us what you need. We will happily answer all your questions. 
@@ -198,7 +203,8 @@ support-types:
  
 page-product: 
   title: Product 
-  description: Starting with ORIGAM is easy 
+  description: Assemble a software that fits your organization - database, logistics and budget applications,
+    analysis and evaluation of data. Custom software quickly and for the price of a packaged product. 
   start: 
     title: Starting with ORIGAM is easy 
     subtitle: Make your work easier and focus on your business. 
@@ -363,7 +369,8 @@ testimonials:
  
 page-partners: 
   title: Partners 
-  description: We only provide top-quality services to our customers 
+  description: Become a reliable supplier of enterprise software to your customers.
+    Thanks to the ORIGAM platform, development is easier and faster than starting from scratch.
   intro: 
     title: We only provide top-quality services to our customers 
     text: Becoming a certified ORIGAM partner is a proof that you provide top-quality services to your customers with ORIGAM. We'll set you up for that. 
@@ -484,7 +491,8 @@ partner-list:
    
 page-community: 
   title: Community 
-  description: Knowledge and information is a competitive advantage
+  description: Community forum of ORIGAM supporters and experts. Here you will find knowledge 
+    about the development of the platform as well as suggestions for improvement.
   intro: 
     title: Knowledge and information is a competitive advantage 
     text: Seeking help from others or offering help in turn? This is what community is about. It's here for anyone. We share tips about the platform development, advise each other on how to fix the individual processes, propose improvements and new functionalities. 
