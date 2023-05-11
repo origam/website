@@ -1,0 +1,17 @@
+<li class="quote-card">
+    <blockquote class="quotation">{{ include.quote }}</blockquote>
+    <div class="person">
+        <div class="images">
+            <img src="{{site.assetsPath}}{{ include.avatar }}" class="avatar" width="80" height="80" alt="{{ include.name }}" loading="lazy">
+            <div class="company">
+                <img src="{{site.assetsPath}}{{ include.companyLogo }}" class="company-logo" height="24" alt="{{ include.company }}" loading="lazy">
+            </div>
+        </div>
+        <p>
+            {{ include.name }},
+            {{ include.position }},
+            {{ include.company }},
+            {{ include.country }}
+        </p>
+    </div>
+</li>

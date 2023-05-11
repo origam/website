@@ -115,11 +115,32 @@ examples:
 
 customer-logos:
   -
-    image: /img/pages/home/logos_microsoft-teams.svg
-    alt: Microsoft
+    image: /img/pages/home/logos_nikon.png
+    alt: Nikon
   -
-    image: /img/pages/home/logos_android.svg
-    alt: Google
+    image: /img/pages/home/logos_icontel.png
+    alt: Icontel
+
+customer-testimonials:
+  -
+    quote: Převedení chaotických Excelových tabulek do funkční aplikace zvýšilo
+      naši produktivitu a ušetřilo mi jeden víkend v měsíci.
+    avatar: /img/pages/home/eva-cizkova.jpeg
+    companyLogo: /img/pages/home/logos_nikon.png
+    name: Eva Čížková
+    position: Marketing Manager
+    company: Nikon
+    country: Česko
+  -
+    quote: ORIGAM nám výrazně usnadnil vývoj softwaru pro naše klienty. 
+      Zrychlili jsme dodání, systém je stabilní a vždy se máme na koho 
+      obrátit pro radu a pomoc.
+    avatar: /img/pages/home/werner-mattes.jpeg
+    companyLogo: /img/pages/home/logos_icontel.png
+    name: Werner Mattes
+    position: CEO
+    company: Icontel AG
+    country: Švýcarsko
 
 page-about:
   title: O nás

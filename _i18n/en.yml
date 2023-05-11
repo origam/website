@@ -112,13 +112,34 @@ examples:
     content: The entire analytical process - data collection from various sources, preparation, 
       processing, visualization, evaluation to creating outputs in many formats.
  
-customer-logos:  
-  - 
-    image: /img/pages/home/logos_microsoft-teams.svg 
-    alt: Microsoft 
-  - 
-    image: /img/pages/home/logos_android.svg 
-    alt: Google 
+customer-logos:
+  -
+    image: /img/pages/home/logos_nikon.png
+    alt: Nikon
+  -
+    image: /img/pages/home/logos_icontel.png
+    alt: Icontel
+
+customer-testimonials:
+  -
+    quote: Converting messy Excel spreadsheets into a functional application 
+      has increased our productivity and saved me one weekend a month.
+    avatar: /img/pages/home/eva-cizkova.jpeg
+    companyLogo: /img/pages/home/logos_nikon.png
+    name: Eva Čížková
+    position: Marketing Manager
+    company: Nikon
+    country: Czechia
+  -
+    quote: Developing software for our customers has become much easier with
+      ORIGAM. We have accelerated delivery, the system is stable and we 
+      always have someone to turn to for advice and support.
+    avatar: /img/pages/home/werner-mattes.jpeg
+    companyLogo: /img/pages/home/logos_icontel.png
+    name: Werner Mattes
+    position: CEO
+    company: Icontel AG
+    country: Switzerland
  
 page-about: 
   title: About Us 
