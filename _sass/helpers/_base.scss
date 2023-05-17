@@ -136,9 +136,13 @@ strong {
 /*
  * Localize blockquotes.
  */
-blockquote {
+ html[lang=cs] blockquote {
 	&::before { content: "„"; }
 	&::after { content: "“"; }
+}
+html blockquote {
+	&::before { content: "“"; }
+	&::after { content: "”"; }
 }
 
 /* ==========================================================================
