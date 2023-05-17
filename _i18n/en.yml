@@ -118,7 +118,19 @@ customer-logos:
     alt: Nikon
   -
     image: /img/pages/home/logos_icontel.png
-    alt: Icontel
+    alt: Icontel AG
+  -
+    image: /img/pages/home/logo_tereos_ttd.svg
+    alt: Tereos TTD
+  -
+    image: /img/pages/home/logo_elpida.svg
+    alt: Elpida, o.p.s.
+  -
+    image: /img/pages/home/logo_pie_properties.jpg
+    alt: PIE Properties LLC
+  -
+    image: /img/pages/home/logo_wyby.svg
+    alt: wy.by AG
 
 customer-testimonials:
   -
@@ -139,6 +151,47 @@ customer-testimonials:
     name: Werner Mattes
     position: CEO
     company: Icontel AG
+    country: Switzerland
+  -
+    quote: We were no longer able to manage the delivery of raw materials
+      only by phone with the drivers. With the ORIGAM platform we can now
+      track everything online in real time. We've migrated all historical
+      applications onto one platform and we are now evaluating much more
+      information in an automated way. We are prepared for any situation.
+    companyLogo: /img/pages/home/logo_tereos_ttd.svg
+    company: Tereos TTD
+    country: Czechia
+  -
+    quote: The new software on the Senior Line has enabled us to improve
+      the ergonomics of call handling. Detailed analysis has given us new
+      insights into our data and automated reporting to the provider.
+    avatar: /img/pages/home/Katerina-Bohata-Elpida.jpg
+    companyLogo: /img/pages/home/logo_elpida.svg
+    name: Kateřina Bohatá
+    position: Maganer
+    company: Elpida, o.p.s.
+    country: Czechia
+  -
+    quote: We started our business with a mobile application built on the ORIGAM
+      backend. Investors now have a detailed overview of what is happening
+      in the property world and can respond quickly to offers.
+      We are the number one real estate app in Egypt.
+    avatar: /img/pages/home/user.png
+    companyLogo: /img/pages/home/logo_pie_properties.jpg
+    name: Hassan Sadek
+    position: CEO
+    company: PIE Properties LLC
+    country: Egypt
+  -
+    quote: Our original e-commerce platform developed in Java was too complex and slow.
+      ORIGAM is so flexible. Features that used to take us months to implement are now
+      ready in a matter of weeks. For over 10 years now, it has enabled us to respond
+      flexibly to the customers needs throughout Switzerland.
+    avatar: /img/pages/home/Marcel-Tschanen-wyby.jpeg
+    companyLogo: /img/pages/home/logo_wyby.svg
+    name: Marcel Tschanen
+    position: Managing Director
+    company: wy.by AG
     country: Switzerland
  
 page-about: 
