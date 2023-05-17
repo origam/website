@@ -119,7 +119,19 @@ customer-logos:
     alt: Nikon
   -
     image: /img/pages/home/logos_icontel.png
-    alt: Icontel
+    alt: Icontel AG
+  -
+    image: /img/pages/home/logo_tereos_ttd.svg
+    alt: Tereos TTD
+    -
+    image: /img/pages/home/logo_elpida.svg
+    alt: Elpida, o.p.s.
+  -
+    image: /img/pages/home/logo_pie_properties.jpg
+    alt: PIE Properties LLC
+  -
+    image: /img/pages/home/logo_wyby.svg
+    alt: wy.by AG
 
 customer-testimonials:
   -
@@ -140,6 +152,49 @@ customer-testimonials:
     name: Werner Mattes
     position: CEO
     company: Icontel AG
+    country: Švýcarsko
+   -
+    quote: Už jsme nedokázali dál řídit dodávku surovin pouze telefonicky
+      s řidiči. S ORIGAM platformou nyní sledujeme vše v reálném čase online.
+      Převedli jsme historické aplikace na jednu platformu a vyhodnocujeme
+      nyní automatizovaně mnohem více informací. Jsme připraveni na každou situaci.
+    avatar: 
+    companyLogo: /img/pages/home/logo_tereos_ttd.svg
+    name: 
+    position: 
+    company: Tereos TTD
+    country: Česko
+ -
+    quote: Nový software na Lince pro seniory nám umožnil zlepšit ergonomii
+      úkonů při hovorech. Díky podrobné analytice jsme získali nové pohledy
+      na naše data a zautomatizovali reportování zřizovateli.
+    avatar: 
+    companyLogo: /img/pages/home/logo_elpida.svg
+    name: Kateřina Bohatá
+    position: 
+    company: Elpida, o.p.s.
+    country: Česko
+  -
+    quote: Podnikání jsme naplno rozjeli až s mobilní aplikací postavenou
+      na backendu ORIGAM. Investoři mají teď podrobný přehled o dění v realitním
+      světě a mohou rychle reagovat na nabídky. Jsme jednička mezi realitními
+      aplikacemi v Egyptě.
+    avatar: 
+    companyLogo: /img/pages/home/logo_pie_properties.jpg
+    name: Hassan Sadek
+    position: 
+    company: PIE Properties LLC
+    country: Egypt
+  -
+    quote: Vývoj naší původní e-commerce platformy vyvíjené v Javě byl příliš
+      složitý a pomalý. ORIGAM je natolik variabilní, že funkce, které jsme
+      dříve implementovali měsíce, byly hotové v řádu týdnů. Přes 10 let nám již
+      umožňuje flexibilně reagovat na požadavky našich klientů z celého Švýcarska.
+    avatar: /img/pages/home/werner-mattes.jpeg
+    companyLogo: /img/pages/home/logo_wyby.svg
+    name: Marcel Tschanen
+    position: Managing Director
+    company: wy.by AG
     country: Švýcarsko
 
 page-about:
