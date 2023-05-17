@@ -168,10 +168,10 @@ customer-testimonials:
     quote: Nový software na Lince pro seniory nám umožnil zlepšit ergonomii
       úkonů při hovorech. Díky podrobné analytice jsme získali nové pohledy
       na naše data a zautomatizovali reportování zřizovateli.
-    avatar: 
+    avatar: /img/pages/home/Katerina-Bohata-Elpida.jpg
     companyLogo: /img/pages/home/logo_elpida.svg
     name: Kateřina Bohatá
-    position: 
+    position: Vedoucí Linky seniorů 
     company: Elpida, o.p.s.
     country: Česko
   -
@@ -179,10 +179,10 @@ customer-testimonials:
       na backendu ORIGAM. Investoři mají teď podrobný přehled o dění v realitním
       světě a mohou rychle reagovat na nabídky. Jsme jednička mezi realitními
       aplikacemi v Egyptě.
-    avatar: 
+    avatar: /img/pages/home/hassan-sadek.jpeg
     companyLogo: /img/pages/home/logo_pie_properties.jpg
     name: Hassan Sadek
-    position: 
+    position: CEO
     company: PIE Properties LLC
     country: Egypt
   -
@@ -190,7 +190,7 @@ customer-testimonials:
       složitý a pomalý. ORIGAM je natolik variabilní, že funkce, které jsme
       dříve implementovali měsíce, byly hotové v řádu týdnů. Přes 10 let nám již
       umožňuje flexibilně reagovat na požadavky našich klientů z celého Švýcarska.
-    avatar: /img/pages/home/werner-mattes.jpeg
+    avatar: /img/pages/home/Marcel-Tschanen-wyby.jpeg
     companyLogo: /img/pages/home/logo_wyby.svg
     name: Marcel Tschanen
     position: Managing Director
