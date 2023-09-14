@@ -20,8 +20,15 @@
         {{ include.text }}
     {% endif %}
 {% endcapture %}
+{% if link contains '://' %}
+    {% assign external = true %}
+{% else %}
+    {% assign external = false %}
+{% endif %}
 {% if secondary == true %}
-    <a href="{{ link }}" class="secondary-button{% if dark == true %} dark{% endif %}">
+    <a href="{{ link }}"
+        target="{% if external == true %}_blank{% endif %}"
+        class="secondary-button{% if dark == true %} dark{% endif %}">
         {% if iconLeft == true %}
             <img src="{{ icon }}" alt="Icon" width="20" height="20"/>
         {% endif %}
@@ -31,7 +38,9 @@
         {% endif %}
     </a>
 {% else %}
-    <a href="{{ link }}" class="primary-button">
+    <a href="{{ link }}" 
+        target="{% if external == true %}_blank{% endif %}"
+        class="primary-button">
         {% if dark == true and small == false %}
             <button class="large dark">
                 {{ text }}
