@@ -416,11 +416,11 @@ aspects:
 industries:
   -
     name: Obchod & e-commerce
-    image: /img/pages/produkt/obchod.png
+    image: /img/pages/produkt/ecommerce.png
     description: E-commerce aplikace postavená nad ORIGAM
   -
     name: Potravinářský průmysl
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/potravinovy prumysl skladova vydejka.png 
     description: 
   -
     name: Pojišťovny
@@ -428,11 +428,11 @@ industries:
     description: 
   -
     name: Reality
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/reality.png 
     description: 
   -
     name: Služby
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/sluzby.png 
     description: 
   -
     name: Telco
@@ -440,7 +440,7 @@ industries:
     description: 
   -
     name: Cestovní ruch
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/cestovni ruch.png 
     description: 
   -
     name: Ostatní
