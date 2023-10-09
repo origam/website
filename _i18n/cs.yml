@@ -420,7 +420,7 @@ industries:
     description: E-commerce aplikace postavená nad ORIGAM
   -
     name: Potravinářský průmysl
-    image: /img/pages/produkt/potravinovy prumysl skladova vydejka.png 
+    image: /img/pages/produkt/potraviny.png 
     description: 
   -
     name: Pojišťovny
@@ -444,7 +444,7 @@ industries:
     description: 
   -
     name: Ostatní
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/ostatni.png 
     description: 
 
 timeline:
