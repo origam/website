@@ -354,36 +354,36 @@ aspects:
 industries: 
   - 
     name: Sales & e-commerce 
-    image: /img/pages/produkt/obchod.png 
+    image: /img/pages/produkt/ecommerce.png 
     description: E-commerce application based on ORIGAM 
   - 
     name: Food industry 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/food.png 
+    description:  ERP system in the food industry
   - 
     name: Insurance companies 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/insurance.png 
+    description:  Document management
   - 
     name: Real estate 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/real.png 
+    description:  Real estate application based on ORIGAM
   - 
     name: Services 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/services.png 
+    description:  Reservation system based on ORIGAM
   - 
     name: Telco 
-    image: /img/pages/produkt/obchod.png
+    image: /img/pages/produkt/telco.png
     description:  
   - 
     name: Tourism 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/travel.png 
+    description:  Reservation system based on ORIGAM
   - 
     name: Other 
-    image: /img/pages/produkt/obchod.png 
-    description:  
+    image: /img/pages/produkt/other.png 
+    description:  Reservation system based on ORIGAM
  
 timeline: 
   - 
