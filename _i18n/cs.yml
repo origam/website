@@ -420,32 +420,32 @@ industries:
     description: E-commerce aplikace postavená nad ORIGAM
   -
     name: Potravinářský průmysl
-    image: /img/pages/produkt/potraviny.png 
-    description: 
+    image: /img/pages/produkt/food.png 
+    description: ERP systém v potravinářském průmyslu
   -
     name: Pojišťovny
-    image: /img/pages/produkt/obchod.png 
-    description: 
+    image: /img/pages/produkt/insurance.png 
+    description: Správa dokumentů
   -
     name: Reality
-    image: /img/pages/produkt/reality.png 
-    description: 
+    image: /img/pages/produkt/real.png 
+    description: Aplikace pro správu nemovitostí postavená nad ORIGAM
   -
     name: Služby
-    image: /img/pages/produkt/sluzby.png 
-    description: 
+    image: /img/pages/produkt/services.png 
+    description: Rezervační systém vytvořený nad ORIGAM
   -
     name: Telco
     image: /img/pages/produkt/telco.png 
-    description: 
+    description: Software pro telefonní linku
   -
     name: Cestovní ruch
-    image: /img/pages/produkt/cestovni ruch.png 
-    description: 
+    image: /img/pages/produkt/travel.png 
+    description: Rezervační systém vytvořený nad ORIGAM
   -
     name: Ostatní
-    image: /img/pages/produkt/ostatni.png 
-    description: 
+    image: /img/pages/produkt/other.png 
+    description: Rezervační systém vytvořený nad ORIGAM
 
 timeline:
   -
