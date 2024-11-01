@@ -233,16 +233,10 @@ page-contact:
     Write us what you need. We will be glad to come back to you.
   main: 
     title: We will present ORIGAM to you in person or online 
-    subtitle: Do you like ORIGAM's functionalities? Do you want to test a prototype? Do you want to become ORIGAM partner? Tell us what you need. We will happily answer all your questions. 
-  form: 
-    interest-type: How would you like to work with ORIGAM? 
-    interest1: We are an organization seeking to innovate our internal system 
-    interest2: We want to become an ORIGAM partner 
-    name: Your name or the name of your organization  
-    e-mail: Contact e-mail 
-    phone: Phone 
-    help: How can we help you? 
-    button-send: Send 
+    subtitle: Do you like ORIGAM's functionalities? Do you want to test a prototype? Do you want to become ORIGAM partner?
+  form:
+    line1: Tell us what you need at
+    line2: We will happily answer all your questions.
  
 support: 
   title: Support 

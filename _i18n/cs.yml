@@ -248,21 +248,13 @@ origam-timeline:
 page-contact:
   title: Kontakt
   description: Zaujal Vás ORIGAM? Chcete si vyzkoušet prototyp nebo se stát partnerem?
-    Napište nám, co potřebujete. Vše rádi zodpovíme.
   main:
     title: Představíme Vám ORIGAM osobně nebo online
     subtitle: Zaujaly Vás funkce? Chcete si vyzkoušet prototyp? Nebo se Vám
-      ORIGAM líbí tak, že chcete být partnerem? Napište nám, co potřebujete.
-      Vše rádi zodpovíme.
+      ORIGAM líbí tak, že chcete být partnerem?
   form:
-    interest-type: Čím Vás ORIGAM zaujal?
-    interest1: Jsme organizace a potřebujeme inovovat náš interní systém
-    interest2: Chceme se stát ORIGAM partnerem
-    name: Vaše jméno nebo název organizace
-    e-mail: Kontaktní e-mail
-    phone: Telefon
-    help: V čem Vám můžeme pomoci?
-    button-send: Odeslat
+    line1: Napište nám na
+    line2: Vše rádi zodpovíme.
 
 support:
   title: Podpora

@@ -9,40 +9,12 @@ permalink:     /contact/
 ---
 <section class="contacts">
     <div class="container">
-        <img src="{{ site.assetsPath }}/img/icons/kontakt-triangle.svg" class="bg-triangle">
-        <img src="{{ site.assetsPath }}/img/icons/kontakt-bg.svg" class="bg-pic">
         <h1>{% t page-contact.main.title %}</h1>
         <p>{% t page-contact.main.subtitle %}</p>
 
         <form id="form" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfufNvGs9jySccoTrslyHCRNjlg6nB_kk1zwPmOqWVtQ0qA5w/formResponse">
-            <label class="big-label">{% t page-contact.form.interest-type %}</label>
-            <div class="radio">
-                <div class="option">
-                    <input type="radio" id="innovate" 
-                        value="Jsme organizace a potřebujeme inovovat náš interní systém." 
-                        name="entry.39948717" required>
-                    <label for="innovate">{% t page-contact.form.interest1 %}</label><br>
-                </div>
-                <div class="option">
-                    <input type="radio" id="partner" 
-                        value="Chceme se stát ORIGAM partnerem." 
-                        name="entry.39948717">
-                    <label for="partner">{% t page-contact.form.interest2 %}</label><br>
-                </div>
-            </div>
-            <label for="name" class="big-label">{% t page-contact.form.name %}</label>
-            <input type="text" id="name" name="entry.117664973" required>
-            <label for="email" class="big-label">{% t page-contact.form.e-mail %}</label>
-            <input type="text" id="email" name="entry.866550084" required>
-            <label for="phone" class="big-label">{% t page-contact.form.phone %}</label>
-            <input type="text" id="phone" name="entry.182826076" value="+420" required>
-            <label for="help" class="big-label">{% t page-contact.form.help %}</label>
-            <textarea id="help" name="entry.1719113303" required></textarea>
-            {% include button.html 
-                text="page-contact.form.button-send"
-                translate=true
-                link="#"
-            %}
+            <label class="big-label">{% t page-contact.form.line1 %} <a href="mailto:info@origam.com">info@origam.com</a>.</label>
+            <label class="big-label">{% t page-contact.form.line2 %}</label>
         </form>
     </div>
 </section>
